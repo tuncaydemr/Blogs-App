@@ -10,7 +10,7 @@ class BlogsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function blogs()
     {
         $blogs = Blogs::all();
 
