@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
+
     @foreach ($blogs as $blog)
 
         @if ($blog['active'])
@@ -19,4 +20,5 @@
         @endif
 
     @endforeach
+    
 @endsection
