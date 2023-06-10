@@ -40,7 +40,7 @@ class BlogsController extends Controller
     {
         $blog = Blogs::find($id);
 
-        return view('blogs.blogs-details', $blog);
+        return view('blogs.blog-details', $blog);
     }
 
     /**
