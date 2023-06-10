@@ -36,7 +36,7 @@ class BlogsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function blogsDetails(int $id)
+    public function blogDetails(int $id)
     {
         $blog = Blogs::find($id);
 
