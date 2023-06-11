@@ -13,7 +13,6 @@
                     <h4 class="card-title mb-3 mt-2">{{ $title }}</h4>
                     <h6>{{ $description }}</h6>
                     <p class="mb-1">{{ $likes }} likes</p>
-                    <p>{{ $timestamp }}</p>
                     <p class="m-0">
                         <a href="/blogs" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
@@ -34,7 +33,7 @@
         <div class="alert alert-warning">
             Blog Not Found
         </div>
-        
+
     @endif
 
 @endsection

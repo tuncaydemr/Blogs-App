@@ -15,7 +15,6 @@
                         <h4 class="card-title mb-3 mt-2">{{ $blog['title'] }}</h4>
                         <h6>{{ $blog['description'] }}</h6>
                         <p class="mb-1">{{ $blog['likes'] }} likes</p>
-                        <p>{{ $blog['timestamp'] }}</p>
                         <p class="m-0">
                             <a href="/blogs/{{ $blog['id'] }}" class="btn btn-danger px-5 py-2">Details</a>
                         </p>
