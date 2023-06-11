@@ -8,7 +8,7 @@
                 <p>{{ $description }}</p>
                 <p>{{ $likes }}</p>
                 <p>
-                    <a href="/blogs" class="link-danger-hover border border-danger rounded px-3 py-1 bg-danger bg-gradient text-white" style="text-decoration: none;">Back</a>
+                    <a href="/blogs" class="btn btn-danger px-5 py-2">Back</a>
                 </p>
             </div>
         </div>
