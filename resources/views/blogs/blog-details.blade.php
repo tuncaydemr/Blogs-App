@@ -13,7 +13,7 @@
                     <p class="mb-1">{{ $likes }} likes</p>
                     <p>{{ $timestamp }}</p>
                     <p class="m-0">
-                        <a href="/blogs" class="btn btn-danger px-5 py-2">Back</a>
+                        <a href="/blogs" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
                 </div>
                 <div class="col-2 d-flex justify-content-center flex-column align-items-center">
@@ -21,7 +21,7 @@
                         <a href="/blogs/edit" class="btn btn-primary px-4 py-2">Edit</a>
                     </p>
                     <p>
-                        <a href="/blogs/delete" class="btn btn-primary px-3 py-2">Delete</a>
+                        <a href="/blogs/delete" class="btn btn-danger px-3 py-2">Delete</a>
                     </p>
                 </div>
             </div>
