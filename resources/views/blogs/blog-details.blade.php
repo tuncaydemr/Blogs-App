@@ -1,7 +1,9 @@
 @extends('layouts.layout')
 
 @section('content')
+
     @if ($active)
+
         <div class="card my-4">
             <div class="row">
                 <div class="col-3">
@@ -26,9 +28,13 @@
                 </div>
             </div>
         </div>
+
     @else
+
         <div class="alert alert-warning">
             Blog Not Found
         </div>
+        
     @endif
+
 @endsection
