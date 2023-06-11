@@ -20,5 +20,5 @@
         @endif
 
     @endforeach
-    
+
 @endsection
