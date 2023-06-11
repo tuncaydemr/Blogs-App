@@ -19,4 +19,4 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/index', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/blogs', [BlogsController::class, 'blogs']);
-Route::get('/blogs/{id}', [BlogsController::class, 'blogDetails']);
+Route::get('/blogs/{id}', [BlogsController::class, 'show']);
