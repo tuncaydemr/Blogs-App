@@ -12,7 +12,7 @@
                     <p>{{ $blog['description'] }}</p>
                     <p>{{ $blog['likes'] }} likes</p>
                     <p>
-                        <a href="/blogs/{{ $blog['id'] }}" class="link-danger-hover border border-danger rounded px-3 py-1 bg-danger bg-gradient text-white" style="text-decoration: none;">Details</a>
+                        <a href="/blogs/{{ $blog['id'] }}" class="btn btn-danger px-5 py-2">Details</a>
                     </p>
                 </div>
             </div>
