@@ -5,7 +5,7 @@
         <div class="card my-4">
             <div class="row">
                 <div class="col-3">
-                    <img src="{{ asset('storage/img/Laravel.png') }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
+                    <img src="{{ asset('storage/img/' . $image) }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
                 </div>
                 <div class="col-7">
                     <h4 class="card-title mb-3 mt-2">{{ $title }}</h4>
