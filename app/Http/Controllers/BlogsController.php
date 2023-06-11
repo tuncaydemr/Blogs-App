@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blogs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BlogsController extends Controller
 {
@@ -46,15 +47,18 @@ class BlogsController extends Controller
      */
     public function edit(string $id)
     {
-        //
+
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(int $id, string $title, string $description, string $image)
     {
-        //
+        $blog = Blogs::where('id', $id)
+        ->update(['title' => $title, 'description' => $description, 'image' => $image]);
+
+        return view('blogs.blog-edit', $blog);
     }
 
     /**
