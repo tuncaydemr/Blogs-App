@@ -8,10 +8,11 @@
 
             <div class="card my-4">
                 <div class="card-body">
-                    <h5 class="card-title mb-4">{{ $blog['title'] }}</h5>
-                    <p>{{ $blog['description'] }}</p>
+                    <img src="{{ url('/resources/img/Laravel.png') }}" alt="Image">
+                    <h4 class="card-title mb-4">{{ $blog['title'] }}</h4>
+                    <h6>{{ $blog['description'] }}</h6>
                     <p>{{ $blog['likes'] }} likes</p>
-                    <p>{{ $currentTime }}</p>
+                    <p>{{ $blog['timestamp'] }}</p>
                     <p>
                         <a href="/blogs/{{ $blog['id'] }}" class="btn btn-danger px-5 py-2">Details</a>
                     </p>
