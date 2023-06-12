@@ -20,4 +20,4 @@ Route::get('/index', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/blogs', [BlogsController::class, 'blogs']);
 Route::get('/blogs/{id}', [BlogsController::class, 'show']);
-Route::post('/blogs/edit', [BlogsController::class, 'edit']);
+Route::get('/blogs/edit', [BlogsController::class, 'edit']);

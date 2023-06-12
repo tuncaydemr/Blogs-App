@@ -35,11 +35,9 @@ class BlogsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(int $id)
+    public function show($id)
     {
-        $blog = Blogs::find($id);
-
-        return view('blogs.blog-details', $blog);
+        return view('blogs.blog-details', ['blogs' => Blogs::findOrFail($id)]);  
     }
 
     /**
@@ -47,12 +45,10 @@ class BlogsController extends Controller
      */
     public function edit(int $id, string $title, string $description, string $image)
     {
-        $blog = Blogs::where('id', $id)
+        $blogEdit = Blogs::where('id', $id)
         ->update(['title' => $title, 'description' => $description, 'image' => $image]);
 
-        $blog = Blogs::all();
-
-        return view('blogs.blog-edit', $blog);
+        return view('blogs.blog-edit', $blogEdit);
     }
 
     /**
