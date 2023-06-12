@@ -10,20 +10,13 @@ class FormController extends Controller
 {
     public function submitForm(Request $request)
     {
-        // Handle form submission logic here
 
-        // Access form data
         $name = $request->input('name');
         $email = $request->input('email');
 
-        $blog = Blogs::where('id', '1')
-            ->update(['title' => $name, 'description' => $email]);
+        $blog = Blogs::where('id', '1')->update(['title' => $name, 'description' => $email]);
 
-        $blog = Blogs::all();
+        return view('blogs', ['blogs' => $blog]);
 
-        // Perform validation, database operations, etc.
-
-        // Redirect back or to a success page
-        return view('blogs.blog-details', ['blogs' => $blog]);
     }
 }
