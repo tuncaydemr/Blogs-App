@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    public function submitForm(Request $request, int $id)
+    public function submitForm(Request $request)
     {
         // Handle form submission logic here
 
@@ -16,7 +16,7 @@ class FormController extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
 
-        $blog = Blogs::where('id', $id)
+        $blog = Blogs::where('id', '1')
             ->update(['title' => $name, 'description' => $email]);
 
         $blog = Blogs::all();
