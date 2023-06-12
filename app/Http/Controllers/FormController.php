@@ -16,7 +16,9 @@ class FormController extends Controller
 
         $blog = Blogs::where('id', '1')->update(['title' => $name, 'description' => $email]);
 
-        return view('blogs', ['blogs' => $blog]);
+        $blog = Blogs::all();
+
+        return view('blogs.index', ['blogs' => $blog]);
 
     }
 }

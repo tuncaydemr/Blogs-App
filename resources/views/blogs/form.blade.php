@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form action="/submit-form" method="POST" novalidate>
+    <form action="/blogs" method="POST" novalidate>
         @csrf
 
         <label for="name">Name:</label>
