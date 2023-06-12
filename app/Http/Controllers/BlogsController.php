@@ -35,9 +35,9 @@ class BlogsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        $blog = Blogs::find($id);
+        $blog = Blogs::findOrFail($id);
 
         return view('blogs.blog-details', $blog);
     }
@@ -45,11 +45,11 @@ class BlogsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(int $id)
+    public function edit()
     {
-        $blog = Blogs::find($id);
+        $blogEdit = Blogs::all();
 
-        return view('blogs.blog-edit', $blog);
+        return view('blogs.blog-edit', $blogEdit);
     }
 
     /**
