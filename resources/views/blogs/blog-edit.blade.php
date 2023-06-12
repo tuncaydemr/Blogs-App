@@ -2,10 +2,15 @@
 
 @section('content')
 
-    <div>{{ $blog['title'] }}</div>
+    <form action="{{ route('/resources/views/blogs/blog-form') }}" method="POST">
+        @csrf
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
 
-    <div>{{ $description }}</div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
 
-    <div>{{ $image }}</div>
+        <button type="submit">Submit</button>
+    </form>
 
 @endsection
