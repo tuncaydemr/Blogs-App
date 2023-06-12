@@ -2,17 +2,17 @@
 
 @section('content')
 
-    @if ($blogs['active'])
+    @if ($active)
 
         <div class="card my-4">
             <div class="row">
                 <div class="col-3">
-                    <img src="{{ asset('storage/img/' . $blogs['image']) }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
+                    <img src="{{ asset('storage/img/' . $image) }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
                 </div>
                 <div class="col-7">
-                    <h4 class="card-title mb-3 mt-2">{{ $blogs['title'] }}</h4>
-                    <h6>{{ $blogs['description'] }}</h6>
-                    <p class="mb-1">{{ $blogs['likes'] }} likes</p>
+                    <h4 class="card-title mb-3 mt-2">{{ $title }}</h4>
+                    <h6>{{ $description }}</h6>
+                    <p class="mb-1">{{ $likes }} likes</p>
                     <p class="m-0">
                         <a href="/blogs" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
