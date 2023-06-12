@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blogs;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    public function submitForm(Request $request)
+    public function submitForm(Request $request, int $id)
     {
         // Handle form submission logic here
 
@@ -15,9 +16,14 @@ class FormController extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
 
+        $blog = Blogs::where('id', $id)
+            ->update(['title' => $name, 'description' => $email]);
+
+        $blog = Blogs::all();
+
         // Perform validation, database operations, etc.
 
         // Redirect back or to a success page
-        return redirect()->back()->with('success', 'Form submitted successfully!');
+        return view('blogs.blog-details', ['blogs' => $blog]);
     }
 }
