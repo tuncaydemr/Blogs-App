@@ -35,7 +35,7 @@ class BlogsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(int $id)
+    public function show(string $id)
     {
         $blog = Blogs::find($id);
 
@@ -45,10 +45,9 @@ class BlogsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(int $id, string $title, string $description, string $image)
+    public function edit(int $id)
     {
-        $blog = Blogs::where('id', $id)
-        ->update(['title' => $title, 'description' => $description, 'image' => $image]);
+        $blog = Blogs::find($id);
 
         return view('blogs.blog-edit', $blog);
     }
