@@ -2,6 +2,10 @@
 
 @section('content')
 
-    <div>Hello</div>
+    <div>{{ $blog['title'] }}</div>
+
+    <div>{{ $description }}</div>
+
+    <div>{{ $image }}</div>
 
 @endsection
