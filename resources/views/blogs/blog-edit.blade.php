@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form action="{{ route('/resources/views/blogs/blog-form') }}" method="POST">
+    <form action="{{ route('blog-form') }}" method="POST">
         @csrf
         <label for="name">Name:</label>
         <input type="text" name="name" id="name">

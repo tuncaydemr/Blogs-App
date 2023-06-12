@@ -45,14 +45,14 @@ class BlogsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(int $id, string $title, string $description, string $image)
+    public function edit()
     {
-        $blog = Blogs::where('id', $id)
-        ->update(['title' => $title, 'description' => $description, 'image' => $image]);
+        // $blog = Blogs::where('id', $id)
+        // ->update(['title' => $title, 'description' => $description, 'image' => $image]);
 
-        $blog = Blogs::all();
+        // $blog = Blogs::all();
 
-        return view('blogs.blog-edit', ['blogs' => $blog]);
+        return view('blogs.blog-edit');
     }
 
     /**
