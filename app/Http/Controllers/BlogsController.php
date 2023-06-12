@@ -47,12 +47,7 @@ class BlogsController extends Controller
      */
     public function edit()
     {
-        // $blog = Blogs::where('id', $id)
-        // ->update(['title' => $title, 'description' => $description, 'image' => $image]);
-
-        // $blog = Blogs::all();
-
-        return view('blogs.blog-edit');
+        
     }
 
     /**
