@@ -26,3 +26,5 @@ Route::get('/blogs/{id}', [BlogsController::class, 'show']);
 Route::get('/blogs/{id}/form', function () {
     return view('form');
 });
+
+Route::post('/submit-form', 'FormController@submitForm')->name('submit-form');
