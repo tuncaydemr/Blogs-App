@@ -15,16 +15,12 @@ class FormController extends Controller
 
     public function submitForm(Request $request, $id)
     {
-        $getID = Blogs::find($id);
+        $id = Blogs::find($id);
 
         $name = $request->input('name');
         $email = $request->input('email');
 
-        if($getID){
-            $getID = $getID->id;
-        }
-
-        $blogs = Blogs::where('id', $getID)->update(['title' => $name, 'description' => $email]);
+        $blogs = Blogs::where('id', $id)->update(['title' => $name, 'description' => $email]);
 
         return view('blogs.index', ['blogs' => $blogs]);
     }
