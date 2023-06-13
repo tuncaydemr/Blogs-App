@@ -10,9 +10,6 @@ class FormController extends Controller
 {
     public function submitForm(Request $request)
     {
-        // Handle form submission logic here
-
-        // Access form data
         $name = $request->input('name');
         $email = $request->input('email');
 
