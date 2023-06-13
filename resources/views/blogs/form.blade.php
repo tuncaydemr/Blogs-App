@@ -6,19 +6,29 @@
         @csrf
         @method('PUT')
 
-        <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" name="title" value="{{ $blog->title }}">
+        <div class="container d-flex justify-content-center align-items-center bg-danger" style="height: 80vh;">
+            <div class="col-3">&nbsp;</div>
+
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" value="{{ $blog->title }}">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" name="description" id="description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image</label>
+                    <input class="form-control" type="file" id="image">
+                </div>
+                <div class="w-100 d-flex justify-content-center bg-dark mt-5">
+                    <button type="submit" class="btn btn-primary w-50 p-3">Submit</button>
+                </div>
+            </div>
+
+            <div class="col-3">&nbsp;</div>
         </div>
-        <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" name="description" id="description"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="image" class="form-label">Image</label>
-            <input class="form-control" type="file" id="image" disabled>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 @endsection
