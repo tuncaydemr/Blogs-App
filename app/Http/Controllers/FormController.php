@@ -20,7 +20,7 @@ class FormController extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
 
-        $blogs = Blogs::where('id', $id)->update(['title' => $name, 'description' => $email]);
+        Blogs::where('id', $id)->update(['title' => $name, 'description' => $email]);
 
         return redirect()->to('/blogs');
     }
