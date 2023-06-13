@@ -17,10 +17,6 @@ class FormController extends Controller
             ->update(['title' => $name, 'description' => $email]);
 
         $blog = Blogs::all();
-
-        // Perform validation, database operations, etc.
-
-        // Redirect back or to a success page
         return view('blogs.index', ['blogs' => $blog]);
     }
 }
