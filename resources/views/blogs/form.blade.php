@@ -5,6 +5,8 @@
     <form action="/blogs" method="POST" novalidate>
         @csrf
 
+        <input type="hidden" name="id" value="{{ $blogs->id }}">
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
 

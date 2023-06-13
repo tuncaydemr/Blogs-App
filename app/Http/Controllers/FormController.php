@@ -10,11 +10,14 @@ class FormController extends Controller
 {
     public function editForm()
     {
-        return view('blogs.form');
+        $blogs = Blogs::all();
+
+        return view('blogs.form', $blogs);
     }
 
-    public function submitForm(Request $request, $id)
+    public function submitForm(Request $request)
     {
+        $id = $request->input('id');
 
         $getId = Blogs::find($id);
         $name = $request->input('name');
