@@ -13,15 +13,19 @@ class FormController extends Controller
         return view('blogs.form');
     }
 
-    public function submitForm(Request $request)
+    public function submitForm(Request $request, $id)
     {
+        $getID = Blogs::find($id);
+
         $name = $request->input('name');
         $email = $request->input('email');
 
-        $blog = Blogs::where('id', '1')->update(['title' => $name, 'description' => $email]);
+        if($getID){
+            $getID = $getID->id;
+        }
 
-        $blog = Blogs::all();
-        
-        return view('blogs.index', ['blogs' => $blog]);
+        $blogs = Blogs::where('id', $getID)->update(['title' => $name, 'description' => $email]);
+
+        return view('blogs.index', ['blogs' => $blogs]);
     }
 }
