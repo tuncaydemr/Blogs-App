@@ -13,6 +13,7 @@ class BlogsController extends Controller
     public function blogs()
     {
         $blogs = Blogs::all();
+        
         return view('blogs.index', ['blogs' => $blogs]);
     }
 
@@ -47,7 +48,7 @@ class BlogsController extends Controller
      */
     public function edit()
     {
-        
+
     }
 
     /**
