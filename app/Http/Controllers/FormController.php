@@ -13,9 +13,9 @@ class FormController extends Controller
         return view('blogs.form');
     }
 
-    public function submitForm(Request $request, $id)
+    public function submitForm(Request $request)
     {
-        $id = Blogs::find($id);
+        $id = Blogs::find($request->id);
 
         $name = $request->input('name');
         $email = $request->input('email');
