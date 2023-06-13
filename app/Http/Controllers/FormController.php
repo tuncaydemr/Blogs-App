@@ -8,23 +8,19 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    public function editForm(Request $request)
+    public function editForm($id)
     {
-        $id = $request->input('id');
-        $blogs = Blogs::find($id);
+        $blog = Blogs::findOrFail($id);
 
-        return view('blogs.form', compact('blogs'));
+        return view('blogs.form', compact('blog'));
     }
 
-    public function submitForm(Request $request)
+    public function submitForm(Request $request, int $id)
     {
-        $id = $request->input('id');
-
-        $getId = Blogs::find($id);
         $name = $request->input('name');
         $email = $request->input('email');
 
-        $blogs = Blogs::where('id', $getId)->update(['title' => $name, 'description' => $email]);
+        $blogs = Blogs::where('id', $id)->first()->update(['title' => $name, 'description' => $email]);
 
         return view('blogs.index', ['blogs' => $blogs]);
     }
