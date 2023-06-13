@@ -12,7 +12,7 @@ class FormController extends Controller
     {
         $blogs = Blogs::all();
 
-        return view('blogs.form', $blogs);
+        return view('blogs.form', ['blogs' => $blogs]);
     }
 
     public function submitForm(Request $request)
