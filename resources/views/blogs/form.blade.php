@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form method="POST" action="{{ route('blogs') }}" novalidate>
+    <form action="/blogs" method="POST" novalidate>
         @csrf
 
         <label for="name">Name:</label>
