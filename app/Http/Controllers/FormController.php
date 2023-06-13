@@ -17,10 +17,11 @@ class FormController extends Controller
 
     public function submitForm(Request $request, int $id)
     {
-        $name = $request->input('name');
-        $email = $request->input('email');
+        $title = $request->input('title');
+        $description = $request->input('description');
+        $image = $request->input('image');
 
-        Blogs::where('id', $id)->update(['title' => $name, 'description' => $email]);
+        Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $image]);
 
         return redirect()->to('/blogs');
     }
