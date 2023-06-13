@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
+    public function editForm()
+    {
+        return view('blogs.form');
+    }
+    
     public function submitForm(Request $request)
     {
         $name = $request->input('name');
@@ -17,6 +22,9 @@ class FormController extends Controller
 
         $blog = Blogs::all();
 
+        // Perform validation, database operations, etc.
+
+        // Redirect back or to a success page
         return view('blogs.index', ['blogs' => $blog]);
     }
 }

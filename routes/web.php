@@ -12,9 +12,5 @@ Route::get('/index', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/blogs', [BlogsController::class, 'blogs']);
 Route::get('/blogs/{id}', [BlogsController::class, 'show']);
-
-Route::get('/blogs/{id}/edit', function () {
-    return view('blogs.form');
-});
-
+Route::get('/blogs/{id}/edit', [FormController::class, 'editForm']);
 Route::post('/blogs', [FormController::class, 'submitForm']);
