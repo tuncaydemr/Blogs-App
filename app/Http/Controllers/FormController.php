@@ -8,9 +8,10 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    public function editForm()
+    public function editForm(Request $request)
     {
-        $blogs = Blogs::all();
+        $id = $request->input('id');
+        $blogs = Blogs::find($id);
 
         return view('blogs.form', ['blogs' => $blogs]);
     }
