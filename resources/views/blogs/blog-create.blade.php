@@ -12,11 +12,11 @@
             <div class="col-6">
                 <div class="mb-3">
                     <label for="title" class="form-label text-white">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" value="{{ $blog->title }}">
+                    <input type="text" class="form-control" id="title" name="title">
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label text-white">Description</label>
-                    <textarea class="form-control" name="description" id="description">{{ $blog->description }}</textarea>
+                    <textarea class="form-control" name="description" id="description"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="image" class="form-label text-white">Image</label>
