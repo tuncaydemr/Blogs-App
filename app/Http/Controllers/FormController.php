@@ -26,4 +26,13 @@ class FormController extends Controller
 
         return redirect()->to('/blogs');
     }
+
+    public function create(Request $request)
+    {
+        $title = $request->title;
+        $description = $request->description;
+        $image = $request->image;
+
+        $blogAdd = Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image]);
+    }
 }
