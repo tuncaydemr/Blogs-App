@@ -14,12 +14,12 @@
                         <img src="{{ asset('storage/img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
                     </div>
                     <div class="col-9">
-                        <h4 class="card-title mb-4 mt-2">{{ $blog['title'] }}</h4>
+                        <h4 class="card-title mb-3 mt-2">{{ $blog['title'] }}</h4>
                         <h6 class="mb-3">{{ $blog['description'] }}</h6>
 
                         @if ($blog['likes'])
                             <div class="like d-flex align-items-center">
-                                <p class="mb-4">{{ $blog['likes'] }} likes</p>
+                                <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} likes</p>
 
                                 <button type="button" class="btn btn-primary py-1 mb-3">
                                     <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
