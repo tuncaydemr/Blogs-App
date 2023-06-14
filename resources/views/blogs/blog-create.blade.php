@@ -13,7 +13,7 @@
                     <label for="title" class="form-label text-white">Title</label>
                     <input type="text" class="form-control" id="title" name="title">
                     @error('title')
-                        <div class="text-white mt-1">Required (*)</div>
+                        <div class="text-white mt-1">{{ ucwords($message) }}</div>
                     @enderror
                 </div>
                 <div class="mb-3">
