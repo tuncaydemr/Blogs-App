@@ -20,7 +20,7 @@
                     <label for="description" class="form-label text-white">Description</label>
                     <textarea class="form-control" name="description" id="description"></textarea>
                     @error('description')
-                        <div class="text-white mt-1">Required (*)</div>
+                        <div class="text-white mt-1">{{ ucwords($message) }}</div>
                     @enderror
                 </div>
                 <div class="mb-3">
