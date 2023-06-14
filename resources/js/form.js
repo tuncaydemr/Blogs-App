@@ -1,11 +1,12 @@
 $(() => {
-    $('#active').val();
+    let checkbox = $('#active');
+    let label = $('label[for=active]');
 
-    $('#active').on('change', () => {
-        if($('#active').is(':checked')) {
-            $(this).val('Active');
+    checkbox.on('change', () => {
+        if(checkbox.is(':checked')) {
+            label.text('Active');
         } else {
-            $(this).val('Disable');
+            label.text('Disable');
         }
     });
 })
