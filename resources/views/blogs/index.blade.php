@@ -18,7 +18,10 @@
                         <h6 class="mb-3">{{ $blog['description'] }}</h6>
 
                         @if ($blog['likes'])
-                            <p class="mb-4">{{ $blog['likes'] }} likes</p>
+                            <div class="like d-flex align-items-center">
+                                <p class="mb-4">{{ $blog['likes'] }} likes</p>
+                                <button type="button" class="btn btn-primary py-1 mb-3">Like</button>
+                            </div>
                         @else
                             <button type="button" class="btn btn-primary py-1 mb-3">Like</button>
                         @endif
