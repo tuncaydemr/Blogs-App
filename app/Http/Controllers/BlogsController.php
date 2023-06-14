@@ -64,7 +64,7 @@ class BlogsController extends Controller
      */
     public function delete(int $id)
     {
-        $blog = Blogs::findOrFail($id);
+        Blogs::findOrFail($id);
 
         Blogs::where('id', $id)->delete();
 
