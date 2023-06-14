@@ -20,11 +20,17 @@
                         @if ($blog['likes'])
                             <div class="like d-flex align-items-center">
                                 <p class="mb-4">{{ $blog['likes'] }} likes</p>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <button type="button" class="btn btn-primary py-1 mb-3">Like</button>
+
+                                <button type="button" class="btn btn-primary py-1 mb-3">
+                                    <i class="bi bi-hand-thumbs-up-fill me-1"></i>
+                                    Like
+                                </button>
                             </div>
                         @else
-                            <button type="button" class="btn btn-primary py-1 mb-3">Like</button>
+                            <button type="button" class="btn btn-primary py-1 mb-3">
+                                <i class="bi bi-hand-thumbs-up-fill me-1"></i>
+                                Like
+                            </button>
                         @endif
 
                         <p class="m-0">
