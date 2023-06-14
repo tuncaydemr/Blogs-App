@@ -35,7 +35,7 @@
                     <label class="form-check-label text-white" for="active">Active</label>
                 </div>
                     @error('active')
-                        <div class="text-white mt-1">Required (*)</div>
+                        <div class="text-white mt-1">{{ ucwords($message) }}</div>
                     @enderror
                 <div class="w-100 d-flex justify-content-center mt-5">
                     <button type="submit" class="btn btn-primary w-50 p-3">Create</button>
