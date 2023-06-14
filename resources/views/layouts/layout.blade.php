@@ -28,5 +28,7 @@
     <div class="container mt-3">
         @yield('content')
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </body>
 </html>
