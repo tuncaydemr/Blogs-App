@@ -22,7 +22,7 @@
                     <input class="form-control" type="file" id="image" name="image">
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="active" value="1">
+                  <input class="form-check-input" type="checkbox" id="active" name="active" value="1">
                   <label class="form-check-label text-white" for="active">Active</label>
                 </div>
                 <div class="w-100 d-flex justify-content-center mt-5">
