@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="{{ asset('js/form.js') }}"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
@@ -31,7 +29,7 @@
         @yield('content')
     </div>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="{{ asset('js/form.js') }}"></script>
 </body>
 </html>
