@@ -67,5 +67,7 @@ class BlogsController extends Controller
         $blog = Blogs::findOrFail($id);
 
         Blogs::where('id', $id)->delete();
+
+        return redirect()->to('/blogs');
     }
 }
