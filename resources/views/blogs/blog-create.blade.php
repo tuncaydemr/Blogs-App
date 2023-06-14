@@ -27,7 +27,7 @@
                     <label for="image" class="form-label text-white">Image</label>
                     <input class="form-control" type="file" id="image" name="image">
                     @error('image')
-                        <div class="text-white mt-1">Required (*)</div>
+                        <div class="text-white mt-1">{{ ucwords($message) }}</div>
                     @enderror
                 </div>
                 <div class="form-check">
