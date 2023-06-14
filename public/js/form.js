@@ -4,9 +4,9 @@ $(() => {
 
     checkbox.on('change', function () {
         if (checkbox.is(':checked')) {
-            label.text('Active');
-        } else {
             label.text('Disable');
+        } else {
+            label.text('Active');
         }
     });
 })
