@@ -1,6 +1,6 @@
 $(() => {
     let checkbox = $('#active');
-    let label = $('label[for=active]');
+    let label = $('label[for="active"]');
 
     checkbox.on('change', () => {
         if(checkbox.is(':checked')) {
