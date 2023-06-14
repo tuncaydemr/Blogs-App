@@ -21,6 +21,10 @@
                     <label for="image" class="form-label text-white">Image</label>
                     <input class="form-control" type="file" id="image" name="image">
                 </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="" checked>
+                  <label class="form-check-label" for="">Active</label>
+                </div>
                 <div class="w-100 d-flex justify-content-center mt-5">
                     <button type="submit" class="btn btn-primary w-50 p-3">Create</button>
                 </div>
