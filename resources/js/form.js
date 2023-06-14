@@ -1,9 +1,11 @@
 $(() => {
     $('#active').val();
 
-    $('#active').click(function (e) {
-        e.preventDefault();
-
-        $('#active').val('Disable');
+    $('#active').on('change', () => {
+        if($('#active').is(':checked')) {
+            $(this).val('Active');
+        } else {
+            $(this).val('Disable');
+        }
     });
 })
