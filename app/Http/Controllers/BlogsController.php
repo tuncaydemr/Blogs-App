@@ -46,11 +46,9 @@ class BlogsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Request $request)
+    public function edit()
     {
-        $validate = $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
-
-        return view('blogs.blog-create', $validate);
+        return view('blogs.blog-create');
     }
 
     /**
