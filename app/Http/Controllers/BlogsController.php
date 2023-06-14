@@ -48,7 +48,7 @@ class BlogsController extends Controller
      */
     public function edit()
     {
-        return view('blogs.blog-create');
+        return view('blogs.blog-edit');
     }
 
     /**
