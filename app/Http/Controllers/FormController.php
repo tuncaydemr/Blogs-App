@@ -33,7 +33,7 @@ class FormController extends Controller
         $description = $request->input('description');
         $image = $request->input('image');
 
-        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image]);
+        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image, 'active' => 1]);
 
         return redirect()->to('/blogs');
     }
