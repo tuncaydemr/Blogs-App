@@ -12,11 +12,13 @@
                 <div class="col-7">
                     <h4 class="card-title mb-4 mt-2">{{ $title }}</h4>
                     <h6 class="mb-3">{{ $description }}</h6>
+
                     @if ($likes)
                         <p class="mb-4">{{ $likes }} likes</p>
                     @else
-                        
+                        <button type="button" class="btn btn-primary py-1 mb-3">Like</button>
                     @endif
+
                     <p class="m-0">
                         <a href="/blogs" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
