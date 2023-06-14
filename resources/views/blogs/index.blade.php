@@ -28,7 +28,7 @@
                             </div>
                         @else
                             <button type="button" class="btn btn-primary py-1 mb-3">
-                                <i class="bi bi-hand-thumbs-up-fill me-1"></i>
+                                <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
                                 Like
                             </button>
                         @endif
