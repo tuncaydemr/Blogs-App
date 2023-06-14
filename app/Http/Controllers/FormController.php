@@ -29,10 +29,12 @@ class FormController extends Controller
 
     public function create(Request $request)
     {
-        $title = $request->title;
-        $description = $request->description;
-        $image = $request->image;
+        $title = $request->input('title');
+        $description = $request->input('description');
+        $image = $request->input('image');
 
-        $blogAdd = Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image]);
+        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image]);
+
+        return redirect()->to('/blogs');
     }
 }
