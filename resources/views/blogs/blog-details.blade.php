@@ -14,6 +14,8 @@
                     <h6 class="mb-3">{{ $description }}</h6>
                     @if ($likes)
                         <p class="mb-4">{{ $likes }} likes</p>
+                    @else
+                        
                     @endif
                     <p class="m-0">
                         <a href="/blogs" class="btn btn-primary px-5 py-2">Back</a>
