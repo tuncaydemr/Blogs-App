@@ -56,14 +56,13 @@ class BlogsController extends Controller
      */
     public function update(Request $request)
     {
-        $number = Blogs::find(4);
+        $number = Blogs::findOrFail(4);
 
         if ($number) {
             $number->likes++;
-            $number->save();
         }
 
-        return response()->json(['blogs' => $number ? $number->likes : null]);
+        return redirect()->to('/blogs');
     }
 
     /**
