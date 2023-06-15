@@ -10,9 +10,4 @@ $(() => {
         }
     });
 
-    $("#increment-button").click(function () {
-        $.get("/blogs/{id}", function (response) {
-            $("#current-number").text(response.likes);
-        });
-    });
 })
