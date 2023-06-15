@@ -62,6 +62,8 @@ class BlogsController extends Controller
             $number->likes++;
             $number->save();
         }
+
+        return response()->json(['blogs' => $number ? $number->likes : null]);
     }
 
     /**
