@@ -10,7 +10,7 @@ $(() => {
         }
     });
 
-    let button = $('button[type="button"]');
+    let button = $('#like-button');
 
     button.click(() => {
         $.post('/blogs', (response) => {
