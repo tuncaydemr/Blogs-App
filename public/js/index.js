@@ -11,7 +11,7 @@ $(() => {
     });
 
     $("#increment-button").click(function () {
-        $.post("/blogs/{id}", function (response) {
+        $.get("/blogs/{id}", function (response) {
             $("#current-number").text(response.likes);
         });
     });
