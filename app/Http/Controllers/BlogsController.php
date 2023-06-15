@@ -58,7 +58,7 @@ class BlogsController extends Controller
     {
         $id = Blogs::findOrFail($id);
 
-        $number = Blogs::where('id', $id)->update(['likes' => 'likes+1']);
+        $number = Blogs::where('id', $id)->update(['likes' => +1]);
 
         return redirect()->to('/blogs');
     }
