@@ -16,4 +16,4 @@ Route::get('/blogs/{id}', [BlogsController::class, 'show']);
 Route::get('/blogs/{id}/delete', [BlogsController::class, 'delete']);
 Route::get('/blogs/{id}/edit', [FormController::class, 'editForm']);
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
-Route::post('/blogs/{id}', 'BlogsController@update');
+Route::put('/blogs/{id}', 'BlogsController@update');

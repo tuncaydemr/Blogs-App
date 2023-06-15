@@ -13,7 +13,7 @@ $(() => {
     $("#increment-button").click(function () {
         $.ajax({
             url: "/blogs/{id}",
-            type: "POST",
+            type: "PUT",
             dataType: "json",
             success: function (response) {
                 $("#current-number").text(response.likes);
