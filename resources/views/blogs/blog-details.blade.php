@@ -14,9 +14,19 @@
                     <h6 class="mb-3">{{ $description }}</h6>
 
                     @if ($likes)
-                        <p class="mb-4">{{ $likes }} likes</p>
+                        <div class="like d-flex align-items-center">
+                            <p class="mb-4 me-3 mt-1">{{ $likes }} likes</p>
+
+                            <button type="button" class="btn btn-primary py-1 mb-3">
+                                <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
+                                Like
+                            </button>
+                        </div>
                     @else
-                        <button type="button" class="btn btn-primary py-1 mb-3">Like</button>
+                        <button type="button" class="btn btn-primary py-1 mb-3">
+                            <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
+                            Like
+                        </button>
                     @endif
 
                     <p class="m-0">
