@@ -14,7 +14,7 @@ $(() => {
 
     button.click(() => {
         $.post('/blogs', (response) => {
-            
+            $('#current-number').text(response.$blogs['likes']);
         })
     })
 })
