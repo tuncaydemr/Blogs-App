@@ -56,7 +56,7 @@ class BlogsController extends Controller
      */
     public function update(Request $request)
     {
-        $number = Blogs::findOrFail(1);
+        $number = Blogs::findOrFail(4);
 
         if ($number) {
             $number->likes++;
