@@ -54,13 +54,9 @@ class BlogsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(int $id)
+    public function update()
     {
-        $id = Blogs::findOrFail($id);
 
-        $number = Blogs::where('id', $id)->update(['likes' => +1]);
-
-        return redirect()->to('/blogs');
     }
 
     /**
