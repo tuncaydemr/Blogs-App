@@ -10,4 +10,9 @@ $(() => {
         }
     });
 
+    $("#increment-button").click(function () {
+        $.post("/like", function (response) {
+            $("#current-number").text(response.likes);
+        });
+    });
 })
