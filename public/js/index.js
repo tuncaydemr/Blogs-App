@@ -9,12 +9,4 @@ $(() => {
             label.text('Active');
         }
     });
-
-    let button = $('#like-button');
-
-    button.click(() => {
-        $.post('/blogs', (response) => {
-            $('#current-number').text(response.blog['likes']);
-        })
-    })
 })
