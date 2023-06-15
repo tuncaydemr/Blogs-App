@@ -15,7 +15,7 @@
 
                     @if ($likes)
                         <div class="like d-flex align-items-center">
-                            <p class="mb-4 me-3 mt-1">{{ $likes }} likes</p>
+                            <p class="mb-4 me-3 mt-1"><span id="current-number">{{ $likes }}</span> likes</p>
 
                             <button type="button" class="btn btn-primary py-1 mb-3">
                                 <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
