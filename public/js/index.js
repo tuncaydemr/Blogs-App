@@ -9,4 +9,12 @@ $(() => {
             label.text('Active');
         }
     });
+
+    let button = $('button[type="button"]');
+
+    button.click(() => {
+        $.post('/blogs', (response) => {
+            
+        })
+    })
 })
