@@ -6,11 +6,11 @@
         @csrf
 
         <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">
-            <div class="row">
-                <div class="col-3">&nbsp;</div>
 
-                <div class="col-6">
-                    <h1 class="d-block">Blog Create</h1>
+            <div class="row">
+
+                <div class="col-12">
+
                     <div class="mb-3">
                         <label for="title" class="form-label text-white">Title</label>
                         <input type="text" class="form-control" id="title" name="title">
@@ -44,7 +44,6 @@
                     </div>
                 </div>
 
-                <div class="col-3">&nbsp;</div>
             </div>
         </div>
     </form>
