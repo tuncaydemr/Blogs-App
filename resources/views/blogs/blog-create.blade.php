@@ -6,6 +6,7 @@
         @csrf
 
         <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">
+            <div class="row"></div>
             <div class="row">
                 <div class="col-3">&nbsp;</div>
 
