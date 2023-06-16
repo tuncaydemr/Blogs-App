@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('title')
+    
+@endsection
+
 @section('content')
 
     <a href="/blogs/edit" class="btn btn-primary" role="button">Blog Add</a>
