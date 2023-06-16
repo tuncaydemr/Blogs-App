@@ -6,13 +6,11 @@
         @csrf
 
         <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">
+
             <div class="row">
-                <div class="col-12">
-                    <h1>Blog Create</h1>
+                <div class="col-3">
+                    <h1 class="d-block">Blog Create</h1>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-3">&nbsp;</div>
 
                 <div class="col-6">
                     <div class="mb-3">
