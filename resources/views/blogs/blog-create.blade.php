@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('title')
+    
+@endsection
+
 @section('content')
 
     <form action="/blogs/create" method="GET" novalidate>
