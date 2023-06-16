@@ -7,8 +7,8 @@
 
         <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">
 
-            <div class="row">
-
+            <div class="row w-50">
+                <h2 class="mb-5 text-center text-white">Blog Create</h2>
                 <div class="col-12">
 
                     <div class="mb-3">
