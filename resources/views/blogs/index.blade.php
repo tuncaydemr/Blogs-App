@@ -23,7 +23,6 @@
                         @if ($blog['likes'])
                             <div class="like d-flex align-items-center">
                                 <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} likes</p>
-
                                 <a href="/blogs/{{ $blog['id'] }}/like">
                                     <button type="button" class="btn btn-primary py-1 mb-3">
                                         <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
