@@ -11,9 +11,8 @@
         @method('PUT')
 
         <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">
-
-
-            <div class="col-6">
+            <div class="row w-50">
+                <div class="col-6">
                 <div class="mb-3">
                     <label for="title" class="form-label text-white">Title</label>
                     <input type="text" class="form-control" id="title" name="title" value="{{ $title }}">
@@ -33,8 +32,7 @@
                     <button type="submit" class="btn btn-primary w-50 p-3">Edit</button>
                 </div>
             </div>
-
-            
+            </div>
         </div>
     </form>
 
