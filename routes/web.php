@@ -10,7 +10,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/index', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 
-Route::get('/blogs/create', [FormController::class, 'create']);
+Route::get('/blogs/create', [BlogsController::class, 'create']);
 
 
 Route::get('/blogs/{id}/edit', [FormController::class, 'editForm']);
