@@ -13,7 +13,7 @@ $(() => {
     $("#increment-button").click(function () {
         $.ajax({
             url: "/blogs/{id}/like",
-            type: "GET",
+            type: "POST",
             dataType: "json",
             success: function (response) {
                 // Update the number on the page
