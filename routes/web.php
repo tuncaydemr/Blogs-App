@@ -13,7 +13,7 @@ Route::get('/contact', [HomeController::class, 'contact']);
 
 
 
-Route::get('/blogs/{id}/edit', [BlogsController::class, 'editForm']);
+
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
 Route::get('/blogs/{id}/like', [BlogsController::class, 'update']);
 
@@ -22,5 +22,6 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/add', 'add');
     Route::get('/blogs/create', 'create');
     Route::get('/blogs/{id}', 'show');
+    Route::get('/blogs/{id}/edit', 'editForm');
     Route::get('/blogs/{id}/delete', 'delete');
 });
