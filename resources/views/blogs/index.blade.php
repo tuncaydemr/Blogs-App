@@ -40,7 +40,7 @@
                         @endif
                     </div>
                     <div class="col-3">
-                        <p class="m-0">
+                        <p>
                             <a href="/blogs/{{ $blog['id'] }}" class="btn btn-danger px-5 py-2">Details</a>
                         </p>
                     </div>
