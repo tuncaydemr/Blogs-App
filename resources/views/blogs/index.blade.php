@@ -20,25 +20,23 @@
                     <div class="col-6 d-flex flex-column justify-content-between my-2">
                         <h4 class="card-title mb-3 mt-2">{{ $blog['title'] }}</h4>
                         <h6 class="mb-3">{{ $blog['description'] }}</h6>
+                        <div class="like d-flex align-items-center">
 
-                            <div class="like d-flex align-items-center">
+                            @if($blog['likes'] > 1)
+                                <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} likes</p>
+                            @elseif ($blog['likes'] <= 1)
+                                <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} like</p>
+                            @else
+                                <p class="mb-4">0 like</p>
+                            @endif
 
-                                @if($blog['likes'] > 1)
-                                    <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} likes</p>
-                                @elseif ($blog['likes'] <= 1)
-                                    <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} like</p>
-                                @else
-                                    <p class="mb-4">0 like</p>
-                                @endif
-
-                                <a href="/blogs/{{ $blog['id'] }}/like">
-                                    <button type="button" class="btn btn-primary py-1 mb-3">
-                                        <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
-                                        Like
-                                    </button>
-                                </a>
-                            </div>
-                        
+                            <a href="/blogs/{{ $blog['id'] }}/like">
+                                <button type="button" class="btn btn-primary py-1 mb-3">
+                                    <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
+                                    Like
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-3 d-flex align-items-center">
                         <p>
