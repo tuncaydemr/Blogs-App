@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
+use App\Models\Blogs;
 use Illuminate\Support\Facades\Route;
 
 
@@ -13,7 +14,7 @@ Route::get('/contact', [HomeController::class, 'contact']);
 
 
 
-Route::get('/blogs/{id}/edit', [FormController::class, 'editForm']);
+Route::get('/blogs/{id}/edit', [BlogsController::class, 'editForm']);
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
 Route::get('/blogs/{id}/like', [BlogsController::class, 'update']);
 

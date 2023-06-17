@@ -37,9 +37,11 @@ class BlogsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function editForm($id)
     {
-        //
+        $blog = Blogs::find($id);
+
+        return view('blogs.blog-edit', $blog);
     }
 
     /**

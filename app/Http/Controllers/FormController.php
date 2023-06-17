@@ -9,12 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class FormController extends Controller
 {
-    public function editForm($id)
-    {
-        $blog = Blogs::find($id);
 
-        return view('blogs.blog-edit', $blog);
-    }
 
     public function submitForm(Request $request, int $id)
     {
