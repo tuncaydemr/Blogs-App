@@ -4,6 +4,10 @@
     Blog Edit
 @endsection
 
+@push('scripts')
+    <script src="{{ asset('js/index.js') }}"></script>
+@endpush
+
 @section('content')
 
     <form action="/blogs/{{ $blog->id }}" method="POST" novalidate>
@@ -37,6 +41,4 @@
 
 @endsection
 
-@push('scripts')
-    <script src="/js/index.js"></script>
-@endpush
+
