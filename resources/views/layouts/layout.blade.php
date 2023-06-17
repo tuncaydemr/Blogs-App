@@ -31,6 +31,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    @stack('script')
+    @stack('scripts')
 </body>
 </html>
