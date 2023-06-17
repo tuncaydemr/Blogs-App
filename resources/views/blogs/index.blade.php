@@ -38,9 +38,7 @@
                                 </button>
                             </a>
                         @endif
-                        <p class="m-0">
-                            <a href="/blogs/{{ $blog['id'] }}" class="btn btn-danger px-5 py-2">Details</a>
-                        </p>
+                        
                     </div>
                 </div>
             </div>
