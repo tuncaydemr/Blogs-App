@@ -37,6 +37,6 @@
 
 @endsection
 
-@push('script')
-    <script src="js/index.js"></script>
+@push('scripts')
+    <script src="/js/index.js"></script>
 @endpush
