@@ -14,7 +14,6 @@
             <div class="row w-50">
                 <h2 class="mb-5 text-center text-white"><ins>Blog Create</ins></h2>
                 <div class="col-12">
-
                     <div class="mb-3">
                         <label for="title" class="form-label text-white">Title</label>
                         <input type="text" class="form-control" id="title" name="title">
@@ -47,7 +46,6 @@
                         <button type="submit" class="btn btn-primary w-50 p-3">Create</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </form>
