@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <a href="/blogs/create" class="btn btn-primary" role="button">Blog Add</a>
+    <a href="/blogs/add" class="btn btn-primary" role="button">Blog Add</a>
 
     @foreach ($blogs as $blog)
 
