@@ -60,7 +60,7 @@ class BlogsController extends Controller
 
         Blogs::where('id', $blogLike)->update(['likes' => $blogLike]);
 
-        
+        return redirect()->to('/blogs');
     }
 
     /**
