@@ -22,7 +22,7 @@ class FormController extends Controller
         $description = $request->input('description');
         $image = $request->input('image');
 
-        $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
+        $request->validate(['image' => 'required']);
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $image]);
 
