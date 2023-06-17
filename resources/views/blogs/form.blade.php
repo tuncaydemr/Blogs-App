@@ -38,6 +38,6 @@
 @endsection
 
 @push('scripts')
-    <script src="/jquery-3.7.0.min.js" defer></script>
-    <script src="/index.js" defer></script>
+    <script src="js/jquery-3.7.0.min.js" defer></script>
+    <script src="js/index.js" defer></script>
 @endpush
