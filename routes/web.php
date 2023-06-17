@@ -22,6 +22,6 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/add', 'add');
     Route::get('/blogs/create', 'create');
     Route::get('/blogs/{id}', 'show');
-    Route::get('/blogs/{id}/edit', 'editForm');
+    Route::get('/blogs/{id}/edit', 'edit');
     Route::get('/blogs/{id}/delete', 'delete');
 });
