@@ -3,7 +3,6 @@
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
-use App\Models\Blogs;
 use Illuminate\Support\Facades\Route;
 
 
