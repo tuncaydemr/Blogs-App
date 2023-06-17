@@ -12,8 +12,8 @@ $(() => {
 
     $("#increment-button").click(function () {
         $.ajax({
-            url: "/increment-number",
-            type: "POST",
+            url: "/blogs/{id}/like",
+            type: "GET",
             dataType: "json",
             success: function (response) {
                 // Update the number on the page
