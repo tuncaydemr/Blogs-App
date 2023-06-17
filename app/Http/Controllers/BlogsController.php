@@ -46,7 +46,7 @@ class BlogsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit()
+    public function add()
     {
         return view('blogs.blog-create');
     }
