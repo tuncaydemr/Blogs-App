@@ -25,7 +25,7 @@
 
                                 @if($blog['likes'] > 1)
                                     <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} likes</p>
-                                @elseif ($blog['likes'] = 1)
+                                @elseif ($blog['likes'] <= 1)
                                     <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} like</p>
                                 @else
                                     <p class="mb-4">0 like</p>

@@ -19,7 +19,7 @@
 
                     @if($likes > 1)
                         <p class="mb-4 me-3 mt-1">{{ $likes }} likes</p>
-                    @elseif ($likes = 1)
+                    @elseif ($likes == 1)
                         <p class="mb-4 me-3 mt-1">{{ $likes }} like</p>
                     @else
                         <p class="mb-4">0 like</p>
