@@ -31,10 +31,12 @@
                                 </a>
                             </div>
                         @else
-                            <button type="button" class="btn btn-primary py-1 mb-3">
-                                <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
-                                Like
-                            </button>
+                            <a href="/blogs/{{ $blog['id'] }}/like">
+                                <button type="button" class="btn btn-primary py-1 mb-3">
+                                    <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
+                                    Like
+                                </button>
+                            </a>
                         @endif
                         <p class="m-0">
                             <a href="/blogs/{{ $blog['id'] }}" class="btn btn-danger px-5 py-2">Details</a>
