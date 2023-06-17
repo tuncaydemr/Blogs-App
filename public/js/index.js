@@ -9,15 +9,4 @@ $(() => {
             label.text('Active');
         }
     });
-
-    $("#increment-button").click(function () {
-        $.ajax({
-            url: "/blogs/{id}/like",
-            type: "POST",
-            dataType: "json",
-            success: function (response) {
-                $("#current-number").text(response.blog['likes']);
-            }
-        });
-    });
 })
