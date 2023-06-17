@@ -17,7 +17,7 @@
                     <h4 class="card-title mb-4 mt-2">{{ $title }}</h4>
                     <h6 class="mb-3">{{ $description }}</h6>
 
-                    @if($likes >= 1)
+                    @if($likes > 1)
                         <p class="mb-4 me-3 mt-1">{{ $likes }} likes</p>
                     @else
                         <p class="mb-4">0 like</p>
