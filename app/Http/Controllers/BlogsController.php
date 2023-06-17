@@ -58,7 +58,7 @@ class BlogsController extends Controller
     {
         $blogLike = Blogs::findOrFail($id);
 
-        $likes = Blogs::all();
+        $likes = Blogs::find('likes');
 
         Blogs::where('id', $blogLike)->update(['likes' => $likes++]);
 
