@@ -37,7 +37,7 @@
 
 @endsection
 
-@push('scripts')
+@push('script')
     <script src="/js/jquery-3.7.0.min.js"></script>
     <script src="/js/index.js"></script>
 @endpush
