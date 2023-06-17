@@ -15,7 +15,7 @@ Route::get('/contact', [HomeController::class, 'contact']);
 
 
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
-Route::get('/blogs/{id}/like', [BlogsController::class, 'like']);
+
 
 Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs', 'blogs');
@@ -24,4 +24,5 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/{id}', 'show');
     Route::get('/blogs/{id}/edit', 'edit');
     Route::get('/blogs/{id}/delete', 'delete');
+    Route::get('/blogs/{id}/like', 'like');
 });
