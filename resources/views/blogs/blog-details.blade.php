@@ -49,7 +49,6 @@
 @endpush
 
 @push('scripts')
-
     <script src="{{ asset('js/index.js') }}"></script>
 @endpush
 
