@@ -16,4 +16,5 @@ Route::get('/blogs/{id}', [BlogsController::class, 'show']);
 Route::get('/blogs/{id}/delete', [BlogsController::class, 'delete']);
 Route::get('/blogs/{id}/edit', [FormController::class, 'editForm']);
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
-Route::get('/blogs/{id}/like', [BlogsController::class, 'update']);
+// Route::get('/blogs/{id}/like', [BlogsController::class, 'update']);
+Route::post('/blogs/increment-number', 'BlogsController@update');
