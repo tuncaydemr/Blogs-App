@@ -17,7 +17,7 @@
                     <div class="col-3">
                         <img src="{{ asset('storage/img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
                     </div>
-                    <div class="col-9">
+                    <div class="col-6">
                         <h4 class="card-title mb-3 mt-2">{{ $blog['title'] }}</h4>
                         <h6 class="mb-3">{{ $blog['description'] }}</h6>
                         @if ($blog['likes'])
@@ -38,7 +38,11 @@
                                 </button>
                             </a>
                         @endif
-                        
+                    </div>
+                    <div class="col-3">
+                        <p class="m-0">
+                            <a href="/blogs/{{ $blog['id'] }}" class="btn btn-danger px-5 py-2">Details</a>
+                        </p>
                     </div>
                 </div>
             </div>
