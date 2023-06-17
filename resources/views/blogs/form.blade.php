@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <form action="/blogs/{{ $blog->id }}" method="POST" novalidate>
+    <form action="/blogs/{{ $id }}" method="POST" novalidate>
         @csrf
         @method('PUT')
 
@@ -16,15 +16,15 @@
             <div class="col-6">
                 <div class="mb-3">
                     <label for="title" class="form-label text-white">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" value="{{ $blog->title }}">
+                    <input type="text" class="form-control" id="title" name="title" value="{{ $title }}">
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label text-white">Description</label>
-                    <textarea class="form-control" name="description" id="description">{{ $blog->description }}</textarea>
+                    <textarea class="form-control" name="description" id="description">{{ $description }}</textarea>
                 </div>
                 <div class="mb-3">
                     <label for="image" class="form-label text-white">Image</label>
-                    <input class="form-control" type="file" id="image" name="image" value="{{ $blog->image }}">
+                    <input class="form-control" type="file" id="image" name="image" value="{{ $image }}">
                 </div>
                 <div class="w-100 d-flex justify-content-center mt-5">
                     <button type="submit" class="btn btn-primary w-50 p-3">Edit</button>

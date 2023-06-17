@@ -11,9 +11,9 @@ class FormController extends Controller
 {
     public function editForm($id)
     {
-        $blog = Blogs::findOrFail($id);
+        $blog = Blogs::find($id);
 
-        return view('blogs.form', compact('blog'));
+        return view('blogs.form', $blog);
     }
 
     public function submitForm(Request $request, int $id)
