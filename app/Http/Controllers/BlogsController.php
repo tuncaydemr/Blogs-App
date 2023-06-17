@@ -62,9 +62,7 @@ class BlogsController extends Controller
 
         $number->save();
 
-        // return redirect()->to('/blogs');
-
-        return response()->json(['likes' => $number ? $number->likes : null]);
+        return redirect()->to('/blogs');
     }
 
     /**
