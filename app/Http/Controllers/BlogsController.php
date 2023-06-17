@@ -37,7 +37,7 @@ class BlogsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function editForm($id)
+    public function edit($id)
     {
         $blog = Blogs::find($id);
 
