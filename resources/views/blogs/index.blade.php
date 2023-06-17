@@ -30,7 +30,7 @@
                                 @else
                                     <p class="mb-4">0 like</p>
                                 @endif
-                                
+
                                 <a href="/blogs/{{ $blog['id'] }}/like">
                                     <button type="button" class="btn btn-primary py-1 mb-3">
                                         <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
