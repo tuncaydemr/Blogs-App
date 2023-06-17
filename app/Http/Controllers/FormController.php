@@ -13,7 +13,7 @@ class FormController extends Controller
     {
         $blog = Blogs::find($id);
 
-        return view('blogs.form', $blog);
+        return view('blogs.form', compact('blog'));
     }
 
     public function submitForm(Request $request, int $id)

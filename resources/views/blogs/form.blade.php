@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <form action="/blogs/{{ $id }}" method="POST" novalidate>
+    <form action="/blogs/{{ $blog->id }}" method="POST" novalidate>
         @csrf
         @method('PUT')
 
@@ -16,18 +16,15 @@
             <div class="col-6">
                 <div class="mb-3">
                     <label for="title" class="form-label text-white">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" value="{{ $title }}">
+                    <input type="text" class="form-control" id="title" name="title" value="{{ $blog->title }}">
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label text-white">Description</label>
-                    <textarea class="form-control" name="description" id="description">{{ $description }}</textarea>
+                    <textarea class="form-control" name="description" id="description">{{ $blog->description }}</textarea>
                 </div>
                 <div class="mb-3">
                     <label for="image" class="form-label text-white">Image</label>
-                    <input class="form-control" type="file" id="image" name="image" value="{{ $image }}">
-                    @error('image')
-                        <div class="text-white mt-1">{{ ucwords($message) }}</div>
-                    @enderror
+                    <input class="form-control" type="file" id="image" name="image">
                 </div>
                 <div class="w-100 d-flex justify-content-center mt-5">
                     <button type="submit" class="btn btn-primary w-50 p-3">Edit</button>
@@ -41,6 +38,6 @@
 @endsection
 
 @push('scripts')
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="{{ asset('js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('js/index.js') }}"></script>
 @endpush
