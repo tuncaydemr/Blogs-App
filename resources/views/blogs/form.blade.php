@@ -38,6 +38,6 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('js/jquery-3.7.0.min.js') }}"></script>
-    <script src="{{ asset('js/index.js') }}"></script>
+    <script src="{{ asset('/public/js/jquery-3.7.0.min.js') }}"></script>
+    <script src="{{ asset('/public/js/index.js') }}"></script>
 @endpush
