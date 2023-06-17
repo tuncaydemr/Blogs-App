@@ -11,7 +11,7 @@
         @method('PUT')
 
         <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">
-            
+
 
             <div class="col-6">
                 <div class="mb-3">
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="col-3">&nbsp;</div>
+            
         </div>
     </form>
 
