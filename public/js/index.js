@@ -16,7 +16,6 @@ $(() => {
             type: "POST",
             dataType: "json",
             success: function (response) {
-                // Update the number on the page
                 $("#current-number").text(response.number);
             }
         });
