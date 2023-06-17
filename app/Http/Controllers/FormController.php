@@ -9,8 +9,6 @@ use Illuminate\Support\Facades\Auth;
 
 class FormController extends Controller
 {
-
-
     public function submitForm(Request $request, int $id)
     {
         $title = $request->input('title');
@@ -23,6 +21,4 @@ class FormController extends Controller
 
         return redirect()->to('/blogs');
     }
-
-
 }
