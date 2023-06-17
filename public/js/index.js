@@ -16,7 +16,7 @@ $(() => {
             type: "POST",
             dataType: "json",
             success: function (response) {
-                $("#current-number").text(response.number);
+                $("#current-number").text(response.blog['likes']);
             }
         });
     });
