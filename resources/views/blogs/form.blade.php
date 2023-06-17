@@ -17,6 +17,9 @@
                 <div class="mb-3">
                     <label for="title" class="form-label text-white">Title</label>
                     <input type="text" class="form-control" id="title" name="title" value="{{ $title }}">
+                    @error('title')
+                        <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label text-white">Description</label>
