@@ -10,7 +10,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/index', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 
-Route::get('/blogs/create', [BlogsController::class, 'create']);
+
 
 
 Route::get('/blogs/{id}/edit', [FormController::class, 'editForm']);
@@ -20,6 +20,7 @@ Route::get('/blogs/{id}/like', [BlogsController::class, 'update']);
 Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs', 'blogs');
     Route::get('/blogs/add', 'add');
+    Route::get('/blogs/create', 'create');
     Route::get('/blogs/{id}', 'show');
     Route::get('/blogs/{id}/delete', 'delete');
 });
