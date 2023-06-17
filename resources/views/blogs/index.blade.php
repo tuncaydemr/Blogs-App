@@ -22,7 +22,7 @@
                         <h6 class="mb-3">{{ $blog['description'] }}</h6>
                         @if ($blog['likes'])
                             <div class="like d-flex align-items-center">
-                                <p class="mb-4 me-3 mt-1"><span id="current-number">{{ $blog['likes'] }}</span> likes</p>
+                                <p class="mb-4 me-3 mt-1"><span>{{ $blog['likes'] }}</span> likes</p>
 
                                 <a href="/blogs/{{ $blog['id'] }}/like">
                                     <button type="button" id="increment-button" class="btn btn-primary py-1 mb-3">
