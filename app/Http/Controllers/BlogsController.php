@@ -56,7 +56,7 @@ class BlogsController extends Controller
      */
     public function update(int $id)
     {
-        $id = Blogs::findOrFail($id);
+        $id = Blogs::find($id);
 
         $likes = Blogs::all();
 
@@ -70,7 +70,7 @@ class BlogsController extends Controller
      */
     public function delete(int $id)
     {
-        Blogs::findOrFail($id);
+        Blogs::find($id);
 
         Blogs::where('id', $id)->delete();
 
