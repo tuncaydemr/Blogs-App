@@ -37,6 +37,6 @@
 
 @endsection
 
-@push('scripts')
+{{-- @push('scripts')
     <script src="{{ asset('js/index.js') }}"></script>
-@endpush
+@endpush --}}
