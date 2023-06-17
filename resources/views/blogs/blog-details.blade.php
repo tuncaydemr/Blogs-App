@@ -21,10 +21,12 @@
                         <div class="like d-flex align-items-center">
                             <p class="mb-4 me-3 mt-1"><span>{{ $likes }}</span> likes</p>
 
-                            <button type="button" class="btn btn-primary py-1 mb-3">
-                                <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
-                                Like
-                            </button>
+                            <a href="/blogs/{{ $id }}/like">
+                                <button type="button" class="btn btn-primary py-1 mb-3">
+                                    <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.9rem;"></i>
+                                    Like
+                                </button>
+                            </a>
                         </div>
                     @else
                         <button type="button" class="btn btn-primary py-1 mb-3">
