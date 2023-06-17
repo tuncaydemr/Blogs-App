@@ -57,3 +57,8 @@
     @endif
 
 @endsection
+
+@push('script')
+    <script src="js/index.js"></script>
+@endpush
+
