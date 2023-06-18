@@ -26,10 +26,12 @@ class FormController extends Controller
     {
         $select = $request->input('sort-by');
 
-        if($select['option'] == 'selected') {
-            Blogs::orderBy('likes', 'desc');
+        $likes = Blogs::select('likes')->get();
+
+        if($select['top-rated'] == 'selected') {
+           $blogs = Blogs::where('likes', $likes)->orderBy('likes', 'desc')->get();
         }
 
-        return view('blogs.index');
+        return view('blogs.index', ['blogs' => $blogs]);
     }
 }
