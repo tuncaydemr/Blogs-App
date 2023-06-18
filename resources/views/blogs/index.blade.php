@@ -24,7 +24,7 @@
             <div class="col-3">
 
                 <form action="{{ route('sort-by') }}" method="GET">
-                    <select class="form-select" name="sort-by" id="sort-by">
+                    <select class="form-select" name="sort-by[]" multiple>
                         <option selected>Sort By</option>
                         <option value="top-rated">Top Rated</option>
                         <option value="">Istanbul</option>
