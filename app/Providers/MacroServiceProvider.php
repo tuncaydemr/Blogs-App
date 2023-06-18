@@ -25,7 +25,7 @@ class MacroServiceProvider extends ServiceProvider
 
     public function query(): void
     {
-        Blogs::macro('whereLike', function (string $attribute, string $searchTerm) {
+        Blogs::macro('whereTitle', function (string $attribute, string $searchTerm) {
             return $this->orWhere($attribute, 'LIKE', "%{$searchTerm}%");
         });
     }
