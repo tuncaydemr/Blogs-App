@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 
 class SearchController extends Controller
 {
-    public function search(Request $request)
+    public function search(Request $request, int $id)
     {
         $search = $request->input('search');
 
-        $results = Blogs::where('title', 'like', '%' . $search . '%')->get();
+        $results = Blogs::find($id)->where('title', 'like', '%' . $search . '%')->get();
 
         return view('blogs.blog-search', ['results' => $results]);
     }
