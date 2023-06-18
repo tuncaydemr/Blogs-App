@@ -24,11 +24,11 @@ class FormController extends Controller
 
     public function sortBy(Request $request)
     {
-        $select = $request->input('sort-by[]');
+        $select = $request->input('sort-by');
 
         $likes = Blogs::select('likes')->get();
 
-        if($select == 'top-rated') {
+        if($select['top-rated'] == 'selected') {
             Blogs::where('likes', $likes)->orderBy('likes', 'desc');
         }
 
