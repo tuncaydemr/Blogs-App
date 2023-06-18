@@ -21,7 +21,16 @@
 
                 </div>
             </div>
-            <div class="col-3"></div>
+            <div class="col-3">
+
+                <select class="form-select" name="sort-by" id="sort-by">
+                    <option selected>Sort By</option>
+                    <option value="">New Delhi</option>
+                    <option value="">Istanbul</option>
+                    <option value="">Jakarta</option>
+                </select>
+
+            </div>
         </div>
     </div>
 
