@@ -87,13 +87,4 @@ class BlogsController extends Controller
 
         return redirect()->to('/blogs');
     }
-
-    public function search(Request $request)
-    {
-        $search = $request->input('search');
-
-        $result = Blogs::where('title', 'like', '%' . $search . '%')->get();
-
-        return view('blogs.index', $result);
-    }
 }
