@@ -15,7 +15,9 @@
         </form>
     </div>
 
-    <div class="container"></div>
+    <div class="container">
+        <div class="row"></div>
+    </div>
 
     @foreach ($blogs as $blog)
 
