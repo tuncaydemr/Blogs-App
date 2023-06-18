@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <a href="/blogs/add" class="btn btn-primary" role="button">Blog Add</a>
+
 
     <div class="container-fluid">
         <form class="d-flex" role="search">
@@ -17,7 +17,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-3"></div>
+            <div class="col-3">
+                <a href="/blogs/add" class="btn btn-primary" role="button">Blog Add</a>
+            </div>
         </div>
     </div>
 
