@@ -25,4 +25,5 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/{id}/edit', 'edit');
     Route::get('/blogs/{id}/delete', 'delete');
     Route::get('/blogs/{id}/like', 'like');
+    Route::get('/blogs/search', 'search')->name('search');
 });
