@@ -26,10 +26,9 @@ class FormController extends Controller
     {
         $select = $request->input('sort-by');
 
-        $likes = Blogs::select('likes')->get();
 
-        if($select['top-rated'] == 'selected') {
-           $blogs = Blogs::where('likes', $likes)->orderBy('likes', 'desc')->get();
+        if($select[0] == 'selected') {
+           $blogs = Blogs::orderBy('likes', 'asc');
         }
 
         return view('blogs.index', ['blogs' => $blogs]);
