@@ -87,4 +87,11 @@ class BlogsController extends Controller
 
         return redirect()->to('/blogs');
     }
+
+    public function likeQuery()
+    {
+        $all = Blogs::all();
+
+        Blogs::whereLike('title', $all)->get();
+    }
 }
