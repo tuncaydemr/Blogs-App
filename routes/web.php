@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
-
+Route::get('/blogs', [SearchController::class, 'search'])->name('search');
 
 Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs', 'blogs');
@@ -27,4 +27,4 @@ Route::controller(HomeController::class)->group(function () {
 });
 
 
-Route::get('/blogs', [SearchController::class, 'search'])->name('search');
+
