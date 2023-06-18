@@ -29,4 +29,4 @@ Route::controller(BlogsController::class)->group(function () {
 });
 
 
-Route::get('/blogs/search', [SearchController::class, 'search'])->name('search');
+Route::get('/blogs', [SearchController::class, 'search']);
