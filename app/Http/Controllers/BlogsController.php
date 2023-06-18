@@ -94,6 +94,6 @@ class BlogsController extends Controller
 
         $result = Blogs::where('title', 'like', '%' . $search . '%')->get();
 
-        return view('/blogs', $result);
+        return view('blogs.index', $result);
     }
 }
