@@ -28,16 +28,6 @@
 
         @if ($blog['active'])
 
-            @if($results->isEmpty())
-                <p>No results found.</p>
-            @else
-                <ul>
-                    @foreach($results as $result)
-                        <li>{{ $result->title }}</li>
-                    @endforeach
-                </ul>
-            @endif
-
             <div class="card my-4">
                 <div class="row">
                     <div class="col-3">
