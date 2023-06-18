@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
-    Route::get('/index', [HomeController::class, 'index']);
+    Route::get('/index', 'index');
     Route::get('/contact', [HomeController::class, 'contact']);
 });
 
