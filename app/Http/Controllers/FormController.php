@@ -26,7 +26,7 @@ class FormController extends Controller
     {
         $select = $request->input('sort-by');
 
-        if($select == 'selected') {
+        if($select['option'] == 'selected') {
             Blogs::orderBy('likes', 'desc');
         }
 
