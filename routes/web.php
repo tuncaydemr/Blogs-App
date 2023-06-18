@@ -7,6 +7,12 @@ use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
 
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index');
+    Route::get('/index', 'index');
+    Route::get('/contact', 'contact');
+});
+
 Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs', 'blogs');
     Route::get('/blogs/add', 'add');
@@ -17,12 +23,10 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/{id}/like', 'like');
 });
 
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/', 'index');
-    Route::get('/index', 'index');
-    Route::get('/contact', 'contact');
-});
-
-
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');
+
+
+
+
+
