@@ -25,4 +25,4 @@ Route::controller(BlogsController::class)->group(function () {
 
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');
-Route::get('/blogs/sort-by', [FormController::class, 'sortBy'])->name('sort-by');
+Route::get('/blogs', [FormController::class, 'sortBy'])->name('sort-by');
