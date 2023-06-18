@@ -92,6 +92,8 @@ class BlogsController extends Controller
     {
         $all = Blogs::all();
 
-        Blogs::whereLike('title', $all)->get();
+        $search = Blogs::whereLike('title', $all)->get();
+
+        return view('/blogs', $search);
     }
 }
