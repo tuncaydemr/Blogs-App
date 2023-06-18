@@ -15,6 +15,8 @@
         </form>
     </div>
 
+    <div class="container"></div>
+
     @foreach ($blogs as $blog)
 
         @if ($blog['active'])
