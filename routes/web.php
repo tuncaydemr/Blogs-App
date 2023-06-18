@@ -7,10 +7,6 @@ use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/index', [HomeController::class, 'index']);
-Route::get('/contact', [HomeController::class, 'contact']);
-
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', [HomeController::class, 'index']);
     Route::get('/index', [HomeController::class, 'index']);
