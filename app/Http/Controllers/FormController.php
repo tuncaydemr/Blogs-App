@@ -21,4 +21,17 @@ class FormController extends Controller
 
         return redirect()->to('/blogs');
     }
+
+    public function sortBy(Request $request)
+    {
+        $select = $request->input('sort-by[]');
+
+        $likes = Blogs::select('likes')->get();
+
+        if($select == 'top-rated') {
+            Blogs::where('likes', $likes)->orderBy('likes', 'desc');
+        }
+
+        return view('blogs.index');
+    }
 }
