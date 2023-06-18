@@ -20,6 +20,9 @@
             <div class="col-3">
                 <a href="/blogs/add" class="btn btn-primary" role="button">Blog Add</a>
             </div>
+            <div class="col-6">
+                
+            </div>
         </div>
     </div>
 
