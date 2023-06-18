@@ -92,7 +92,7 @@ class BlogsController extends Controller
     {
         $search = $request->input('search');
 
-        $result = Blogs::query()->whereLike('title', $search)->get();
+        $result = Blogs::where('title', 'like', '%' . $search . '%')->get();
 
         return view('/blogs', $result);
     }
