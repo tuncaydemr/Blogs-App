@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -25,5 +26,7 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/{id}/edit', 'edit');
     Route::get('/blogs/{id}/delete', 'delete');
     Route::get('/blogs/{id}/like', 'like');
-    Route::get('/blogs/search', 'search')->name('search');
 });
+
+
+Route::get('/blogs/search', [SearchController::class, 'search'])->name('search');
