@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Blogs;
 use Illuminate\Support\ServiceProvider;
 
 class MacroServiceProvider extends ServiceProvider
@@ -20,5 +21,13 @@ class MacroServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+    }
+
+    public function query(): void
+    {
+        Blogs::macro('whereLike', function (string $attribute, string $searchTerm) {
+            return Blogs::where($attribute, 'LIKE', "%{$searchTerm}%")
+            ->orWhere($attribute, 'LIKE', "%{$searchTerm}%");
+        });
     }
 }
