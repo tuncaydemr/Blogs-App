@@ -88,7 +88,7 @@ class BlogsController extends Controller
         return redirect()->to('/blogs');
     }
 
-    public function likeQuery()
+    public function search()
     {
         $all = Blogs::all();
 
