@@ -30,5 +30,7 @@ class FormController extends Controller
         ->where('likes', 'LIKE', "%{$select}%")
         ->orderBy('likes', 'desc')
         ->get();
+
+        return view('blogs.index', ['blogs' => $blogs]);
     }
 }
