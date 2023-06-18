@@ -28,7 +28,7 @@
 
         @if ($blog['active'])
 
-            @if ($result)
+            @if ($blog['title'])
 
                 <div class="card my-4">
                     <div class="row">
