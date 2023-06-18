@@ -25,7 +25,7 @@
 
                 <select class="form-select" name="sort-by" id="sort-by">
                     <option selected>Sort By</option>
-                    <option value="">New Delhi</option>
+                    <option value="top-rated">Top Rated</option>
                     <option value="">Istanbul</option>
                     <option value="">Jakarta</option>
                 </select>
