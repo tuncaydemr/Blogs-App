@@ -21,4 +21,9 @@ class FormController extends Controller
 
         return redirect()->to('/blogs');
     }
+
+    public function sortByRate(Request $request)
+    {
+        
+    }
 }
