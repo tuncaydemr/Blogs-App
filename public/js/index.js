@@ -16,10 +16,7 @@ $(() => {
         $.ajax({
             type: "GET",
             url: "{{ route('sortByRate') }}",
-            data: { sort: selectedOption },
-            success: function (response) {
-                $('#blogs-container').html(response);
-            },
+            data: { sort: selectedOption }
         });
     });
 })
