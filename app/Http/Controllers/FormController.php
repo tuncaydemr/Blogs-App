@@ -28,6 +28,6 @@ class FormController extends Controller
 
         $blogs = Blogs::orderBy('likes', $sort)->get();
 
-        return redirect()->to('/blogs');
+        return view('blogs.index', ['blogs' => $blogs]);
     }
 }
