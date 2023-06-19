@@ -1,5 +1,5 @@
 <ul>
-    @foreach ($items as $item)
-        <li>{{ $item->name }} - {{ $item->price }}</li>
+    @foreach ($blogs as $blog)
+        <li>{{ $blog->name }}</li>
     @endforeach
 </ul>
