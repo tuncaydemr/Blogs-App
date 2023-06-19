@@ -16,7 +16,10 @@ $(() => {
         $.ajax({
             type: "GET",
             url: "{{ route('sortByRate') }}",
-            data: { sort: selectedOption }
+            data: { sort: selectedOption },
+            success: function (response) {
+                $("#sort-by-likes").html(response);
+            },
         });
     });
 })
