@@ -10,5 +10,13 @@ $(() => {
         }
     });
 
-    
+    $('#sortBy').on('change', () => {
+        let selectedOption = $(this).val();
+
+        $.ajax({
+            type: "GET",
+            url: "{{ route('sortByRate') }}",
+            data: {sort: selectedOption},
+        });
+    });
 })
