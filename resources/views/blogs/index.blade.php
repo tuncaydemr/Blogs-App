@@ -28,6 +28,10 @@
                     <option value="desc">Top Rated</option>
                 </select>
 
+                <div id="blogs-container">
+                    
+                </div>
+
             </div>
         </div>
     </div>

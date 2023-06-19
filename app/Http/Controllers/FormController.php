@@ -28,6 +28,6 @@ class FormController extends Controller
 
         $blogs = Blogs::orderBy('likes', $sort)->get();
 
-        return view('blogs.index', ['blogs' => $blogs]);
+        return view('blogs.blog-sort', compact('blogs'));
     }
 }
