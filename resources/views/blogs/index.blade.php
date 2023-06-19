@@ -23,7 +23,7 @@
             </div>
             <div class="col-3">
 
-                <select class="form-select" name="sortBy">
+                <select class="form-select" name="sortBy" id="sortBy" onchange="sortByRate()">
                     <option selected>Sort By</option>
                     <option value="topRated">Top Rated</option>
                 </select>
