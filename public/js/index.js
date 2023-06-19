@@ -18,7 +18,7 @@ $(() => {
             url: "{{ route('sortByRate') }}",
             data: { sort: selectedOption },
             success: function (response) {
-                $(this).html(response);
+                $('#blogs-container').html(response);
             },
         });
     });
