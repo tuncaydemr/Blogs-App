@@ -17,6 +17,9 @@ $(() => {
             type: "GET",
             url: "{{ route('sortByRate') }}",
             data: { sort: selectedOption },
+            success: function (response) {
+                $(this).html(response);
+            },
         });
     });
 })
