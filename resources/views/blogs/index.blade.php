@@ -30,6 +30,7 @@
                         <option value="">Istanbul</option>
                         <option value="">Jakarta</option>
                     </select>
+                    <button type="submit">Sort</button>
                 </form>
 
             </div>
