@@ -24,13 +24,9 @@ class FormController extends Controller
 
     public function sortBy(Request $request)
     {
-        $select = $request->input('sort-by');
-        $likes = Blogs::all();
+        $select = $request->query('sort-by', 'top-rated');
 
-
-        if($select == 'selected') {
-           $blogs = Blogs::orderBy($likes['likes'], 'asc');
-        }
+        $blogs = Blogs::orderBy($select)->get();
 
         return view('blogs.index', ['blogs' => $blogs]);
     }
