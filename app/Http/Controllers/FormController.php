@@ -28,6 +28,6 @@ class FormController extends Controller
 
         $blogs = Blogs::orderBy($select)->get();
 
-        return view('blogs.index', ['blogs' => $blogs]);
+        return view('blogs.blog-search', compact('blogs'));
     }
 }
