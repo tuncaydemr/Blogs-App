@@ -36,7 +36,7 @@
 
         @if ($blog['active'])
 
-            <div class="card my-4" id="blogs-container">
+            <div class="card my-4">
                 <div class="row">
                     <div class="col-3">
                         <img src="{{ asset('storage/img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
