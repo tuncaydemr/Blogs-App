@@ -23,11 +23,9 @@
             </div>
             <div class="col-3">
 
-                <select class="form-select" name="sort-by">
+                <select class="form-select" name="sortBy">
                     <option selected>Sort By</option>
-                    <option value="top-rated">Top Rated</option>
-                    <option value="">Istanbul</option>
-                    <option value="">Jakarta</option>
+                    <option value="topRated">Top Rated</option>
                 </select>
 
             </div>
