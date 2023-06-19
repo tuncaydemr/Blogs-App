@@ -26,7 +26,7 @@ class FormController extends Controller
     {
         $sort = $request->input('sort', 'asc');
 
-        $result = Blogs::orderBy('likes', $sort)->get();
+        $blogs = Blogs::orderBy('likes', $sort)->get();
 
         return redirect()->to('/blogs');
     }
