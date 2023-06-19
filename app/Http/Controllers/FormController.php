@@ -21,13 +21,4 @@ class FormController extends Controller
 
         return redirect()->to('/blogs');
     }
-
-    public function sortBy(Request $request)
-    {
-        $select = $request->query('sort-by', 'top-rated');
-
-        $blogs = Blogs::orderBy($select)->get();
-
-        return view('blogs.blog-search', compact('blogs'));
-    }
 }
