@@ -25,7 +25,7 @@
 
                 <select class="form-select" name="sortBy" id="sort-by-likes">
                     <option value="asc">Sort By</option>
-                    <option value="desc">Top Rat</option>
+                    <option value="desc">Top Rated</option>
                 </select>
 
             </div>
