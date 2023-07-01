@@ -11,7 +11,6 @@ $(() => {
     })
 
     let navbarIndex = $('.nav-link')
-
     let index = navbarIndex.index();
 
     navbarIndex.click(function (e) {
