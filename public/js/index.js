@@ -13,7 +13,7 @@ $(() => {
     $(".nav-link").click(function () {
         $(".nav-link").removeClass("active");
 
-        let index = $('.nav-item a').index();
+        let index = $('.nav-link').index();
         $(this).eq(index).addClass("active");
     });
 });
