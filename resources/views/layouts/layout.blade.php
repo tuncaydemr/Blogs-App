@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="{{ asset('img/FOGO.png') }}" class="img-fluid" alt="FOGO" width="">
+                <img src="{{ asset('img/FOGO.png') }}" class="img-fluid bg-dark" alt="FOGO" width="100" height="100">
             </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
