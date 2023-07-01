@@ -16,6 +16,7 @@ $(() => {
     navbarIndex.click(function (e) {
         e.preventDefault();
 
+        $(this).removeClass('active');
         $(this).eq(index).addClass('active');
     });
 })
