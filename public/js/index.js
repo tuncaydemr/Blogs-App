@@ -10,11 +10,8 @@ $(() => {
         }
     })
 
-    $('.nav-item').click(function () {
-        let index = $(this).index();
-
-
-        $('.nav-link').removeClass('active');
-        $('.nav-link').eq(index).addClass('active');
+    $(".nav-link").click(function () {
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
     });
 });
