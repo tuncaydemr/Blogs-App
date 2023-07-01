@@ -8,14 +8,14 @@
     @stack('cdn')
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
             <a href="/" class="navbar-brand">
                 <img src="{{ asset('img/FOGO.png') }}" class="img-fluid" alt="FOGO" width="100" height="100">
             </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a href="/index" class="nav-link">Home</a>
+                    <a href="/index" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="/blogs" class="nav-link">Blogs</a>
