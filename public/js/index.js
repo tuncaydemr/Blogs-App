@@ -13,10 +13,9 @@ $(() => {
     let navbarIndex = $('.nav-link')
     let index = navbarIndex.index();
 
-    navbarIndex.click(function (e) {
-        e.preventDefault();
+    navbarIndex.click(function () {
+        $(navbarIndex).removeClass('active');
 
-        $(this).removeClass('active');
-        $(this).eq(index).addClass('active');
+        $(navbarIndex).eq(index).addClass('active');
     });
 })
