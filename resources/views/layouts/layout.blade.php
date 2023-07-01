@@ -18,6 +18,12 @@
                     <a href="/index" class="nav-link active fs-5">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a href="/index" class="nav-link fs-5">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/index" class="nav-link fs-5">Home</a>
+                </li>
+                <li class="nav-item">
                     <a href="/blogs" class="nav-link fs-5">Blogs</a>
                 </li>
                 <li class="nav-item">
