@@ -10,12 +10,11 @@ $(() => {
         }
     })
 
-    let navbarIndex = $('.nav-link')
-    let index = navbarIndex.index();
+    $(".nav-link").click(function () {
+        $(".nav-link").removeClass("active");
 
-    navbarIndex.click(function () {
-        $(navbarIndex).removeClass('active');
+        let index = $(this).index();
 
-        $(navbarIndex).eq(index).addClass('active');
+        $(".nav-link").eq(index).addClass("active");
     });
 })
