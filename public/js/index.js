@@ -9,4 +9,14 @@ $(() => {
             label.text('Active')
         }
     })
+
+    let navbarIndex = $('.nav-link')
+
+    let index = navbarIndex.index();
+
+    navbarIndex.click(function (e) {
+        e.preventDefault();
+
+        $(this).eq(index).addClass('active');
+    });
 })
