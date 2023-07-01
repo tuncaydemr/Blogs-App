@@ -11,7 +11,7 @@ $(() => {
     })
 
     $('.nav-item').click(function () {
-        let index = $(this).index('.nav-item');
+        let index = $(this).index();
 
 
         $('.nav-link').removeClass('active');
