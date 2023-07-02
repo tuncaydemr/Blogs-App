@@ -81,7 +81,7 @@
                     <div class="modal-content">
                         <form action="">
                             <div class="modal-header">
-                                <h3>Sign In</h3>
+                                <h3>Sign Up</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
 
@@ -102,7 +102,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Sign In</button>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
                             </div>
                         </form>
                     </div>
