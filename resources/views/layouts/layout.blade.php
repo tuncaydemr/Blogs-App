@@ -33,10 +33,14 @@
             <div id="navMenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
                     <li class="nav-item me-3">
-                        <a href="/blogs" class="nav-link fs-5">Sign in</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
+                            Sign in
+                        </button>
                     </li>
                     <li class="nav-item">
-                        <a href="/contact" class="nav-link fs-5">Sign up</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUp">
+                            Sign up
+                        </button>
                     </li>
                 </ul>
             </div>
