@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
+    @stack('styles')
     @stack('cdn')
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navMenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto my-lg-5 flex-row justify-content-center">
+                <ul class="navbar-nav ms-auto flex-row justify-content-center">
                     <li class="nav-item me-5">
                         <a href="/index" class="nav-link fs-5">Home</a>
                     </li>
