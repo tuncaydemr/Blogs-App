@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('/index', 'index');
-    Route::get('/contact', 'contact');
+    Route::get('/contact', 'contact')->name('contact');
 });
 
 Route::controller(BlogsController::class)->group(function () {
