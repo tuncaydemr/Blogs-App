@@ -10,34 +10,36 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container bg-danger">
-            <a href="/" class="navbar-brand">
-                <img src="{{ asset('img/FOGO.png') }}" class="img-fluid" alt="FOGO" width="100" height="100">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navMenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
-                    <li class="nav-item me-5">
-                        <a href="/index" class="nav-link fs-5">Home</a>
-                    </li>
-                    <li class="nav-item me-5">
-                        <a href="/blogs" class="nav-link fs-5">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact" class="nav-link fs-5">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="navMenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
-                    <li class="nav-item me-5">
-                        <a href="/blogs" class="nav-link fs-5">Sign in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact" class="nav-link fs-5">Sign up</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <a href="/" class="navbar-brand">
+                    <img src="{{ asset('img/FOGO.png') }}" class="img-fluid" alt="FOGO" width="100" height="100">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navMenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
+                        <li class="nav-item me-5">
+                            <a href="/index" class="nav-link fs-5">Home</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a href="/blogs" class="nav-link fs-5">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contact" class="nav-link fs-5">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="navMenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
+                        <li class="nav-item me-5">
+                            <a href="/blogs" class="nav-link fs-5">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contact" class="nav-link fs-5">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
