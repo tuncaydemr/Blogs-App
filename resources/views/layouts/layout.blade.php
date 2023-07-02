@@ -15,13 +15,13 @@
             </a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a href="/index" class="nav-link active fs-5">Home</a>
+                    <a href="/index" class="nav-link active {{ request->path() === '/index' ? 'active' : '' }} fs-5">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/blogs" class="nav-link fs-5">Blogs</a>
+                    <a href="/blogs" class="nav-link {{ request->path() === '/blogs' ? 'active' : '' }} fs-5">Blogs</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contact" class="nav-link fs-5">Contact</a>
+                    <a href="/contact" class="nav-link {{ request->path() === '/contact' ? 'active' : '' }} fs-5">Contact</a>
                 </li>
             </ul>
         </div>
