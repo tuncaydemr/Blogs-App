@@ -44,6 +44,19 @@
                     </li>
                 </ul>
             </div>
+            <div id="signIn" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                <h1>Sign In</h1>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
