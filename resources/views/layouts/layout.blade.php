@@ -17,7 +17,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navMenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
+                <ul class="navbar-nav ms-auto my-lg-5 flex-row justify-content-center">
                     <li class="nav-item me-5">
                         <a href="/index" class="nav-link fs-5">Home</a>
                     </li>
@@ -30,7 +30,7 @@
                 </ul>
             </div>
             <div id="navMenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
+                <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
                     <li class="nav-item me-3">
                         <a href="/blogs" class="nav-link fs-5">Sign in</a>
                     </li>
