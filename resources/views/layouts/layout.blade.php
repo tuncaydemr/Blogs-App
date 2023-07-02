@@ -19,18 +19,20 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div id="navMenu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
-                        <li class="nav-item me-5">
-                            <a href="/index" class="nav-link fs-5">Home</a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a href="/blogs" class="nav-link fs-5">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/contact" class="nav-link fs-5">Contact</a>
-                        </li>
-                    </ul>
+                <div class="col-4">
+                    <div id="navMenu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
+                            <li class="nav-item me-5">
+                                <a href="/index" class="nav-link fs-5">Home</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a href="/blogs" class="nav-link fs-5">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact" class="nav-link fs-5">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="navMenu" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto mb-2 py-lg-5 flex-row justify-content-center">
