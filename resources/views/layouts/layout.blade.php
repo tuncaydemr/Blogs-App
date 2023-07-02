@@ -47,7 +47,7 @@
             <div id="signIn" class="modal fade">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <form action="">
+                        <form action="" method="POST">
                             <div class="modal-header">
                                 <h3>Sign In</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
