@@ -45,19 +45,21 @@
                 </ul>
             </div>
             <div id="signIn" class="modal fade">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h3>Sign In</h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
+                        <form action="">
+                            <div class="modal-header">
+                                <h3>Sign In</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
 
-                        <div class="modal-body"></div>
+                            <div class="modal-body"></div>
 
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Sign In</button>
-                        </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Sign In</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
