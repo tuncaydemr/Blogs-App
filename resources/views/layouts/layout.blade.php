@@ -13,6 +13,7 @@
             <a href="/" class="navbar-brand">
                 <img src="{{ asset('img/FOGO.png') }}" class="img-fluid" alt="FOGO" width="100" height="100">
             </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu"></button>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item me-5">
                     <a href="/index" class="nav-link fs-5">Home</a>
