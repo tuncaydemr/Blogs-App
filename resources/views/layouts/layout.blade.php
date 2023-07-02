@@ -21,7 +21,7 @@
                     <a href="/blogs" class="nav-link fs-5">Blogs</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contact" class="nav-link active fs-5">Contact</a>
+                    <a href="/contact" class="nav-link fs-5">Contact</a>
                 </li>
             </ul>
         </div>

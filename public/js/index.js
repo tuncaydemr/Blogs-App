@@ -10,9 +10,11 @@ $(() => {
         }
     })
 
-    $(".nav-item > a").click(function () {
-        $(".nav-link").removeClass("active");
+    $(".nav-link").click(function () {
+
 
         $(this).addClass("active");
+
+        $(".nav-link").removeClass("active");
     });
 });
