@@ -17,7 +17,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navMenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2">
                     <li class="nav-item me-5">
                         <a href="/index" class="nav-link fs-5">Home</a>
                     </li>
