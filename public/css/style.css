@@ -1,5 +1,5 @@
-@include media-breakpoint-down(lg) {
+@media (max-width: 992px) {
     .navbar-nav {
-        padding: 150px;
+        padding: 16px 0;
     }
 }
