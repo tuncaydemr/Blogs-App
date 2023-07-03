@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->integer('likes')->default(0);
             $table->boolean('active');
             $table->timestamp('created_at')->useCurrent();
