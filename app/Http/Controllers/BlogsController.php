@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blogs;
+use App\Models\Image;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\File;
@@ -27,7 +28,15 @@ class BlogsController extends Controller
         $title = $request->input('title');
         $description = $request->input('description');
         $active = $request->input('active');
-        $image = $request->input('image');
+
+
+        $image = $request->file('image');
+        $fileName = $image->store('public/img');
+
+        $imageModel = new Image();
+        $imageModel->image = $fileName;
+        $imageModel->save();
+
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
 
