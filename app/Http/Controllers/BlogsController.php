@@ -32,9 +32,9 @@ class BlogsController extends Controller
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $imageExtension = $image->hashname();
+            $imageExtension = $image->hashName();
             $imageName = Str::uuid() . "." . $imageExtension;
-            $newImage = 'public/img' . $imageName;
+            $newImage = 'img/' . $imageName;
         }
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
