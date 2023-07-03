@@ -18,7 +18,9 @@ class FormController extends Controller
 
         $request->validate(['image' => 'required']);
 
-        Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $path]);
+        Blogs::create(['image' => $path]);
+
+        Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $image]);
 
         return redirect()->to('/blogs');
     }
