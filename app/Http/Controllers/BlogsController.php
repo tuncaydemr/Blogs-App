@@ -33,13 +33,16 @@ class BlogsController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageExtension = $image->hashName();
-            $imageName = Str::uuid() . "." . $imageExtension;
-            $newImage = 'img/' . $imageName;
+            $newImage = 'img/' . $imageExtension;
+
+            File::move($image, $newImage);
+
+            /* $image = $request->file('image')->store('', 'public'); */
         }
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
 
-        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $newImage, 'active' => $active]);
+        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $imageExtension, 'active' => $active]);
 
         return redirect()->to('/blogs');
     }
