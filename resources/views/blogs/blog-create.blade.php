@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <form action="/blogs/create" method="GET" novalidate enctype="multipart/form-data">
+    <form action="/blogs/create" method="POST" novalidate enctype="multipart/form-data">
         @csrf
 
         <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">

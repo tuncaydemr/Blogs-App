@@ -16,7 +16,7 @@ Route::controller(HomeController::class)->group(function () {
 Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs', 'blogs');
     Route::get('/blogs/add', 'add');
-    Route::get('/blogs/create', 'create');
+    Route::post('/blogs/create', 'create');
     Route::get('/blogs/{id}', 'show');
     Route::get('/blogs/{id}/edit', 'edit');
     Route::get('/blogs/{id}/delete', 'delete');
