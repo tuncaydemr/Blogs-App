@@ -29,7 +29,9 @@ class BlogsController extends Controller
         $description = $request->input('description');
         $active = $request->input('active');
 
-        $image = $request->file('image')->store('public/img', $request->Blogs()->id);
+        if ($request->hasFile('image')) {
+            
+        }
 
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
