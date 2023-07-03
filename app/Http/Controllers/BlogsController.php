@@ -6,7 +6,8 @@ use App\Models\Blogs;
 use App\Models\Image;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
-use Illuminate\Support\File;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class BlogsController extends Controller
 {
@@ -31,7 +32,9 @@ class BlogsController extends Controller
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $newImage = $image->store('', 'public');
+            $imageExtension = $image->hashname();
+            $imageName = Str::uuid() . "." . $imageExtension;
+            $newImage = 'public/img' . $imageName;
         }
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
