@@ -9,7 +9,7 @@
     <form action="/blogs/create" method="POST" novalidate enctype="multipart/form-data">
         @csrf
 
-        <div class="container d-flex justify-content-center align-items-center bg-danger rounded-4" style="height: 80vh;">
+        <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4" style="height: 80vh;">
             <div class="row w-50">
                 <h2 class="mb-5 text-center text-white"><ins>Blog Create</ins></h2>
                 <div class="col-12">

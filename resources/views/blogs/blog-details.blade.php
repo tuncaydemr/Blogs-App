@@ -10,10 +10,10 @@
 
         <div class="card my-4">
             <div class="row">
-                <div class="col-3">
-                    <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start" width="325" height="217">
+                <div class="col-4">
+                    <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start">
                 </div>
-                <div class="col-7">
+                <div class="col-6">
                     <h4 class="card-title mb-4 mt-2">{{ $title }}</h4>
                     <h6 class="mb-3">{{ $description }}</h6>
 
