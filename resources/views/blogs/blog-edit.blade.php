@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <form action="/blogs/{{ $id }}" method="POST" novalidate>
+    <form action="/blogs/{{ $id }}" method="POST" novalidate enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
