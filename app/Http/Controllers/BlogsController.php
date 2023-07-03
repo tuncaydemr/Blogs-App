@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blogs;
 use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\File;
 
 class BlogsController extends Controller
@@ -25,12 +26,15 @@ class BlogsController extends Controller
     {
         $title = $request->input('title');
         $description = $request->input('description');
-        $image = $request->input('image');
         $active = $request->input('active');
+
+        $image = $request->file('image');
+        $fileName = uniqid() . '.' . $image->getClientOriginalExtension();
+        $path = $image->storeAs('public/img', $fileName);
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
 
-        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image, 'active' => $active]);
+        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $path, 'active' => $active]);
 
         return redirect()->to('/blogs');
     }
