@@ -38,20 +38,20 @@
 
             <div class="card my-4">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-3">
                         <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-between my-2">
+                    <div class="col-7 d-flex flex-column justify-content-between my-2">
                         <h4 class="card-title mb-3 mt-2">{{ $blog['title'] }}</h4>
                         <h6 class="mb-3">{{ $blog['description'] }}</h6>
                         <div class="like d-flex align-items-center">
 
                             @if($blog['likes'] > 1)
-                                <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} likes</p>
+                                <p class="mb-3 me-3 mt-1">{{ $blog['likes'] }} likes</p>
                             @elseif ($blog['likes'] <= 1)
-                                <p class="mb-4 me-3 mt-1">{{ $blog['likes'] }} like</p>
+                                <p class="mb-3 me-3 mt-1">{{ $blog['likes'] }} like</p>
                             @else
-                                <p class="mb-4">0 like</p>
+                                <p class="mb-3">0 like</p>
                             @endif
 
                             <a href="/blogs/{{ $blog['id'] }}/like">
