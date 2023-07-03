@@ -30,13 +30,16 @@ class BlogsController extends Controller
         $active = $request->input('active');
 
         if ($request->hasFile('image')) {
-            
+            $image = $request->file('image');
+            $fileName = $image->hashName();
+            $fileExtension = $image->extension();
+            $newImage = $image->store('public/img', $fileName . '.' . $fileExtension);
         }
 
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
 
-        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image, 'active' => $active]);
+        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $newImage, 'active' => $active]);
 
         return redirect()->to('/blogs');
     }
