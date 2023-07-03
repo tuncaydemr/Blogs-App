@@ -32,8 +32,7 @@ class BlogsController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $fileName = $image->hashName();
-            $fileExtension = $image->extension();
-            $newImage = $image->store('public/img', $fileName . '.' . $fileExtension);
+            $newImage = $image->store('public/img', $fileName);
         }
 
 
