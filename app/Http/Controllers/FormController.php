@@ -14,7 +14,7 @@ class FormController extends Controller
         $title = $request->input('title');
         $description = $request->input('description');
         $image = $request->file('image');
-        $path = $image->store('storage/img');
+        $path = $image->store('public/img');
 
         $request->validate(['image' => 'required']);
 
