@@ -31,7 +31,7 @@ class BlogsController extends Controller
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $newImage = $image->store('img', 'public');
+            $newImage = $image->store('', 'public');
         }
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
