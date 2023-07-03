@@ -24,13 +24,12 @@ class BlogsController extends Controller
     {
         $title = $request->input('title');
         $description = $request->input('description');
-        $image = $request->file('image');
-        $path = $image->create('public/img');
+        $image = $request->input('image');
         $active = $request->input('active');
 
-        $request->validate(['title' => 'required', 'description' => 'required', 'active' => 'required']);
+        $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
 
-        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $path, 'active' => $active]);
+        Blogs::insert(['title' => $title, 'description' => $description, 'image' => $image, 'active' => $active]);
 
         return redirect()->to('/blogs');
     }

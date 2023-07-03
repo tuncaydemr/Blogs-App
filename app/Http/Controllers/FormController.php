@@ -13,13 +13,11 @@ class FormController extends Controller
     {
         $title = $request->input('title');
         $description = $request->input('description');
-        $image = $request->file('image');
-        $path = $image->submitForm('public/img');
+        $image = $request->input('image');
 
         $request->validate(['image' => 'required']);
 
-
-        Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $path]);
+        Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $image]);
 
         return redirect()->to('/blogs');
     }
