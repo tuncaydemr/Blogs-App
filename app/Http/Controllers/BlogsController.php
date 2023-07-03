@@ -33,7 +33,7 @@ class BlogsController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageExtension = $image->hashName();
-            $newImage = $image->store('img', 'public');
+            $newImage = $image->store('img');
 
             File::move($image, $newImage);
         }
