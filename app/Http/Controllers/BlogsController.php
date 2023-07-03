@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blogs;
-use App\Models\Image;
 use Illuminate\Http\Request;
-use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
 
 class BlogsController extends Controller
 {
