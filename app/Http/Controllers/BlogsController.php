@@ -27,10 +27,7 @@ class BlogsController extends Controller
         $title = $request->input('title');
         $description = $request->input('description');
         $active = $request->input('active');
-
         $image = $request->input('image');
-        $fileName = uniqid() . '.' . $image->getClientOriginalExtension();
-        $path = $image->storeAs('public/img', $fileName);
 
         $request->validate(['title' => 'required', 'description' => 'required', 'image' => 'required', 'active' => 'required']);
 
