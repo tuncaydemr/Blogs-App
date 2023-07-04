@@ -74,7 +74,7 @@
             </div>
             <div id="signUp" class="modal fade">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+                    <div class="modal-content p-3">
                         <form action="">
                             <div class="modal-header">
                                 <h3>Sign Up</h3>
