@@ -8,7 +8,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4 p-0 my-2">
+            <div class="col-12 col-md-4 p-md-0 my-2">
                 <a href="/blogs/add" class="btn btn-primary d-block d-md-inline-block" role="button">Blog Add</a>
             </div>
             <div class="col-8 col-md-4 p-0 my-2">
