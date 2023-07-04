@@ -46,7 +46,7 @@
             </div>
             <div id="signIn" class="modal fade">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+                    <div class="modal-content p-3">
                         <form action="" method="POST">
                             <div class="modal-header">
                                 <h3>Sign In</h3>
