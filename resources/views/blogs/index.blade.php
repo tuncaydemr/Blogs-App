@@ -17,7 +17,7 @@
                     <button class="btn btn-outline-danger" type="submit">Search</button>
                 </form>
             </div>
-            <div class="col-3">
+            <div class="col-3 p-0">
                 <select class="form-select" name="sortBy" id="sort-by-likes">
                     <option value="asc">Sort By</option>
                     <option value="desc">Top Rated</option>
