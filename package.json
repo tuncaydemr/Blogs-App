@@ -4,7 +4,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "sass": "sass -w (scss giriş klasörün yolu):(css çıkış klasörün yolu) --no-source-map"
+        "sass": "sass -w sass:css --no-source-map"
     },
     "devDependencies": {
         "@types/jquery": "^3.5.16",
