@@ -12,7 +12,7 @@ $(() => {
 
     let navActive = $(".nav-link");
 
-    let currentPageUrl = window.location.pathname;
+    let currentPageUrl = window.location.href;
 
     navActive.each(function () {
         if ($(this).attr("href") === currentPageUrl) {

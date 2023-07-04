@@ -25,7 +25,7 @@
                             <a href="/index" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item me-5">
-                            <a href="/blogs" class="nav-link">Blogs</a>
+                            <a href="{{ route('blogs') }}" class="nav-link">Blogs</a>
                         </li>
                         <li class="nav-item">
                             <a href="/contact" class="nav-link">Contact</a>
