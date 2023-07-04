@@ -22,7 +22,7 @@
                     @elseif ($likes == 1)
                         <p class="mb-lg-2">{{ $likes }} like</p>
                     @else
-                        <p class="mb-lg-2">0 like</p>   
+                        <p class="mb-lg-2">0 like</p>
                     @endif
 
                     <p class="m-0">
@@ -51,7 +51,7 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 @endpush
 
 @push('cdn')
