@@ -22,13 +22,13 @@
                 <div id="navMenu" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto flex-row justify-content-center">
                         <li class="nav-item me-5">
-                            <a href="/index" class="nav-link">Home</a>
+                            <a href="{{ route('home') }}" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item me-5">
                             <a href="{{ route('blogs') }}" class="nav-link">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">Contact</a>
+                            <a href="{{ route('contact') }}" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
