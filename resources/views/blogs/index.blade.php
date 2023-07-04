@@ -8,8 +8,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-3">
-                <a href="/blogs/add" class="btn btn-primary d-block" role="button">Blog Add</a>
+            <div class="col-3 p-0">
+                <a href="/blogs/add" class="btn btn-primary" role="button">Blog Add</a>
             </div>
             <div class="col-6">
                 <form method="GET" action="{{ route('search') }}" class="d-flex" role="search">
