@@ -8,14 +8,14 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-5 col-md-4 p-0 my-2">
+                <a href="/blogs/add" class="btn btn-primary d-block" role="button">Blog Add</a>
+            </div>
             <div class="col-12 col-md-4 p-0 my-2">
                 <form method="GET" action="{{ route('search') }}" class="d-flex" role="search">
                     <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-danger" type="submit">Search</button>
                 </form>
-            </div>
-            <div class="col-5 col-md-4 p-0 my-2">
-                <a href="/blogs/add" class="btn btn-primary d-block" role="button">Blog Add</a>
             </div>
             <div class="col-5 col-md-4 p-0 my-2 ms-auto">
                 <select class="form-select" name="sortBy" id="sort-by-likes">
