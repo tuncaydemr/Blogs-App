@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
-    Route::get('/index', 'index');
+    Route::get('/index', 'index')->name('home');
     Route::get('/contact', 'contact');
 });
 
 Route::controller(BlogsController::class)->group(function () {
-    Route::get('/blogs', 'blogs');
+    Route::get('/blogs', 'blogs')->name('blogs');
     Route::get('/blogs/add', 'add');
     Route::post('/blogs/create', 'create');
     Route::get('/blogs/{id}', 'show');
