@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4 p-0 my-2">
-                <a href="/blogs/add" class="btn btn-primary d-block d-md-inline-block min-w-0" role="button">Blog Add</a>
+                <a href="/blogs/add" class="btn btn-primary d-block d-md-inline-block" role="button">Blog Add</a>
             </div>
             <div class="col-8 col-md-4 p-0 my-2">
                 <form method="GET" action="{{ route('search') }}" class="d-flex" role="search">
