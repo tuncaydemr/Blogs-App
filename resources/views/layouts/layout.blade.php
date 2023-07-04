@@ -23,10 +23,10 @@
                         <a href="{{ route('home') }}" class="nav-link fs-5">Home</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a href="/blogs" class="nav-link fs-5">Blogs</a>
+                        <a href="{{ route('blogs') }}" class="nav-link fs-5">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/contact" class="nav-link fs-5">Contact</a>
+                        <a href="{{ route('contact') }}" class="nav-link fs-5">Contact</a>
                     </li>
                 </ul>
             </div>
