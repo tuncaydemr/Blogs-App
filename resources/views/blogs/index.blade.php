@@ -12,22 +12,16 @@
                 <a href="/blogs/add" class="btn btn-primary d-block" role="button">Blog Add</a>
             </div>
             <div class="col-6">
-                <div class="container-fluid">
-
-                    <form method="GET" action="{{ route('search') }}" class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger" type="submit">Search</button>
-                    </form>
-
-                </div>
+                <form method="GET" action="{{ route('search') }}" class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
             </div>
             <div class="col-3">
-
                 <select class="form-select" name="sortBy" id="sort-by-likes">
                     <option value="asc">Sort By</option>
                     <option value="desc">Top Rated</option>
                 </select>
-
             </div>
         </div>
     </div>

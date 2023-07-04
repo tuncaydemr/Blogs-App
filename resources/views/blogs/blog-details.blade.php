@@ -10,21 +10,19 @@
 
         <div class="card my-4">
             <div class="row">
-                <div class="col-3 bg-dark">
-                    <figure class="figure">
-                        <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start figure-img">
-                    </figure>
+                <div class="col-4">
+                        <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start">
                 </div>
-                <div class="col-5">
-                    <h4 class="card-title mb-4 mt-2">{{ $title }}</h4>
-                    <h6 class="mb-3">{{ $description }}</h6>
+                <div class="col-4">
+                    <h4 class="card-title mb-1 mb-sm-2 mb-md-3 mb-lg-4 mt-2">{{ $title }}</h4>
+                    <h6 class="mb-1 mb-sm-2 mb-lg-3">{{ $description }}</h6>
 
                     @if($likes > 1)
-                        <p class="mb-4 me-3 mt-1">{{ $likes }} likes</p>
+                        <p class="mb-1 mb-sm-2 mb-lg-3">{{ $likes }} likes</p>
                     @elseif ($likes == 1)
-                        <p class="mb-4 me-3 mt-1">{{ $likes }} like</p>
+                        <p class="mb-lg-2">{{ $likes }} like</p>
                     @else
-                        <p class="mb-4">0 like</p>
+                        <p class="mb-lg-2">0 like</p>   
                     @endif
 
                     <p class="m-0">
