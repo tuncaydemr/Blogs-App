@@ -41,7 +41,7 @@
                     <div class="col-3">
                         <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
                     </div>
-                    <div class="col-7 d-flex flex-column justify-content-between my-2">
+                    <div class="col-6 d-flex flex-column justify-content-between my-2">
                         <h4 class="card-title mb-3 mt-2">{{ $blog['title'] }}</h4>
                         <h6 class="mb-3">{{ $blog['description'] }}</h6>
                         <div class="like d-flex align-items-center">
@@ -62,7 +62,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-2 d-flex align-items-center">
+                    <div class="col-3 d-flex align-items-center">
                         <p>
                             <a href="/blogs/{{ $blog['id'] }}" class="btn btn-success px-5 py-2">Details</a>
                         </p>

@@ -10,10 +10,12 @@
 
         <div class="card my-4">
             <div class="row">
-                <div class="col-4">
-                    <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start">
+                <div class="col-3 bg-dark">
+                    <figure class="figure">
+                        <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start figure-img">
+                    </figure>
                 </div>
-                <div class="col-6">
+                <div class="col-5">
                     <h4 class="card-title mb-4 mt-2">{{ $title }}</h4>
                     <h6 class="mb-3">{{ $description }}</h6>
 
@@ -29,7 +31,7 @@
                         <a href="/blogs" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
                 </div>
-                <div class="col-2 d-flex justify-content-center flex-column align-items-center">
+                <div class="col-4 d-flex justify-content-center flex-column align-items-center">
                     <p>
                         <a href="/blogs/{{ $id }}/edit" class="btn btn-primary px-4 py-2">Edit</a>
                     </p>
