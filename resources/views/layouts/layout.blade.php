@@ -9,7 +9,7 @@
     @stack('cdn')
 </head>
 <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container">
@@ -110,9 +110,13 @@
         </nav>
     </header>
 
-    <div class="container mt-3">
-        @yield('content')
-    </div>
+    <main>
+        <section>
+            <div class="container mt-3">
+                @yield('content')
+            </div>
+        </section>
+    </main>
 
     @stack('scripts')
 </body>
