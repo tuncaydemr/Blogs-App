@@ -58,7 +58,7 @@
                                 Like
                             </button>
                         </a>
-                        <a href="/blogs/{{ $blog['id'] }}" class="btn btn-success px-5 py-2">Details</a>
+                        <a href="/blogs/{{ $blog['id'] }}" class="btn btn-success blogs-details">Details</a>
                     </div>
                 </div>
             </div>

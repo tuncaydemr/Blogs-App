@@ -6,21 +6,25 @@
     }
 
     .card-title {
-        font-size: 20px;
+        font-size: $h5-font-size;
     }
 
     .card-description,
     .like {
-        font-size: 16px;
+        font-size: $h6-font-size;
     }
 
     .like {
         margin-bottom: 0;
     }
+
+    // .blogs-details {
+    //     padding: ;
+    // }
 }
 
 .bi-hand-thumbs-up-fill {
-    font-size: 1rem;
+    font-size: $h6-font-size;
 }
 
 

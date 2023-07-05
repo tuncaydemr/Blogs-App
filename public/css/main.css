@@ -11865,11 +11865,11 @@ textarea.form-control-lg {
     margin: 16px;
   }
   .card-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .card-description,
   .like {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .like {
     margin-bottom: 0;
