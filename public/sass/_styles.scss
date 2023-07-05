@@ -2,7 +2,7 @@
     font-size: $font-size-base;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     .navbar {
         .container {
             .collapse,
@@ -40,7 +40,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .blog-edit {
         width: 50%;
     }
