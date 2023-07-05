@@ -26,7 +26,7 @@ class FormController extends Controller
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
 
-        return redirect()->to('/blogs');
+        return redirect()->to('/blogs/index');
     }
 
     public function sortByRate(Request $request)
@@ -36,7 +36,7 @@ class FormController extends Controller
         if ($sort == 'asc') {
             $blogs = Blogs::orderBy('likes', 'asc')->get();
         }
-        
+
         return view('blogs.index', ['blogs' => $blogs]);
     }
 }
