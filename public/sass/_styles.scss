@@ -20,6 +20,7 @@
 
     .card-title {
         font-size: $font-size-lg;
+        padding-bottom: 10px;
     }
 
     .card-description,
@@ -48,6 +49,13 @@
                 background: $gradient;
             }
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .card-title,
+    .card-description {
+        margin: 0 0 100px 0;
     }
 }
 

@@ -11874,6 +11874,7 @@ textarea.form-control-lg {
   }
   .card-title {
     font-size: 1.25rem;
+    padding-bottom: 10px;
   }
   .card-description,
   .like {
@@ -11893,6 +11894,12 @@ textarea.form-control-lg {
   .navbar .container .collapse,
   .navbar .container .modal {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+}
+@media (min-width: 768px) {
+  .card-title,
+  .card-description {
+    margin: 0 0 100px 0;
   }
 }
 @media (min-width: 992px) {
