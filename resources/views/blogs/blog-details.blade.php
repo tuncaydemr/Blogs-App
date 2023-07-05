@@ -17,6 +17,7 @@
                     <h4 class="card-title">{{ $title }}</h4>
                     <h6 class="card-description">{{ $description }}</h6>
                     <div class="like d-flex align-items-center">
+
                         @if($likes > 1)
                             <p class="mb-1 mb-sm-2 mb-lg-3">{{ $likes }} likes</p>
                         @elseif ($likes === 1)
@@ -24,7 +25,6 @@
                         @else
                             <p class="mb-lg-2">0 like</p>
                         @endif
-
 
                     </div>
                     <p class="m-3">
