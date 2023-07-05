@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-8 col-md-6 d-flex flex-column justify-content-between card-body">
                     <h4 class="card-title">{{ $title }}</h4>
-                    <h6 class="">{{ $description }}</h6>
+                    <h6 class="card-description">{{ $description }}</h6>
 
                     @if($likes > 1)
                         <p class="mb-1 mb-sm-2 mb-lg-3">{{ $likes }} likes</p>
@@ -29,7 +29,7 @@
                         <a href="{{ route('blogs') }}" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
                 </div>
-                <div class="col-1 d-flex justify-content-center flex-column align-items-center">
+                <div class="col-4 col-md-3 d-flex flex-column align-items-center justify-content-center">
                     <p>
                         <a href="{{ route('blogs.edit', ['id' => $id]) }}" class="btn btn-primary px-4 py-2">Edit</a>
                     </p>
