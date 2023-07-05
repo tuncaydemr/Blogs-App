@@ -18,7 +18,7 @@
                 </form>
             </div>
             <div class="col-4 col-md-3 my-2 p-0">
-                <select class="form-select" name="sortBy" id="sort-by-likes">
+                <select class="form-select" name="sortBy" id="sortBy">
                     <option value="asc">Sort By</option>
                     <option value="desc">Top Rated</option>
                 </select>

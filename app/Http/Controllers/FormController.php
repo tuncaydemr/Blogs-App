@@ -31,10 +31,13 @@ class FormController extends Controller
 
     public function sortByRate(Request $request)
     {
-        $likes = Blogs::select('likes')->get();
-        $sort = $request->input('sortBy');
+        $sort = $request->select('sortBy');
 
-        $blogs = Blogs::where('likes', $likes)->orderBy($sort, 'desc')->get();
+        if ($sort == 'asc') {
+            $blogs = Blogs::orderBy('likes', 'asc')->get();
+        }
+
+
 
         return view('blogs.index', ['blogs' => $blogs]);
     }
