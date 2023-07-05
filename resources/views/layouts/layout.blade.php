@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="navMenu" class="collapse navbar-collapse p-5">
+                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
                     <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
                         <li class="nav-item me-3">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
