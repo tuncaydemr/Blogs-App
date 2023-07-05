@@ -8,7 +8,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-3 my-2 p-0">
+            <div class="col-12 col-md-2 my-2 p-0">
                 <a href="/blogs/add" class="btn btn-primary d-block d-md-inline-block" role="button">Blog Add</a>
             </div>
             <div class="col-8 col-md-7 my-2 ps-0 pe-4 px-md-3">
@@ -17,7 +17,7 @@
                     <button class="btn btn-outline-danger" type="submit">Search</button>
                 </form>
             </div>
-            <div class="col-4 col-md-2 my-2 p-0">
+            <div class="col-4 col-md-3 my-2 p-0">
                 <select class="form-select" name="sortBy" id="sort-by-likes">
                     <option value="asc">Sort By</option>
                     <option value="desc">Top Rated</option>
