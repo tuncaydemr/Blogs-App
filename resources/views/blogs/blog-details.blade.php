@@ -16,16 +16,18 @@
                 <div class="col-8 col-md-6 d-flex flex-column justify-content-between card-body">
                     <h4 class="card-title">{{ $title }}</h4>
                     <h6 class="card-description">{{ $description }}</h6>
+                    <div class="like d-flex align-items-center">
+                        @if($likes > 1)
+                            <p class="mb-1 mb-sm-2 mb-lg-3">{{ $likes }} likes</p>
+                        @elseif ($likes === 1)
+                            <p class="mb-lg-2">{{ $likes }} like</p>
+                        @else
+                            <p class="mb-lg-2">0 like</p>
+                        @endif
 
-                    @if($likes > 1)
-                        <p class="mb-1 mb-sm-2 mb-lg-3">{{ $likes }} likes</p>
-                    @elseif ($likes === 1)
-                        <p class="mb-lg-2">{{ $likes }} like</p>
-                    @else
-                        <p class="mb-lg-2">0 like</p>
-                    @endif
 
-                    <p class="m-0">
+                    </div>
+                    <p class="m-3">
                         <a href="{{ route('blogs') }}" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
                 </div>
