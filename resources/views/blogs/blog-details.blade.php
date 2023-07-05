@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-4 d-flex justify-content-center flex-column align-items-center">
                     <p>
-                        <a href="/blogs/{{ $id }}/edit" class="btn btn-primary px-4 py-2">Edit</a>
+                        <a href="{{ route('edit') }}" class="btn btn-primary px-4 py-2">Edit</a>
                     </p>
                     <p>
                         <a href="/blogs/{{ $id }}/delete" class="btn btn-danger px-3 py-2">Delete</a>
