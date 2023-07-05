@@ -1,6 +1,11 @@
 @media (max-width: 575.98px) {
     .navbar {
-        background: $gradient;
+        .container {
+            .collapse,
+            .modal {
+                background: $gradient;
+            }
+        }
     }
 
     .card-title,
