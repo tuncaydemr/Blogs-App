@@ -36,8 +36,8 @@
                         <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
                     </div>
                     <div class="col-6 d-flex flex-column justify-content-between my-2">
-                        <h4 class="card-title mb-3 mt-2">{{ $blog['title'] }}</h4>
-                        <h6 class="mb-3">{{ $blog['description'] }}</h6>
+                        <h4 class="card-title mb-3">{{ $blog['title'] }}</h4>
+                        <h6 class="card-description mb-3">{{ $blog['description'] }}</h6>
                         <div class="like d-flex align-items-center">
 
                             @if($blog['likes'] > 1)
