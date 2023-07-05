@@ -13,7 +13,7 @@
                 <div class="col-12 col-md-3">
                         <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start">
                 </div>
-                <div class="col-8 col-md-6 d-flex flex-column justify-content-between">
+                <div class="col-8 col-md-6 d-flex flex-column justify-content-between py-3">
                     <h4 class="card-title">{{ $title }}</h4>
                     <h6 class="card-description">{{ $description }}</h6>
 
@@ -38,7 +38,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p class="mt-4 d-flex justify-content-center">
+                    <p class="mt-3 d-flex justify-content-center">
                         <a href="{{ route('blogs') }}" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
                 </div>
