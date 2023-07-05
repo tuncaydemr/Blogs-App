@@ -41,9 +41,9 @@
                         <div class="like d-flex align-items-center">
 
                             @if($blog['likes'] > 1)
-                                <p class="me-3">{{ $blog['likes'] }} likes</p>
+                                <p class="me-lg-3">{{ $blog['likes'] }} likes</p>
                             @elseif ($blog['likes'] <= 1)
-                                <p class="me-3">{{ $blog['likes'] }} like</p>
+                                <p class="me-lg-3">{{ $blog['likes'] }} like</p>
                             @else
                                 <p>0 like</p>
                             @endif
