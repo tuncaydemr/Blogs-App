@@ -11881,6 +11881,9 @@ textarea.form-control-lg {
   .blogs-details-btn {
     padding: 0;
   }
+  .blog-edit {
+    width: 80%;
+  }
 }
 .bi-hand-thumbs-up-fill {
   font-size: 1rem;
