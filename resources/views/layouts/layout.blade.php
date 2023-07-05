@@ -19,7 +19,7 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navMenu" class="collapse navbar-collapse bg-gradient p-5">
+                <div id="navMenu" class="collapse navbar-collapse p-5">
                     <ul class="navbar-nav ms-auto flex-row justify-content-center">
                         <li class="nav-item me-5">
                             <a href="{{ route('home') }}" class="nav-link">Home</a>
@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="navMenu" class="collapse navbar-collapse bg-gradient p-5">
+                <div id="navMenu" class="collapse navbar-collapse p-5">
                     <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
                         <li class="nav-item me-3">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
