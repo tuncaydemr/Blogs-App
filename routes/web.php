@@ -20,7 +20,7 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/{id}', 'show');
     Route::get('/blogs/{id}/edit', 'edit')->name('edit');
     Route::get('/blogs/{id}/delete', 'delete')->name('delete');
-    Route::get('/blogs/{id}/like', 'like');
+    Route::get('/blogs/{id}/like', 'like')->name('like');
 });
 
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
