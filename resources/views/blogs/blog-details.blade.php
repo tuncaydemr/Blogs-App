@@ -34,7 +34,7 @@
                         <a href="{{ route('edit') }}" class="btn btn-primary px-4 py-2">Edit</a>
                     </p>
                     <p>
-                        <a href="/blogs/{{ $id }}/delete" class="btn btn-danger px-3 py-2">Delete</a>
+                        <a href="{{ route('delete') }}" class="btn btn-danger px-3 py-2">Delete</a>
                     </p>
                 </div>
             </div>
