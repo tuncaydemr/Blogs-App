@@ -39,7 +39,7 @@ class BlogsController extends Controller
 
         Blogs::insert(['title' => $title, 'description' => $description, 'image' => $imageExtension, 'active' => $active]);
 
-        return redirect()->to('/blogs');
+        return redirect()->to('/blogs/index');
     }
 
     /**
