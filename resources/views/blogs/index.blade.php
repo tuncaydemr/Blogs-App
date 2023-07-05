@@ -56,10 +56,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-3 d-flex align-items-center d-none">
-                        <p>
-                            <a href="/blogs/{{ $blog['id'] }}" class="btn btn-success px-5 py-2">Details</a>
-                        </p>
+                    <div class="col-6 d-flex align-items-center justify-content-center">
+                        <a href="/blogs/{{ $blog['id'] }}" class="btn btn-success px-5 py-2">Details</a>
                     </div>
                 </div>
             </div>

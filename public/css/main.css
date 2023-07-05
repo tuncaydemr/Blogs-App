@@ -11862,15 +11862,16 @@ textarea.form-control-lg {
   .card-title,
   .card-description,
   .like {
-    margin: 12px;
+    margin: 16px;
   }
   .card-title {
     font-size: 20px;
   }
-  .card-description {
+  .card-description,
+  .like {
     font-size: 16px;
   }
   .like {
-    font-size: 8px;
+    margin-bottom: 0;
   }
 }
