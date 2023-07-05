@@ -11858,6 +11858,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.bi-hand-thumbs-up-fill {
+  font-size: 1rem;
+}
+
 @media (max-width: 575.98px) {
   .navbar .container .collapse,
   .navbar .container .modal {
@@ -11884,7 +11888,4 @@ textarea.form-control-lg {
   .blog-edit {
     width: 80%;
   }
-}
-.bi-hand-thumbs-up-fill {
-  font-size: 1rem;
 }

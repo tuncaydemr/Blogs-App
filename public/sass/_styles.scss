@@ -1,3 +1,7 @@
+.bi-hand-thumbs-up-fill {
+    font-size: $font-size-base;
+}
+
 @media (max-width: 575.98px) {
     .navbar {
         .container {
@@ -36,8 +40,8 @@
     }
 }
 
-.bi-hand-thumbs-up-fill {
-    font-size: $font-size-base;
+@media (min-width: 768px) {
+
 }
 
 
