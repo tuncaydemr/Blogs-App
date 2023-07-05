@@ -19,7 +19,7 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navMenu" class="collapse navbar-collapse p-5">
+                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
                     <ul class="navbar-nav ms-auto flex-row justify-content-center">
                         <li class="nav-item me-5">
                             <a href="{{ route('home') }}" class="nav-link">Home</a>
