@@ -40,7 +40,7 @@
                         <h6 class="card-description">{{ $blog['description'] }}</h6>
 
                         @if($blog['likes'] > 1)
-                            <p>{{ $blog['likes'] }} likes</p>
+                            <p class="like">{{ $blog['likes'] }} likes</p>
                         @elseif ($blog['likes'] <= 1)
                             <p>{{ $blog['likes'] }} like</p>
                         @else
