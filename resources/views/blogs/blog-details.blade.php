@@ -36,11 +36,11 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <p class="mt-3 d-flex justify-content-center">
-                        <a href="{{ route('blogs') }}" class="btn btn-primary px-5 py-2">Back</a>
-                    </p>
+                <div class="col-12 d-flex justify-content-center py-3">
+                    <a href="{{ route('blogs') }}" class="btn btn-primary px-5 py-2">Back</a>
                 </div>
             </div>
         </div>
