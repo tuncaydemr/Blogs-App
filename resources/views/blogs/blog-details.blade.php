@@ -14,7 +14,7 @@
                         <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start">
                 </div>
                 <div class="col-4">
-                    <h4 class="card-title mb-1 mb-sm-2 mb-md-3 mb-lg-4 mt-2">{{ $title }}</h4>
+                    <h4 class="card-title blog-details-title">{{ $title }}</h4>
                     <h6 class="mb-1 mb-sm-2 mb-lg-3">{{ $description }}</h6>
 
                     @if($likes > 1)
