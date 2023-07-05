@@ -26,7 +26,7 @@
                     @endif
 
                     <p class="m-0">
-                        <a href="/blogs" class="btn btn-primary px-5 py-2">Back</a>
+                        <a href="{{ route('blogs') }}" class="btn btn-primary px-5 py-2">Back</a>
                     </p>
                 </div>
                 <div class="col-4 d-flex justify-content-center flex-column align-items-center">
