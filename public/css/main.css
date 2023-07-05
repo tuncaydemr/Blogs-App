@@ -11874,6 +11874,9 @@ textarea.form-control-lg {
   .like {
     margin-bottom: 0;
   }
+  .blogs-details {
+    padding: 0;
+  }
 }
 .bi-hand-thumbs-up-fill {
   font-size: 1rem;

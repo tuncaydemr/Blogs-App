@@ -6,7 +6,7 @@
     }
 
     .card-title {
-        font-size: $h5-font-size;
+        font-size: $font-size-lg;
     }
 
     .card-description,
@@ -18,9 +18,9 @@
         margin-bottom: 0;
     }
 
-    // .blogs-details {
-    //     padding: ;
-    // }
+    .blogs-details {
+        padding: 0;
+    }
 }
 
 .bi-hand-thumbs-up-fill {
