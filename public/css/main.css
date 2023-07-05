@@ -11863,10 +11863,6 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 767.98px) {
-  .navbar .container .collapse,
-  .navbar .container .modal {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  }
   .card-title,
   .card-description,
   .like {

@@ -3,15 +3,6 @@
 }
 
 @media (max-width: 767.98px) {
-    .navbar {
-        .container {
-            .collapse,
-            .modal {
-                background: $gradient;
-            }
-        }
-    }
-
     .card-title,
     .card-description,
     .like {
@@ -57,7 +48,7 @@
 }
 
 @media (min-width: 768px) {
-    
+
 }
 
 @media (min-width: 992px) {
