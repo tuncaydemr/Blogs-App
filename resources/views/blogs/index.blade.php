@@ -41,11 +41,11 @@
                         <div class="like d-flex align-items-center">
 
                             @if($blog['likes'] > 1)
-                                <p class=" me-3">{{ $blog['likes'] }} likes</p>
+                                <p class="me-3">{{ $blog['likes'] }} likes</p>
                             @elseif ($blog['likes'] <= 1)
-                                <p class="mb-3 me-3">{{ $blog['likes'] }} like</p>
+                                <p class="me-3">{{ $blog['likes'] }} like</p>
                             @else
-                                <p class="mb-3">0 like</p>
+                                <p>0 like</p>
                             @endif
 
                             <a href="/blogs/{{ $blog['id'] }}/like" class="d-none">
