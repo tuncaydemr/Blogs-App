@@ -11896,12 +11896,6 @@ textarea.form-control-lg {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   }
 }
-@media (min-width: 768px) {
-  .card-title,
-  .card-description {
-    margin: 0 0 100px 0;
-  }
-}
 @media (min-width: 992px) {
   .blog-edit {
     width: 50%;
