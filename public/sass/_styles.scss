@@ -40,6 +40,17 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    .navbar {
+        .container {
+            .collapse,
+            .modal {
+                background: $gradient;
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .blog-edit {
         width: 50%;

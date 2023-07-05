@@ -11889,6 +11889,12 @@ textarea.form-control-lg {
     width: 80%;
   }
 }
+@media (max-width: 991.98px) {
+  .navbar .container .collapse,
+  .navbar .container .modal {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+}
 @media (min-width: 992px) {
   .blog-edit {
     width: 50%;
