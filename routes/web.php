@@ -18,9 +18,9 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/add', 'add');
     Route::post('/blogs/create', 'create');
     Route::get('/blogs/{id}', 'show');
-    Route::get('/blogs/{id}/edit', 'edit')->name('edit');
-    Route::get('/blogs/{id}/delete', 'delete')->name('delete');
-    Route::get('/blogs/{id}/like', 'like')->name('like');
+    Route::get('/blogs/{id}/edit', 'edit')->name('blogs.edit');
+    Route::get('/blogs/{id}/delete', 'delete')->name('blogs.delete');
+    Route::get('/blogs/{id}/like', 'like')->name('blogs.like');
 });
 
 Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
