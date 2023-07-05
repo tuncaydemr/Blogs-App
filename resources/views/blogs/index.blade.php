@@ -38,17 +38,15 @@
                     <div class="col-8 col-md-4 d-flex flex-column card-body">
                         <h4 class="card-title">{{ $blog['title'] }}</h4>
                         <h6 class="card-description">{{ $blog['description'] }}</h6>
-                        <div class="like d-flex align-items-center">
 
-                            @if($blog['likes'] > 1)
-                                <p>{{ $blog['likes'] }} likes</p>
-                            @elseif ($blog['likes'] <= 1)
-                                <p>{{ $blog['likes'] }} like</p>
-                            @else
-                                <p>0 like</p>
-                            @endif
+                        @if($blog['likes'] > 1)
+                            <p>{{ $blog['likes'] }} likes</p>
+                        @elseif ($blog['likes'] <= 1)
+                            <p>{{ $blog['likes'] }} like</p>
+                        @else
+                            <p>0 like</p>
+                        @endif
 
-                        </div>
                     </div>
 
                     <div class="col-4 col-md-3 d-flex flex-column align-items-center justify-content-center">

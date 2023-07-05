@@ -50,6 +50,10 @@
             }
         }
     }
+
+    .card-title {
+        font-size: $font-size-lg;
+    }
 }
 
 @media (min-width: 768px) {
