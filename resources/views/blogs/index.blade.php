@@ -35,7 +35,7 @@
                     <div class="col-12 col-sm-3">
                         <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-between my-2">
+                    <div class="col-8 d-flex flex-column justify-content-between my-2">
                         <h4 class="card-title mb-1">{{ $blog['title'] }}</h4>
                         <h6 class="card-description mb-1">{{ $blog['description'] }}</h6>
                         <div class="like d-flex align-items-center">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-4 d-flex flex-column align-items-center justify-content-center">
                         <a href="/blogs/{{ $blog['id'] }}/like">
                             <button type="button" class="btn btn-primary py-1 mb-3">
                                 <i class="bi bi-hand-thumbs-up-fill"></i>
