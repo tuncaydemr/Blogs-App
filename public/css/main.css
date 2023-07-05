@@ -11895,6 +11895,11 @@ textarea.form-control-lg {
     font-size: 1.25rem;
   }
 }
+@media (min-width: 768px) {
+  .card-title {
+    margin: 16px 0;
+  }
+}
 @media (min-width: 992px) {
   .blog-edit {
     width: 50%;

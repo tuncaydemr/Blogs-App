@@ -35,7 +35,7 @@
                     <div class="col-12 col-md-5">
                         <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
                     </div>
-                    <div class="col-8 col-md-4 d-flex flex-column card-body">
+                    <div class="col-8 col-md-4 d-flex flex-column justify-content-between">
                         <h4 class="card-title">{{ $blog['title'] }}</h4>
                         <h6 class="card-description">{{ $blog['description'] }}</h6>
 
