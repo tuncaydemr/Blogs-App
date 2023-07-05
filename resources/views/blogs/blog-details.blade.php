@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-4">
                     <h4 class="card-title blog-details-title">{{ $title }}</h4>
-                    <h6 class="mb-1 mb-sm-2 mb-lg-3">{{ $description }}</h6>
+                    <h6 class="blog-details-description">{{ $description }}</h6>
 
                     @if($likes > 1)
                         <p class="mb-1 mb-sm-2 mb-lg-3">{{ $likes }} likes</p>

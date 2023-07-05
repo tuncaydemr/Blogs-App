@@ -11878,8 +11878,12 @@ textarea.form-control-lg {
   .like {
     margin-bottom: 0;
   }
-  .blogs-details {
+  .blogs-details-btn {
     padding: 0;
+  }
+  .blog-details-title {
+    margin: 10px 0;
+    font-size: 0.875rem;
   }
 }
 .bi-hand-thumbs-up-fill {
