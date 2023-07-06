@@ -11,7 +11,7 @@
 
         <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4" style="height: 80vh;">
             <div class="row blog-create">
-                <h2 class="mb-5 text-center text-white"><ins>Blog Create</ins></h2>
+                <h2 class="mb-5 text-center text-white">Blog Create</h2>
                 <div class="col-12">
                     <div class="mb-3">
                         <label for="title" class="form-label text-white">Title</label>
