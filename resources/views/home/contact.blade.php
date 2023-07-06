@@ -16,7 +16,7 @@
             </div>
         </section>
         <section>
-            <div class="container bg-dark rounded-4">
+            <div class="container bg-dark rounded-4 mb-5">
                 <div class="row">
                     <div class="col-8 d-flex flex-column justify-content-center my-3 mx-auto">
                         <h1 class="text-center my-5 text-white">Contact Us</h1>
@@ -47,6 +47,9 @@
                                     <label for="" class="form-label text-white">Message</label>
                                     <textarea class="form-control" name="" id="" rows="7"></textarea>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <button type="submit" class="btn btn-primary my-5 w-25 mx-auto py-2 px-4">Submit</button>
                             </div>
                         </form>
                     </div>
