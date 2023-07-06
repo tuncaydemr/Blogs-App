@@ -19,4 +19,8 @@ $(() => {
             $(this).addClass("active border-bottom border-4")
         }
     })
+
+    if ($(".card-description h6").hasClass("text-truncate")) {
+        
+    }
 })
