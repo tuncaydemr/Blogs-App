@@ -15,6 +15,15 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center my-5 form">
+                        <h1>Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 @endsection
 
