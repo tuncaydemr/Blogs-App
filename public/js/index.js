@@ -20,13 +20,11 @@ $(() => {
         }
     });
 
-    let descriptionMore = $('.card-description h6 a');
+    let descriptionMore = $(".card-description h6 a");
 
     if ($('.card-description h6').hasClass('text-truncate')) {
         descriptionMore.addClass('d-block');
-        descriptionMore.removeClass('d-none');
     }else {
         descriptionMore.addClass('d-none');
-        descriptionMore.removeClass('d-block');
     }
 });
