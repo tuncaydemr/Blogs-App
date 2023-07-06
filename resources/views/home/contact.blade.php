@@ -35,7 +35,7 @@
                                 <div class="mb-3 col-6">
                                     <label for="phone" class="form-label text-white">Phone</label>
                                     <input type="tel" name="phone" id="phone" class="form-control"
-                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="10" minlength="10">
+                                    pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" maxlength="10" minlength="10">
                                 </div>
                                 <div class="mb-3 col-6">
                                     <label for="" class="form-label text-white">Subject</label>
