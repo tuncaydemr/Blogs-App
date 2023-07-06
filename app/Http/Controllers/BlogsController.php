@@ -81,7 +81,7 @@ class BlogsController extends Controller
 
         $number->save();
 
-        return redirect()->to('/blogs/index');
+        return redirect()->to('/blogs/home');
     }
 
     /**
