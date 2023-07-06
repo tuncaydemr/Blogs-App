@@ -31,9 +31,21 @@
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                             </div>
-                            <div class="mb-3 col-4">
-                              <label for="" class="form-label">Name</label>
-                              <input type="text" name="" id="" class="form-control">
+                            <div class="row">
+                                <div class="mb-3 col-6">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mt-3">
+                                    <label for="" class="form-label">Message</label>
+                                    <textarea class="form-control" name="" id="" rows="7"></textarea>
+                                </div>
                             </div>
                         </form>
                     </div>
