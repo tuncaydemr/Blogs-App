@@ -27,17 +27,17 @@
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label">Name</label>
+                                    <label for="" class="form-label">Email</label>
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label">Name</label>
+                                    <label for="" class="form-label">Phone</label>
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label">Name</label>
+                                    <label for="" class="form-label">Subject</label>
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                             </div>
