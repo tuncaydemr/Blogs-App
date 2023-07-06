@@ -17,7 +17,6 @@
                     <h4 class="card-title">{{ $title }}</h4>
                     <div class="card-description">
                         <h6 class="text-truncate">{{ $description }}</h6>
-                        <a href="" class="more text-decoration-none">More...</a>
                     </div>
 
                     @if($likes > 1)
