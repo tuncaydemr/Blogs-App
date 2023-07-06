@@ -19,12 +19,4 @@ $(() => {
             $(this).addClass('active border-bottom border-4');
         }
     });
-
-    let descriptionMore = $(".card-description h6 a");
-
-    if ($('.card-description h6').hasClass('text-truncate')) {
-        descriptionMore.addClass('d-block');
-    }else {
-        descriptionMore.addClass('d-none');
-    }
 });
