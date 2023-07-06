@@ -13,7 +13,7 @@
                 <div class="col-12 col-md-4">
                         <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start">
                 </div>
-                <div class="col-8 col-md-6 d-flex flex-column justify-content-between py-3 py-md-0">
+                <div class="col-8 col-md-6 d-flex flex-column justify-content-evenly py-3 py-md-0">
                     <h4 class="card-title">{{ $title }}</h4>
                     <div class="card-description">
                         <h6 class="text-truncate">{{ $description }}</h6>
