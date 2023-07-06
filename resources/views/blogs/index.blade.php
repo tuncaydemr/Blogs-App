@@ -68,7 +68,7 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('sass/main.scss') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 @endpush
 
 @push('cdn')
