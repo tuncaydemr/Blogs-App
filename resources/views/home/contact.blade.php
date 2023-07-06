@@ -16,34 +16,34 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container bg-dark rounded-4">
                 <div class="row">
                     <div class="col-8 d-flex flex-column justify-content-center my-3 mx-auto">
-                        <h1 class="text-center mb-4">Contact Us</h1>
+                        <h1 class="text-center my-5 text-white">Contact Us</h1>
                         <form action="" method="GET">
                             <div class="row">
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label">Name</label>
+                                    <label for="" class="form-label text-white">Name</label>
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label">Email</label>
+                                    <label for="" class="form-label text-white">Email</label>
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label">Phone</label>
+                                    <label for="" class="form-label text-white">Phone</label>
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label">Subject</label>
+                                    <label for="" class="form-label text-white">Subject</label>
                                     <input type="text" name="" id="" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 mt-3">
-                                    <label for="" class="form-label">Message</label>
+                                    <label for="" class="form-label text-white">Message</label>
                                     <textarea class="form-control" name="" id="" rows="7"></textarea>
                                 </div>
                             </div>
