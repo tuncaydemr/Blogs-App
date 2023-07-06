@@ -15,10 +15,8 @@
                 </div>
                 <div class="col-8 col-md-6 d-flex flex-column justify-content-evenly py-3 py-md-0">
                     <h4 class="card-title">{{ $title }}</h4>
-                    <div class="card-description">
-                        <h6 class="text-truncate">{{ $description }}</h6>
-                    </div>
-
+                    <h6 class="card-description">{{ $description }}</h6>
+                    
                     @if($likes > 1)
                         <p class="like">{{ $likes }} likes</p>
                     @elseif ($likes === 1)
