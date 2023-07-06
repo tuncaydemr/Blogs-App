@@ -41,28 +41,20 @@
             }
         }
     }
-
-    .card-title {
-        font-size: $font-size-lg;
-    }
 }
 
 // Small up
 
 @media (min-width: 768px) {
-    .card-title,
-    .card-description,
-    .like {
-        margin: 4px 0;
-    }
-
     .card-title {
-        font-size: $font-size-base;
+        font-size: $font-family-base;
+        margin: 6px 0 0 0;
     }
 
     .text-truncate,
     .like,
     .more {
+        margin: 0 0 6px 0;
         font-size: $font-size-sm;
     }
 }

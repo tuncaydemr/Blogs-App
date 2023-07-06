@@ -11888,22 +11888,16 @@ textarea.form-control-lg {
   .navbar .container .modal {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   }
-  .card-title {
-    font-size: 1.25rem;
-  }
 }
 @media (min-width: 768px) {
-  .card-title,
-  .card-description,
-  .like {
-    margin: 4px 0;
-  }
   .card-title {
-    font-size: 1rem;
+    font-size: var(--bs-font-sans-serif);
+    margin: 6px 0 0 0;
   }
   .text-truncate,
   .like,
   .more {
+    margin: 0 0 6px 0;
     font-size: 0.875rem;
   }
 }
