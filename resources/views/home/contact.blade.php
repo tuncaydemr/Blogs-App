@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-8 d-flex flex-column justify-content-center my-3 mx-auto">
                         <h1 class="text-center my-5 text-white">Contact Us</h1>
-                        <form action="" method="GET">
+                        <form action="" method="GET" novalidate>
                             <div class="row">
                                 <div class="mb-3 col-6">
                                     <label for="name" class="form-label text-white">Name</label>
