@@ -11896,7 +11896,7 @@ textarea.form-control-lg {
   .card-title,
   .card-description,
   .like {
-    margin: 6px 0;
+    margin: 8px 0 4px 0;
   }
 }
 @media (min-width: 992px) {
