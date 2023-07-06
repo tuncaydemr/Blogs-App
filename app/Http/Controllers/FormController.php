@@ -26,7 +26,7 @@ class FormController extends Controller
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
 
-        return redirect()->to('/blogs/index');
+        return redirect()->to('/blogs/home');
     }
 
     public function sortByRate(Request $request)
