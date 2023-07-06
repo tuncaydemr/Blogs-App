@@ -18,7 +18,7 @@
         <section>
             <div class="container bg-dark rounded-4 mb-5">
                 <div class="row">
-                    <div class="col-8 d-flex flex-column justify-content-center my-3 mx-auto">
+                    <div class="col-11 col-md-8 d-flex flex-column justify-content-center my-3 mx-auto">
                         <h1 class="text-center my-5 text-white">Contact Us</h1>
                         <form action="" method="GET" novalidate>
                             <div class="row">
