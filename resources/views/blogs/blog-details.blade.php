@@ -10,7 +10,7 @@
 
         <div class="card my-4">
             <div class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                         <img src="{{ asset('img/' . $image) }}" alt="Image" class="img-fluid rounded-start">
                 </div>
                 <div class="col-8 col-md-6 d-flex flex-column justify-content-between py-3 py-md-0">
@@ -27,11 +27,11 @@
 
 
                 </div>
-                <div class="col-4 col-md-3 d-flex flex-column align-items-center justify-content-center">
-                    <p>
+                <div class="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center">
+                    <p class="m-1">
                         <a href="{{ route('blogs.edit', ['id' => $id]) }}" class="btn btn-primary px-4 py-2">Edit</a>
                     </p>
-                    <p>
+                    <p class="m-1">
                         <a href="{{ route('blogs.delete', ['id' => $id]) }}" class="btn btn-danger px-3 py-2">Delete</a>
                     </p>
                 </div>
