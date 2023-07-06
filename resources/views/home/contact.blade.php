@@ -44,8 +44,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 mt-3">
-                                    <label for="" class="form-label text-white">Message</label>
-                                    <textarea class="form-control" name="" id="" rows="7"></textarea>
+                                    <label for="message" class="form-label text-white">Message</label>
+                                    <textarea class="form-control" name="message" id="message" rows="7"></textarea>
                                 </div>
                             </div>
                             <div class="row">
