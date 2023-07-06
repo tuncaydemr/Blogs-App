@@ -59,7 +59,7 @@
                                 Like
                             </button>
                         </a>
-                        <a href="/blogs/{{ $blog['id'] }}" class="btn btn-success blogs-details-btn">Details</a>
+                        <a href="{{ route('blogs.details', ['id' => $blog['id']]) }}" class="btn btn-success blogs-details-btn">Details</a>
                     </div>
                 </div>
             </div>
