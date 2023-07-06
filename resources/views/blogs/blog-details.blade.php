@@ -15,7 +15,8 @@
                 </div>
                 <div class="col-8 col-md-6 d-flex flex-column justify-content-between py-3 py-md-0">
                     <h4 class="card-title">{{ $title }}</h4>
-                    <h6 class="card-description">{{ $description }}</h6>
+                    <h6 class="card-description text-truncate">{{ $description }}</h6>
+                    <a>More...</a>
 
                     @if($likes > 1)
                         <p class="like">{{ $likes }} likes</p>
