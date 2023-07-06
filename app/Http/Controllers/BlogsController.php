@@ -93,6 +93,6 @@ class BlogsController extends Controller
 
         Blogs::where('id', $id)->delete();
 
-        return redirect()->to('/blogs/index');
+        return redirect()->to('/blogs/home');
     }
 }
