@@ -18,8 +18,14 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-center my-5 form">
-                        <h1>Contact Us</h1>
+                    <div class="col-8 d-flex flex-column justify-content-center my-3 mx-auto">
+                        <h1 class="text-center mb-4">Contact Us</h1>
+                        <form action="" method="GET">
+                            <div class="mb-3">
+                              <label for="" class="form-label">Name</label>
+                              <input type="text" name="" id="" class="form-control">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
