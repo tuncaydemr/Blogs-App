@@ -11873,6 +11873,7 @@ textarea.form-control-lg {
     padding-bottom: 10px;
   }
   .card-description,
+  .text-truncate,
   .like,
   .more {
     font-size: 1rem;
@@ -11897,6 +11898,7 @@ textarea.form-control-lg {
     margin: 6px 0 0 0;
   }
   .card-description,
+  .text-truncate,
   .like,
   .more {
     margin: 0 0 6px 0;
@@ -11912,6 +11914,7 @@ textarea.form-control-lg {
     font-size: 1.25rem;
   }
   .card-description,
+  .text-truncate,
   .like,
   .more {
     font-size: 1rem;
@@ -11925,7 +11928,8 @@ textarea.form-control-lg {
   .card-title {
     font-size: 1.5rem;
   }
-  .card-description {
+  .card-description,
+  .text-truncate {
     font-size: 1.25rem;
   }
   .like,

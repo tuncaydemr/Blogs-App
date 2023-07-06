@@ -17,6 +17,7 @@
     }
 
     .card-description,
+    .text-truncate,
     .like,
     .more {
         font-size: $font-size-base;
@@ -54,6 +55,7 @@
     }
 
     .card-description,
+    .text-truncate,
     .like,
     .more {
         margin: 0 0 6px 0;
@@ -74,6 +76,7 @@
     }
 
     .card-description,
+    .text-truncate,
     .like,
     .more {
         font-size: $font-size-base;
@@ -92,7 +95,8 @@
         font-size: $font-size-base * 1.5;
     }
 
-    .card-description {
+    .card-description,
+    .text-truncate {
         font-size: $font-size-base * 1.25;
     }
 
