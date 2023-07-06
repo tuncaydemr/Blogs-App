@@ -11918,7 +11918,6 @@ textarea.form-control-lg {
 @media (min-width: 1400px) {
   .card-title {
     font-size: 1.5rem;
-    padding-bottom: 10px;
   }
   .text-truncate {
     font-size: 1.25rem;
