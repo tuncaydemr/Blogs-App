@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center my-5">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24532.794599935532!2d-105.00186320145498!3d39.77110361451773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7911c3c8d1ab%3A0xa636654edbb0b5b1!2sNorth%20Denver%2C%20Denver%2C%20Colorado%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1688650863948!5m2!1str!2str" width="800" height="600" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24532.794599935532!2d-105.00186320145498!3d39.77110361451773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7911c3c8d1ab%3A0xa636654edbb0b5b1!2sNorth%20Denver%2C%20Denver%2C%20Colorado%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1688650863948!5m2!1str!2str" width="1200" height="600" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,17 @@
                     <div class="col-8 d-flex flex-column justify-content-center my-3 mx-auto">
                         <h1 class="text-center mb-4">Contact Us</h1>
                         <form action="" method="GET">
-                            <div class="mb-3">
+                            <div class="row">
+                                <div class="mb-3 col-6">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="mb-3 col-4">
                               <label for="" class="form-label">Name</label>
                               <input type="text" name="" id="" class="form-control">
                             </div>
