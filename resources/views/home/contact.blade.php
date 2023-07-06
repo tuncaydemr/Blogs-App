@@ -23,18 +23,19 @@
                         <form action="" method="GET">
                             <div class="row">
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label text-white">Name</label>
-                                    <input type="text" name="" id="" class="form-control">
+                                    <label for="name" class="form-label text-white">Name</label>
+                                    <input type="text" name="name" id="name" class="form-control">
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label text-white">Email</label>
-                                    <input type="text" name="" id="" class="form-control">
+                                    <label for="email" class="form-label text-white">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label text-white">Phone</label>
-                                    <input type="text" name="" id="" class="form-control">
+                                    <label for="phone" class="form-label text-white">Phone</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control"
+                                    pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}">
                                 </div>
                                 <div class="mb-3 col-6">
                                     <label for="" class="form-label text-white">Subject</label>
