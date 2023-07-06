@@ -77,7 +77,7 @@
                 <div id="signUp" class="modal fade">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content p-3">
-                            <form action="">
+                            <form action="" method="POST">
                                 <div class="modal-header">
                                     <h3>Sign Up</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
