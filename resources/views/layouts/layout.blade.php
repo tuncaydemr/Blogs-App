@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container">
-                <a href="/" class="navbar-brand">
+                <a href="{{ route('home') }}" class="navbar-brand">
                     <img src="{{ asset('img/FOGO.png') }}" class="img-fluid" alt="FOGO" width="100" height="100">
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
