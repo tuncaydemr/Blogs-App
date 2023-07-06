@@ -2,7 +2,7 @@
     font-size: $font-size-base;
 }
 
-// Small
+// Small down
 
 @media (max-width: 767.98px) {
     .card-title,
@@ -30,7 +30,7 @@
     }
 }
 
-// Medium
+// Medium down
 
 @media (max-width: 991.98px) {
     .navbar {
@@ -47,11 +47,15 @@
     }
 }
 
+// Small up
+
 @media (min-width: 768px) {
     .card-title {
         margin: 16px 0;
     }
 }
+
+// Medium up 
 
 @media (min-width: 992px) {
     .blog-edit {
