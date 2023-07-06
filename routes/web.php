@@ -23,6 +23,6 @@ Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/{id}/like', 'like')->name('blogs.like');
 });
 
-Route::put('/blogs/{id}', [FormController::class, 'submitForm']);
+Route::put('/blogs/{id}', [FormController::class, 'submitForm'])->name('blogs.edit.submitForm');
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');
 Route::get('/blogs/sort', [FormController::class, 'sortByRate'])->name('sortByRate');
