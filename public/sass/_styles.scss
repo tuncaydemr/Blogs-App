@@ -2,6 +2,11 @@
     font-size: $font-size-base;
 }
 
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
 // Small down
 
 @media (max-width: 767.98px) {
@@ -69,7 +74,6 @@
 
     .card-title {
         font-size: $font-size-lg;
-        padding-bottom: 10px;
     }
 
     .text-truncate,
