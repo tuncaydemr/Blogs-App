@@ -10,13 +10,13 @@ $(() => {
         }
     })
 
-    let navActive = $(".nav-link");
+    let navActive = $(".nav-link")
 
-    let currentPageUrl = window.location.href;
+    let currentPageUrl = window.location.href
 
     navActive.each(function () {
         if ($(this).attr("href") === currentPageUrl) {
-            $(this).addClass("active border-bottom border-4");
+            $(this).addClass("active border-bottom border-4")
         }
-    });
-});
+    })
+})
