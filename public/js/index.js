@@ -20,9 +20,13 @@ $(() => {
         }
     });
 
+    let descriptionMore = $('.card-description h6 a');
+
     if ($('.card-description h6').hasClass('text-truncate')) {
-        $('.card-description h6 a').addClass('d-block');
+        descriptionMore.addClass('d-block');
+        descriptionMore.removeClass('d-none');
     }else {
-        $('.card-description h6 a').addClass('d-block');
+        descriptionMore.addClass('d-none');
+        descriptionMore.removeClass('d-block');
     }
 });
