@@ -31,14 +31,6 @@
     }
 }
 
-// Small and Medium
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-}
-
-
-
 // Medium down
 
 @media (max-width: 991.98px) {
@@ -85,6 +77,8 @@
         font-size: $font-size-base;
     }
 }
+
+// XXL up
 
 @media (min-width: 1400px) {
     .card-title {
