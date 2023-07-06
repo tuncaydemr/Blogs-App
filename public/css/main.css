@@ -11873,7 +11873,8 @@ textarea.form-control-lg {
     padding-bottom: 10px;
   }
   .text-truncate,
-  .like {
+  .like,
+  .more {
     font-size: 1rem;
   }
   .blogs-details-btn {
@@ -11904,5 +11905,27 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .blog-edit {
     width: 50%;
+  }
+  .card-title {
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+  }
+  .text-truncate,
+  .like,
+  .more {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .card-title {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+  .text-truncate {
+    font-size: 1.25rem;
+  }
+  .like,
+  .more {
+    font-size: 1rem;
   }
 }

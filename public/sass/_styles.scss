@@ -17,7 +17,8 @@
     }
 
     .text-truncate,
-    .like {
+    .like,
+    .more {
         font-size: $font-size-base;
     }
 
@@ -64,5 +65,32 @@
 @media (min-width: 992px) {
     .blog-edit {
         width: 50%;
+    }
+
+    .card-title {
+        font-size: $font-size-lg;
+        padding-bottom: 10px;
+    }
+
+    .text-truncate,
+    .like,
+    .more {
+        font-size: $font-size-base;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card-title {
+        font-size: $font-size-base * 1.5;
+        padding-bottom: 10px;
+    }
+
+    .text-truncate {
+        font-size: $font-size-base * 1.25;
+    }
+
+    .like,
+    .more {
+        font-size: $font-size-base;
     }
 }
