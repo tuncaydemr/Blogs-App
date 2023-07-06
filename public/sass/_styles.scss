@@ -66,7 +66,7 @@
 @media (min-width: 992px) {
     .blog-edit,
     .blog-create {
-        width: 50%;
+        width: 60%;
     }
 
     .card-title {
@@ -83,6 +83,11 @@
 // XXL up
 
 @media (min-width: 1400px) {
+    .blog-edit,
+    .blog-create {
+        width: 50%;
+    }
+
     .card-title {
         font-size: $font-size-base * 1.5;
     }
