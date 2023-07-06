@@ -11880,7 +11880,8 @@ textarea.form-control-lg {
   .blogs-details-btn {
     padding: 0;
   }
-  .blog-edit {
+  .blog-edit,
+  .blog-create {
     width: 80%;
   }
 }
@@ -11903,7 +11904,8 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
-  .blog-edit {
+  .blog-edit,
+  .blog-create {
     width: 50%;
   }
   .card-title {
