@@ -38,8 +38,8 @@
                                     pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" maxlength="10" minlength="10">
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label for="" class="form-label text-white">Subject</label>
-                                    <input type="text" name="" id="" class="form-control">
+                                    <label for="subject" class="form-label text-white">Subject</label>
+                                    <input type="text" name="subject" id="subject" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
