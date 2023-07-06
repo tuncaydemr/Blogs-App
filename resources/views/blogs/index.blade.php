@@ -53,7 +53,7 @@
                     </div>
 
                     <div class="col-4 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center">
-                        <a href="/blogs/{{ $blog['id'] }}/like">
+                        <a href="{{ route('blogs.like', ['id' => $blog['id']]) }}">
                             <button type="button" class="btn btn-primary py-1 mb-3">
                                 <i class="bi bi-hand-thumbs-up-fill"></i>
                                 Like
