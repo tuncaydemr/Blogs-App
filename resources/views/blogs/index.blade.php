@@ -18,13 +18,10 @@
                 </form>
             </div>
             <div class="col-4 col-md-3 my-2 p-0">
-                <form action="{{ route('sortByRate') }}" class="d-flex" method="GET">
-                    <select class="form-select" name="sortBy" id="sortBy">
-                        <option value="asc">Sort By</option>
-                        <option value="desc">Top Rated</option>
-                    </select>
-                    <button type="submit" class="btn btn-outline-primary">Sort</button>
-                </form>
+                <select class="form-select" name="sortBy" id="sortBy">
+                    <option value="asc">Sort By</option>
+                    <option value="desc">Top Rated</option>
+                </select>
             </div>
         </div>
     </div>
