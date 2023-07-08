@@ -57,7 +57,7 @@ class BlogsController extends Controller
      */
     public function show(int $id)
     {
-        $blog = Blogs::find($id);
+        $blog = Blogs::findOrFail($id);
 
         return view('blogs.blog-details', $blog);
     }
