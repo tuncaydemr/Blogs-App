@@ -34,7 +34,7 @@ class FormController extends Controller
         $sort = $request->input('sortBy', 'asc');
 
 
-        $blogs = Blogs::orderBy('likes', $sort)->get();
+        $blogs = Blogs::orderBy($sort)->get();
 
 
         return view('blogs.index', compact('blogs'));
