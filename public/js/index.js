@@ -21,16 +21,4 @@ $(() => {
             $(this).addClass('active border-bottom border-4');
         }
     });
-
-    $('#sortBy').change(() => {
-        let selectedOption = $(this).val();
-
-        $.ajax({
-            url: '{{ route("sortByRate") }}',
-            type: "GET",
-            data: {
-                sortBy: selectedOption,
-            },
-        });
-    });
 });
