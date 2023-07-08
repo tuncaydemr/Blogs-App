@@ -37,6 +37,6 @@ class FormController extends Controller
         $blogs = Blogs::orderBy($sort)->get();
 
 
-        return view('blogs.index', compact('blogs'));
+        return redirect()->to('/blogs/home');
     }
 }
