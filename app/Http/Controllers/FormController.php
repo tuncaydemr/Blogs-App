@@ -31,7 +31,7 @@ class FormController extends Controller
 
     public function sortByRate(Request $request)
     {
-        $sort = $request->input('sort_option');
+        $sort = $request->input('sortBy');
 
         $blogs = Blogs::orderBy($sort)->get();
 
