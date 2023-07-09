@@ -31,7 +31,7 @@ $(() => {
             if (count > 60) {
                 $("#more").addClass("d-none");
             } else {
-                $("#more").removeClass("d-none");
+                $("#more").addClass("d-block");
             }
         }
     });
