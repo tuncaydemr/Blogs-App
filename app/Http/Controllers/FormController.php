@@ -14,11 +14,15 @@ class FormController extends Controller
         $title = $request->input('title');
         $description = $request->input('description');
 
-        $image = $request->file('image');
-        $imageExtension = $image->hashName();
-        $newImage = $image->store('img', 'public');
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageExtension = $image->hashName();
+            $newImage = $image->store('img', 'public');
 
-        File::move($image, $newImage);
+            File::move($image, $newImage);
+        }
+
+        $imageExtension = "";
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
 
