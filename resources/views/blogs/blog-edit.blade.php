@@ -26,6 +26,7 @@
                     <div class="mb-3">
                         <label for="image" class="form-label text-white">Image</label>
                         <input class="form-control" type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
+                        <input type="hidden" name="old_image" value="{{ $image }}">
                     </div>
                     <div class="w-100 d-flex justify-content-center mt-5">
                         <button type="submit" class="btn btn-primary w-50 p-3">Edit</button>
