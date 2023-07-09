@@ -1,5 +1,3 @@
-const { ajax } = require("jquery");
-
 $(() => {
     let checkbox = $('#active');
     let label = $('label[for="active"]');
@@ -22,10 +20,17 @@ $(() => {
         }
     });
 
-    $('#description').on('keyup input', () => {
+    // $('#description').keyup('textarea', () => {
+    //     let text = $(this).val();
+    //     let count = text.length;
+
+    //     $('#letterCount').text(count);
+    // })
+
+    $("#description").on("input", function () {
         let text = $(this).val();
         let count = text.length;
 
-        $('#letterCount').text(count);
-    })
+        $("#letterCount").text(count);
+    });
 });
