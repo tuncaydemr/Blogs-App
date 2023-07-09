@@ -23,11 +23,8 @@ class FormController extends Controller
         }
 
         if (empty($request->hasFile('image'))) {
-            $images = Blogs::all();
-
-            foreach ($images as $image) {
-                $imageExtension = $image->image;
-            }
+            $images = Blogs::where('image', $imageExtension)->get();
+            $imageExtension = $images;
         }
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
