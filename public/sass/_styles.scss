@@ -2,6 +2,10 @@
     font-size: $font-size-base;
 }
 
+.d-none {
+    display: none;
+}
+
 // Small down
 
 @media (max-width: 767.98px) {

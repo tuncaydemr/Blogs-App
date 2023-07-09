@@ -29,4 +29,13 @@ $(() => {
             $("#letterCount").text(count + '/' + maxLength);
         }
     });
+
+    let text = $('#description').val();
+    let count = text.length;
+
+    if (count > 60) {
+        $('#more').addClass('d-none');
+    } else {
+        $("#more").removeClass("d-none");
+    }
 });
