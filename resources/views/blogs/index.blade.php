@@ -39,7 +39,7 @@
                         <h4 class="card-title">{{ $blog['title'] }}</h4>
                         <div class="card-description">
                             <h6 class="text-truncate">{{ $blog['description'] }}</h6>
-                            <a href="" class="more text-decoration-none d-none">More...</a>
+                            <a href="" class="more text-decoration-none">More...</a>
                         </div>
 
                         @if($blog['likes'] > 1)
