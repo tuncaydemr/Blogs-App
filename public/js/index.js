@@ -20,17 +20,12 @@ $(() => {
         }
     });
 
-    // $('#description').keyup('textarea', () => {
-    //     let text = $(this).val();
-    //     let count = text.length;
-
-    //     $('#letterCount').text(count);
-    // })
-
-    $("#description").on("input", function () {
+    $("#description").on('input', function () {
         let text = $(this).val();
-        let count = text.length;
 
-        $("#letterCount").text(count);
+        if (typeof text === "string") {
+            let count = text.length;
+            $("#letterCount").text(count);
+        }
     });
 });
