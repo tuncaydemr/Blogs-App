@@ -21,4 +21,11 @@ $(() => {
             $(this).addClass('active border-bottom border-4');
         }
     });
+
+    $('#description').on('keyup input', () => {
+        let text = $(this).val();
+        let count = text.length;
+
+        $('#letterCount').text(count);
+    })
 });
