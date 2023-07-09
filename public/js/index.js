@@ -22,10 +22,11 @@ $(() => {
 
     $("#description").on('input', function () {
         let text = $(this).val();
+        let maxLength = 100;
 
         if (typeof text === "string") {
             let count = text.length;
-            $("#letterCount").text(count);
+            $("#letterCount").text(count + '/' + maxLength);
         }
     });
 });
