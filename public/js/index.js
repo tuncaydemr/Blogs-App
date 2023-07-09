@@ -27,12 +27,6 @@ $(() => {
         if (typeof text === "string") {
             let count = text.length;
             $("#letterCount").text(count + '/' + maxLength);
-
-            if (count > 60) {
-                $("#more").addClass("d-none");
-            } else {
-                $("#more").addClass("d-block");
-            }
         }
     });
 });
