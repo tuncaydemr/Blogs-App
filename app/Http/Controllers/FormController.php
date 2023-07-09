@@ -21,6 +21,10 @@ class FormController extends Controller
             $newImage = $image->store('img', 'public');
 
             File::move($image, $newImage);
+
+            if ($oldImage = $request->input('old_image')) {
+                Storage::disk('public')->delete($oldImage);
+            }
         } else {
             $imageExtension = $request->input('old_image');
         }
