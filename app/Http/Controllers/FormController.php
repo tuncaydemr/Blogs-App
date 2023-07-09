@@ -22,8 +22,6 @@ class FormController extends Controller
             File::move($image, $newImage);
         }
 
-        $request->validate(['image' => 'required']);
-
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
 
         return redirect()->to('/blogs/home');
