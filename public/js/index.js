@@ -22,7 +22,7 @@ $(() => {
 
     $("#description").on('input', function () {
         let text = $(this).val();
-        let maxLength = 100;
+        let maxLength = 200;
 
         if (typeof text === "string") {
             let count = text.length;
