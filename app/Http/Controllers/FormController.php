@@ -20,8 +20,10 @@ class FormController extends Controller
             $newImage = $image->store('img', 'public');
 
             File::move($image, $newImage);
-        } else {
-            $imageExtension = Blogs::where('image')->get();
+        }else {
+            $images = Blogs::all();
+
+            $imageExtension = $images['image'];
         }
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
