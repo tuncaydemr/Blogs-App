@@ -22,9 +22,12 @@ class FormController extends Controller
             File::move($image, $newImage);
         }
 
-        if (empty($request->file('image'))) {
-            $image = $request->file('image');
-            $imageExtension = Blogs::where('image', $image)->get();
+        if (empty($request->hasFile('image'))) {
+            $images = Blogs::all();
+
+            foreach ($images as $image) {
+                $imageExtension = $image->image;
+            }
         }
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
