@@ -29,4 +29,12 @@ $(() => {
             $("#letterCount").text(count + '/' + maxLength);
         }
     });
+
+    let textTruncate = $('.text-truncate').val();
+
+    if (textTruncate.length > 60) {
+        $('.more').addClass('d-none');
+    } else {
+        $('.more').removeClass('d-none');
+    }
 });
