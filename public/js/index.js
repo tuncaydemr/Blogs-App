@@ -25,8 +25,14 @@ $(() => {
         let maxLength = 100;
 
         if (typeof text === "string") {
-            let count = text.length;
+            var count = text.length;
             $("#letterCount").text(count + '/' + maxLength);
+        }
+
+        if (count > maxLength) {
+            $('#letterCount').addClass('error');
+        } else {
+            $("#letterCount").removeClass("error");
         }
     });
 });

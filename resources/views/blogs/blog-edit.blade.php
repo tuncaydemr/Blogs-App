@@ -21,7 +21,7 @@
                     <div class="mb-3">
                         <label for="description" class="form-label text-white">Description</label>
                         <textarea class="form-control" name="description" id="description">{{ $description }}</textarea>
-                        <p id="letterCount" class="text-white text-end">0</p>
+                        <p id="letterCount" class="text-white text-end"></p>
                     </div>
                     <div class="mb-3">
                         <label for="image" class="form-label text-white">Image</label>
