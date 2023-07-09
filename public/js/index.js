@@ -27,16 +27,12 @@ $(() => {
         if (typeof text === "string") {
             let count = text.length;
             $("#letterCount").text(count + '/' + maxLength);
+
+            if (count > 60) {
+                $(".more").addClass("d-none");
+            } else {
+                $(".more").removeClass("d-none");
+            }
         }
     });
-
-    let textTruncate = $('.text-truncate').val();
-
-    if (typeof textTruncate === 'string') {
-        if (textTruncate.length > 60) {
-            $(".more").addClass("d-none");
-        } else {
-            $(".more").removeClass("d-none");
-        }
-    }
 });

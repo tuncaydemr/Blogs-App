@@ -38,7 +38,7 @@
                     <div class="col-8 col-md-4 col-lg-5 d-flex flex-column justify-content-evenly py-3 py-md-0">
                         <h4 class="card-title">{{ $blog['title'] }}</h4>
                         <div class="card-description">
-                            <h6 class="text-truncate">{{ $blog['description'] }}</h6>
+                            <h6 class="text-truncate" id="description">{{ $blog['description'] }}</h6>
                             <a href="" class="more text-decoration-none">More...</a>
                         </div>
 
