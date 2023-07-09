@@ -25,11 +25,8 @@ class FormController extends Controller
             if ($oldImage = $request->input('old_image')) {
                 Storage::disk('public')->delete($oldImage);
             }
-        }
-
-        if (empty($request->hasFile('image'))) {
-            $images = Blogs::where('image', $imageExtension)->get();
-            $imageExtension = $images;
+        } else {
+            $imageExtension = $request->input('old_image');
         }
 
         Blogs::where('id', $id)->update(['title' => $title, 'description' => $description, 'image' => $imageExtension]);
