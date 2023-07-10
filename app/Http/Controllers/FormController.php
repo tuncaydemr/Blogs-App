@@ -38,7 +38,7 @@ class FormController extends Controller
         return response()->json($blogs);
     }
 
-    public function singUp(Request $request)
+    public function signUp(Request $request)
     {
         $fullName = $request->input('name');
         $email = $request->input('email');
