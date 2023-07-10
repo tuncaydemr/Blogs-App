@@ -100,6 +100,7 @@
                                 </div>
 
                                 <div class="modal-footer">
+                                    <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#signUp">Sign In</a>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary">Sign Up</button>
                                 </div>
