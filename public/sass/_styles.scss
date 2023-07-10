@@ -6,6 +6,12 @@
     user-select: none;
 }
 
+.modal-footer {
+    a {
+        cursor: pointer;
+    }
+}
+
 // Small down
 
 @media (max-width: 767.98px) {

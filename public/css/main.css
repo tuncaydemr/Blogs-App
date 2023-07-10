@@ -11866,6 +11866,10 @@ textarea.form-control-lg {
   user-select: none;
 }
 
+.modal-footer a {
+  cursor: pointer;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,
