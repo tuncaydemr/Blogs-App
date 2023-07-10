@@ -38,8 +38,15 @@ class FormController extends Controller
         return response()->json($blogs);
     }
 
-    public function singIn()
+    public function singIn(Request $request)
     {
-        
+        $email = $request->input('email');
+        $pass = $request->input('pass');
+
+        $request->validate(['email' => 'required', 'password' => 'required']);
+
+        Blogs::insert(['email' => $email, 'password' => $pass]);
+
+        return redirect()->to('/blogs/home');
     }
 }
