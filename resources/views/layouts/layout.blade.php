@@ -54,6 +54,9 @@
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
+                                        @error('description')
+                                            <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                        @enderror
                                     </div>
                                     <div class="mb-3">
                                         <label for="pass" class="form-label">Password</label>
