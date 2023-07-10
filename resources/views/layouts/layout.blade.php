@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
 
-                                <div class="modal-footer d-flex justify-content-between">
+                                <div class="modal-footer">
                                     <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signUp">Sign Up</a>
                                     <div>
                                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
