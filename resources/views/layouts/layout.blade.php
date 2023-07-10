@@ -66,10 +66,12 @@
                                     </div>
                                 </div>
 
-                                <div class="modal-footer">
+                                <div class="modal-footer d-flex justify-content-between">
                                     <a href="" class="text-decoration-none">Sign Up</a>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                    <div>
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Sign In</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
