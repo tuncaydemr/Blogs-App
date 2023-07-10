@@ -46,8 +46,7 @@
                         <div class="modal-content p-3">
                             <form action="{{ route('signin') }}" method="POST">
                                 @csrf
-                                @method('PUT')
-                                
+
                                 <div class="modal-header">
                                     <h3>Sign In</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -83,6 +82,8 @@
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
                             <form action="{{ route('signup') }}" method="POST">
+                                @csrf
+                                
                                 <div class="modal-header">
                                     <h3>Sign Up</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
