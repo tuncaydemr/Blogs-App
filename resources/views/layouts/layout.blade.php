@@ -67,12 +67,10 @@
                                 </div>
 
                                 <div class="modal-footer d-flex justify-content-between">
-                                    <div class="row">
-                                        <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signUp">Sign Up</a>
+                                    <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signUp">Sign Up</a>
 
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Sign In</button>
-                                    </div>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
                                 </div>
                             </form>
                         </div>
