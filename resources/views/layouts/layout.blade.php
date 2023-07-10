@@ -83,6 +83,7 @@
                         <div class="modal-content p-3">
                             <form action="{{ route('signup') }}" method="POST">
                                 @csrf
+                                @method('PUT')
                                 
                                 <div class="modal-header">
                                     <h3>Sign Up</h3>
