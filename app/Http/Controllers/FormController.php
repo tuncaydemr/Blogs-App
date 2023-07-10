@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blogs;
+use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -46,7 +47,7 @@ class FormController extends Controller
 
         $request->validate(['email' => 'required', 'password' => 'required']);
 
-        Blogs::insert(['full_name' => $fullName,'email' => $email, 'password' => $pass]);
+        Users::insert(['full_name' => $fullName,'email' => $email, 'password' => $pass]);
 
         return redirect()->to('/blogs/home');
     }
