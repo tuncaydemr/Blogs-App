@@ -34,14 +34,9 @@
                 </div>
                 <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
                     <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
-                        <li class="nav-item me-3">
+                        <li class="nav-item">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
                                 Sign in
-                            </button>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUp">
-                                Sign up
                             </button>
                         </li>
                     </ul>
