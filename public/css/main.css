@@ -11862,6 +11862,10 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 
+* {
+  user-select: none;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,
