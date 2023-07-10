@@ -81,10 +81,9 @@
                 <div id="signUp" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
-                            <form action="{{ route('signup') }}" method="POST">
+                            <form action="{{ route('signup') }}" method="GET">
                                 @csrf
-                                @method('PUT')
-                                
+
                                 <div class="modal-header">
                                     <h3>Sign Up</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
