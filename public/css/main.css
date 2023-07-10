@@ -11866,10 +11866,6 @@ textarea.form-control-lg {
   user-select: none;
 }
 
-.modal-footer {
-  display: flex;
-  justify-content: space-between;
-}
 .modal-footer a {
   cursor: pointer;
 }
