@@ -40,6 +40,6 @@ class FormController extends Controller
 
     public function singIn()
     {
-
+        
     }
 }
