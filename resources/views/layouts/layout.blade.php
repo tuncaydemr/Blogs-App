@@ -67,7 +67,7 @@
                                 </div>
 
                                 <div class="modal-footer d-flex justify-content-between">
-                                    <a href="" class="text-decoration-none">Sign Up</a>
+                                    <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signUp">Sign Up</a>
                                     <div>
                                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                         <button type="submit" class="btn btn-primary">Sign In</button>
