@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Blogs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
 
 class FormController extends Controller
 {
@@ -37,5 +36,10 @@ class FormController extends Controller
         $blogs = Blogs::orderBy($sort)->get();
 
         return response()->json($blogs);
+    }
+
+    public function singIn()
+    {
+
     }
 }
