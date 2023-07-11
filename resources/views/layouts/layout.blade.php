@@ -81,7 +81,7 @@
                 <div id="signUp" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
-                            <form action="{{ route('signup') }}" method="GET">
+                            <form action="{{ route('signup', ['id' => $id]) }}" method="GET">
                                 @csrf
 
                                 <div class="modal-header">

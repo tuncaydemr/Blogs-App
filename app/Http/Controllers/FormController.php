@@ -39,6 +39,13 @@ class FormController extends Controller
         return response()->json($blogs);
     }
 
+    public function layout(int $id)
+    {
+        $users = Users::find($id);
+
+        return view('layouts.layout', $users);
+    }
+
     public function signUp(Request $request)
     {
         $fullName = $request->input('name');
