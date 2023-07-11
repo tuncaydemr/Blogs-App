@@ -52,7 +52,7 @@ class FormController extends Controller
         $email = $request->input('email');
         $pass = $request->input('pass');
 
-        $request->validate(['full_name' => 'required', 'email' => 'required', 'password' => 'required']);
+        $request->validate(['username' => 'required', 'email' => 'required', 'password' => 'required']);
 
         Users::insert(['full_name' => $fullName,'email' => $email, 'password' => $pass]);
 
