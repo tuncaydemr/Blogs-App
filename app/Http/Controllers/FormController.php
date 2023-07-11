@@ -47,7 +47,7 @@ class FormController extends Controller
 
         $request->validate(['full_name' => 'required', 'email' => 'required', 'password' => 'required']);
 
-        // Users::insert(['full_name' => $fullName,'email' => $email, 'password' => $pass]);
+        Users::insert(['full_name' => $fullName,'email' => $email, 'password' => $pass]);
 
         return redirect()->to('/blogs/home');
     }
