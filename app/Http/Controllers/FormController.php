@@ -48,13 +48,13 @@ class FormController extends Controller
 
     public function signUp(Request $request)
     {
-        $fullName = $request->input('name');
+        $userName = $request->input('name');
         $email = $request->input('email');
         $pass = $request->input('pass');
 
         $request->validate(['username' => 'required', 'email' => 'required', 'password' => 'required']);
 
-        Users::insert(['full_name' => $fullName,'email' => $email, 'password' => $pass]);
+        Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
 
         return redirect()->to('/blogs/home');
     }
