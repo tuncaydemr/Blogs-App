@@ -22,7 +22,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label text-white">Description</label>
-                        <textarea class="form-control" name="description" id="description"></textarea>
+                        <textarea class="form-control" name="description" id="description" maxlength="200"></textarea>
+                        <p id="letterCount" class="text-white text-end"></p>
                         @error('description')
                             <div class="text-white mt-1">{{ ucwords($message) }}</div>
                         @enderror
