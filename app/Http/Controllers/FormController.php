@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blogs;
+use App\Models\User;
 use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -52,7 +53,7 @@ class FormController extends Controller
             'password' => 'required'
         ]);
 
-        Users::create($validated);
+        User::create($validated);
 
         // Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
 
