@@ -55,7 +55,7 @@ class BlogsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(int $id)
+    public function show($id)
     {
         $blog = Blogs::findOrFail($id);
 
