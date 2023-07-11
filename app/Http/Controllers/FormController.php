@@ -8,7 +8,9 @@ use App\Models\User;
 use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class FormController extends Controller
 {
@@ -47,13 +49,17 @@ class FormController extends Controller
         // $email = $request->input('email');
         // $pass = $request->input('pass');
 
-        $validated = $request->validate([
+        Validator::make($request->all(), [
             'username' => 'required',
-            'email' => 'required',
-            'password' => 'required'
-        ]);
+            'email' => 'required|email',
+            'password' => 'required|confirmed'
+        ])->validate();
 
-        User::create($validated);
+        User::create([
+            'username' => $request->input('name'),
+            'email' => $request->input('email'),
+            'password' => Hash::make($request->input('pass'))
+        ]);
 
         // Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
 
