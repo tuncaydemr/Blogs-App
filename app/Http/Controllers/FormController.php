@@ -7,6 +7,7 @@ use App\Models\Blogs;
 use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Session;
 
 class FormController extends Controller
 {
@@ -41,13 +42,22 @@ class FormController extends Controller
 
     public function signUp(Request $request)
     {
-        $userName = $request->input('name');
-        $email = $request->input('email');
-        $pass = $request->input('pass');
 
-        $request->validate(['username' => 'required', 'email' => 'required', 'password' => 'required']);
+        $users = Users::all();
 
-        Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
+        foreach($users as $user) {
+            $username = $user->username;
+
+            Session::put('username', $username);
+            
+            $userName = $request->input('name');
+            $email = $request->input('email');
+            $pass = $request->input('pass');
+
+            $request->validate(['username' => 'required', 'email' => 'required', 'password' => 'required']);
+
+            Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
+        }
 
         return redirect()->to('/blogs/home');
     }
