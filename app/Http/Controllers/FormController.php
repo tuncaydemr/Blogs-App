@@ -52,9 +52,11 @@ class FormController extends Controller
             'password' => 'required'
         ]);
 
+        Users::create($validated);
+
         // Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
 
-        // return redirect()->to('/blogs/home');
+        return redirect()->to('/blogs/home');
 
 
     }
