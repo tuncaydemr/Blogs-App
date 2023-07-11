@@ -82,7 +82,6 @@
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
                             <form action="{{ route('signup') }}" method="GET">
-                                @csrf
 
                                 <div class="modal-header">
                                     <h3>Sign Up</h3>
