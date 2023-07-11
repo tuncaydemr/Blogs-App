@@ -26,8 +26,8 @@ Route::controller(BlogsController::class)->group(function () {
 Route::controller(FormController::class)->group(function () {
     Route::put('/blogs/{id}', 'submitForm')->name('blogs.edit.submitForm');
     Route::get('/blogs/sort', 'sortByRate')->name('sortByRate');
-    Route::post('/blogs/signin', 'signIn')->name('signin');
-    Route::post('/blogs/signup', 'signUp')->name('signup');
+    Route::post('/signin', 'signIn')->name('signin');
+    Route::post('/signup', 'signUp')->name('signup');
 });
 
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blogs;
-use App\Models\User;
 use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -45,26 +44,18 @@ class FormController extends Controller
 
     public function signUp(Request $request)
     {
-        // $userName = $request->input('name');
-        // $email = $request->input('email');
-        // $pass = $request->input('pass');
-
-        Validator::make($request->all(), [
-            'username' => 'required',
+        $request->validate([
+            'username' => 'required|string',
             'email' => 'required|email',
-            'password' => 'required|confirmed'
-        ])->validate();
-
-        User::create([
-            'username' => $request->input('name'),
-            'email' => $request->input('email'),
-            'password' => Hash::make($request->input('password'))
+            'password' => 'required|min:8'
         ]);
 
-        // Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
+        Users::insert([
+            'username' => $request->username,
+            'email' => $request->email,
+            'password' => $request->password
+        ]);
 
         return redirect()->to('/blogs/home');
-
-
     }
 }
