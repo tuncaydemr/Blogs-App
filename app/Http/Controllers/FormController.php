@@ -58,7 +58,7 @@ class FormController extends Controller
         User::create([
             'username' => $request->input('name'),
             'email' => $request->input('email'),
-            'password' => Hash::make($request->input('pass'))
+            'password' => Hash::make($request->input('password'))
         ]);
 
         // Users::insert(['username' => $userName,'email' => $email, 'password' => $pass]);
