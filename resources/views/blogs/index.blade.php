@@ -1,5 +1,3 @@
-@if (Session::has('email'))
-
 @extends('layouts.layout')
 
 @section('title')
