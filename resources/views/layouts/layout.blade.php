@@ -1,4 +1,5 @@
 @if (Session::has('email'))
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
