@@ -70,7 +70,6 @@ class FormController extends Controller
         $hashPassword = Hash::make($password);
 
         $request->validate([
-            'username' => 'required|string',
             'email' => 'required|email',
             'password' => 'required|min:8'
         ]);
