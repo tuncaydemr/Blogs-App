@@ -1,3 +1,5 @@
+@if (Session::has('username'))
+
 @extends('layouts.layout')
 
 @section('title')
@@ -5,10 +7,6 @@
 @endsection
 
 @section('content')
-
-{{-- @if (Session::has('username'))
-
-@endif --}}
 
     <div class="container">
         <div class="row">
@@ -73,6 +71,8 @@
     @endforeach
 
 @endsection
+
+@endif
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
