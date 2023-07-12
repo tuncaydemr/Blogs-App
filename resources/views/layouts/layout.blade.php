@@ -61,9 +61,9 @@
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label for="pass" class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="pass" id="pass">
-                                        @error('pass')
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password">
+                                        @error('password')
                                             <div class="text-white mt-1">{{ ucwords($message) }}</div>
                                         @enderror
                                     </div>
