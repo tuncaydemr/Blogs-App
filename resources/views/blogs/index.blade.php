@@ -72,8 +72,6 @@
 
 @endsection
 
-@endif
-
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 @endpush
