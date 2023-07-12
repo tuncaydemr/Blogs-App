@@ -51,9 +51,9 @@ class FormController extends Controller
         ]);
 
         Users::insert([
-            'username' => $request->input('username'),
-            'email' => $request->input('email'),
-            'password' => $request->input('password')
+            'username' => $request->username,
+            'email' => $request->email,
+            'password' => $request->password
         ]);
 
         return redirect()->to('/blogs/home');
