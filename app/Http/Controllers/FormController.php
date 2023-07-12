@@ -44,6 +44,8 @@ class FormController extends Controller
 
     public function signUp(Request $request)
     {
+        $password = $request->password;
+
         $request->validate([
             'username' => 'required|string',
             'email' => 'required|email',
@@ -53,7 +55,7 @@ class FormController extends Controller
         Users::insert([
             'username' => $request->username,
             'email' => $request->email,
-            'password' => $request->password
+            'password' => $request->Hash::make($password)
         ]);
 
         return redirect()->to('/blogs/home');
