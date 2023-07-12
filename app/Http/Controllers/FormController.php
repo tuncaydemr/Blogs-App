@@ -46,6 +46,8 @@ class FormController extends Controller
     {
         $password = $request->password;
 
+        $hashPassword = Hash::make($password);
+
         $request->validate([
             'username' => 'required|string',
             'email' => 'required|email',
@@ -55,7 +57,7 @@ class FormController extends Controller
         Users::insert([
             'username' => $request->username,
             'email' => $request->email,
-            'password' => $request->Hash::make($password)
+            'password' => $request->$hashPassword
         ]);
 
         return redirect()->to('/blogs/home');
