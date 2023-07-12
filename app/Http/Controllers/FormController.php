@@ -65,7 +65,8 @@ class FormController extends Controller
 
     public function signIn(Request $request)
     {
-        $dbEmail = Users::where('email')->get();
+        $email = $request->email;
+        $dbEmail = Users::where('email', $email)->get();
 
         Session::put('email', $dbEmail);
 
@@ -73,6 +74,8 @@ class FormController extends Controller
             'email' => 'required|email',
             'password' => 'required|min:8'
         ]);
+
+        
 
 
 
