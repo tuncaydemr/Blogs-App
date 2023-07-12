@@ -1,4 +1,4 @@
-@if (Session::has('username'))
+@if (Session::has('email'))
 
 @extends('layouts.layout')
 
