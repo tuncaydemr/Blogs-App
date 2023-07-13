@@ -49,7 +49,7 @@
 
                                 <div class="modal-header">
                                     <h3>Sign In</h3>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" id="modalCloseButton"></button>
                                 </div>
 
                                 <div class="modal-body">
