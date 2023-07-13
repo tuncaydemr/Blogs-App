@@ -118,14 +118,22 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" name="email" id="email">
+                                        <input type="email" class="form-control
+                                            @error('email')
+                                                is-invalid
+                                            @enderror
+                                        " name="email" id="email">
                                         @error('email')
                                             <div class="mt-1">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="password" id="password">
+                                        <input type="password" class="form-control
+                                            @error('password')
+                                                is-invalid
+                                            @enderror
+                                        " name="password" id="password">
                                         @error('password')
                                             <div class="mt-1">{{ ucfirst($message) }}</div>
                                         @enderror
