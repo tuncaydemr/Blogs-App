@@ -79,9 +79,9 @@ class FormController extends Controller
         return redirect()->to('/blogs/home');
     }
 
-    public function logout(Request $request)
+    public function logout()
     {
-        $request->session()->forget('user');
+        Session::forget('user');
 
         return redirect()->to('/home');
     }
