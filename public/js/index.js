@@ -39,10 +39,4 @@ function openModal() {
 
         window.location.href = "/home";
     });
-
-    $("#signIn .modal-footer button").click(function (e) {
-        e.preventDefault();
-
-        window.location.href = "/home";
-    });
 }
