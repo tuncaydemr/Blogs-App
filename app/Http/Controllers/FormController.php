@@ -45,7 +45,6 @@ class FormController extends Controller
     public function signUp(Request $request)
     {
         $password = $request->password;
-
         $hashPassword = Hash::make($password);
 
         $request->validate([
@@ -74,7 +73,7 @@ class FormController extends Controller
             'password' => 'required|min:8'
         ]);
 
-        if($dbEmail && Hash::check($password, $dbEmail->password)) {
+        if($dbEmail && Hash::check($password, $dbEmail->password) ) {
             Session::put('user', $dbEmail);
         }
 
