@@ -68,7 +68,7 @@
                                             @enderror
                                         " name="email" id="email">
                                         @error('email')
-                                            <div class="text-black p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
+                                            <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3 form-group">
@@ -80,11 +80,11 @@
                                         " name="password" id="password">
                                         @error('password')
                                             <div class="invalid-feedback p-2 rounded">
-                                                <div class="text-black">1- Minimum 8 characters.</div>
-                                                <div class="text-black">2- At least one uppercase letter.</div>
-                                                <div class="text-black">3- At least one lowercase letter.</div>
-                                                <div class="text-black">4- At least one number.</div>
-                                                <div class="text-black">5- At least one special character.</div>
+                                                <div class="text-danger">1- Minimum 8 characters.</div>
+                                                <div class="text-danger">2- At least one uppercase letter.</div>
+                                                <div class="text-danger">3- At least one lowercase letter.</div>
+                                                <div class="text-danger">4- At least one number.</div>
+                                                <div class="text-danger">5- At least one special character.</div>
                                             </div>
                                         @enderror
                                     </div>
@@ -119,7 +119,7 @@
                                             @enderror
                                         " name="username" id="username">
                                         @error('username')
-                                            <div class="text-black p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
+                                            <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
@@ -130,7 +130,7 @@
                                             @enderror
                                         " name="email" id="email">
                                         @error('email')
-                                            <div class="text-black p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
+                                            <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
@@ -142,11 +142,11 @@
                                         " name="password" id="password">
                                         @error('password')
                                             <div class="invalid-feedback p-2 rounded">
-                                                <div class="text-black">1- Minimum 8 characters.</div>
-                                                <div class="text-black">2- At least one uppercase letter.</div>
-                                                <div class="text-black">3- At least one lowercase letter.</div>
-                                                <div class="text-black">4- At least one number.</div>
-                                                <div class="text-black">5- At least one special character.</div>
+                                                <div class="text-danger">1- Minimum 8 characters.</div>
+                                                <div class="text-danger">2- At least one uppercase letter.</div>
+                                                <div class="text-danger">3- At least one lowercase letter.</div>
+                                                <div class="text-danger">4- At least one number.</div>
+                                                <div class="text-danger">5- At least one special character.</div>
                                             </div>
                                         @enderror
                                     </div>
