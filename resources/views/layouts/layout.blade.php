@@ -107,25 +107,29 @@
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="username" class="form-label">Username</label>
-                                        <input type="text" class="form-control" name="username" id="username">
+                                        <input type="text" class="form-control
+                                            @error('username')
+                                                is-invalid
+                                            @enderror
+                                        " name="username" id="username">
+                                        @error('username')
+                                            <div class="mt-1">{{ ucfirst($message) }}</div>
+                                        @enderror
                                     </div>
-                                    @error('username')
-                                        <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
+                                        @error('email')
+                                            <div class="mt-1">{{ ucfirst($message) }}</div>
+                                        @enderror
                                     </div>
-                                    @error('email')
-                                        <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
+                                        @error('password')
+                                            <div class="mt-1">{{ ucfirst($message) }}</div>
+                                        @enderror
                                     </div>
-                                    @error('password')
-                                        <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror
                                 </div>
 
                                 <div class="modal-footer">
