@@ -41,7 +41,7 @@ class FormController extends Controller
         return response()->json($blogs);
     }
 
-    public function signUp(Request $request)
+    public function register(Request $request)
     {
         $password = $request->password;
         $hashPassword = Hash::make($password);
@@ -61,7 +61,7 @@ class FormController extends Controller
         return redirect()->to('/blogs/home');
     }
 
-    public function signIn(Request $request)
+    public function login(Request $request)
     {
         $email = $request->email;
         $password = $request->password;
