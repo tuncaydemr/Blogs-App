@@ -47,11 +47,11 @@ class FormController extends Controller
         $hashPassword = Hash::make($password);
 
         $request->validate([
-            'username' => 'required|string',
+            'registerUsername' => 'required|string',
 
-            'email' => 'required|email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
+            'registerEmail' => 'required|email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
 
-            'password' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
+            'registerPassword' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
         Users::insert([
@@ -70,9 +70,9 @@ class FormController extends Controller
         $user = Users::where('email', $email)->first();
 
         $request->validate([
-            'email' => 'required|exists:users,email',
+            'loginEmail' => 'required|exists:users,email',
 
-            'password' => 'required|exists:users,password'
+            'loginPassword' => 'required|exists:users,password'
         ]);
 
         if($user && Hash::check($password, $user->password) ) {
