@@ -47,12 +47,6 @@ class FormController extends Controller
         $hashPassword = Hash::make($password);
 
         $request->validate([
-
-            'email' => 'required|email',
-            'password' => 'required|min:8'
-        ]);
-
-        $request->validate([
             'username' => 'required|string',
 
             'email' => 'required|email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
