@@ -28,6 +28,7 @@ Route::controller(FormController::class)->group(function () {
     Route::get('/blogs/sort', 'sortByRate')->name('sortByRate');
     Route::post('/signin', 'signIn')->name('signin');
     Route::post('/signup', 'signUp')->name('signup');
+    Route::post('/logout', 'logout')->name('logout');
 });
 
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');
