@@ -70,14 +70,22 @@
                                     <div class="mb-3 form-group">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
-                                        @error('password')
+
                                             {{-- <div class="mt-1 text-danger">{{ ucfirst($message) }}</div> --}}
-                                            <ul>
-                                                @foreach ($errors as $error)
-                                                    <li>{{ $error }}</li>
-                                                @endforeach
-                                            </ul>
-                                        @enderror
+                                        @if ($errors)
+
+                                            <div class="text-danger">
+                                                <ul>
+                                                    @foreach ($errors as $error)
+
+                                                        <li>{{ $error }}</li>
+                                                        
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+
+                                        @endif
+
                                     </div>
                                 </div>
 

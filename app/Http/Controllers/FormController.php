@@ -79,7 +79,7 @@ class FormController extends Controller
         if($validator->fails()){
             $errors = $validator->errors()->all();
 
-            return view('layouts.layout', $errors);
+            return view('layouts.layout', ['errors' => $errors]);
         }
 
 
