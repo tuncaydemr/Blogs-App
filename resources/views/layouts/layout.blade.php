@@ -74,22 +74,22 @@
                                 </div>
 
                                 <div class="modal-footer">
-                                    <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#signUp">Sign Up</a>
+                                    <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#register">Register</a>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton2">Close</button>
-                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                    <button type="submit" class="btn btn-primary">Login</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div id="signUp" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div id="register" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
-                            <form action="{{ route('signup') }}" method="POST">
+                            <form action="{{ route('register') }}" method="POST">
                                 @csrf
 
                                 <div class="modal-header">
-                                    <h3>Sign Up</h3>
+                                    <h3>Register</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" id="modalCloseButton3"></button>
                                 </div>
 
@@ -98,6 +98,9 @@
                                         <label for="username" class="form-label">Username</label>
                                         <input type="text" class="form-control" name="username" id="username">
                                     </div>
+                                    @error('username')
+                                        <div class="mt-1">{{ ucwords($message) }}</div>
+                                    @enderror
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
