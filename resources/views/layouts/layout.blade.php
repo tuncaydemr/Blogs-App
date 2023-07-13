@@ -63,9 +63,9 @@
                                     <div class="mb-3 form-group">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
-                                        @error('email')
+                                        {{-- @error('email')
                                             <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
-                                        @enderror
+                                        @enderror --}}
                                     </div>
                                     <div class="mb-3 form-group">
                                         <label for="password" class="form-label">Password</label>
@@ -79,7 +79,7 @@
                                                     @foreach ($errors as $error)
 
                                                         <li>{{ $error }}</li>
-                                                        
+
                                                     @endforeach
                                                 </ul>
                                             </div>
@@ -114,23 +114,23 @@
                                         <label for="username" class="form-label">Username</label>
                                         <input type="text" class="form-control" name="username" id="username">
                                     </div>
-                                    @error('username')
+                                    {{-- @error('username')
                                         <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror
+                                    @enderror --}}
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
                                     </div>
-                                    @error('email')
+                                    {{-- @error('email')
                                         <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror
+                                    @enderror --}}
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
                                     </div>
-                                    @error('password')
+                                    {{-- @error('password')
                                         <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror
+                                    @enderror --}}
                                 </div>
 
                                 <div class="modal-footer">
