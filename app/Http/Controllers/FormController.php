@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Blogs;
 use App\Models\Users;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -78,5 +79,12 @@ class FormController extends Controller
         }
 
         return redirect()->to('/blogs/home');
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        return redirect()->route('login');
     }
 }
