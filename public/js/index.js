@@ -29,4 +29,8 @@ $(() => {
             $("#letterCount").text(count + '/' + maxLength);
         }
     });
+
+    function openModal() {
+        $('#signIn').modal('show');
+    }
 });

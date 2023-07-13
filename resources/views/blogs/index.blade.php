@@ -1,3 +1,11 @@
+@if (!session()->exists('user'))
+  <script>
+    $(document).ready(function() {
+      openModal();
+    });
+  </script>
+@endif
+
 @extends('layouts.layout')
 
 @section('title')
