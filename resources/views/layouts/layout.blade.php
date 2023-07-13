@@ -71,7 +71,7 @@
 
                                 <div class="modal-footer">
                                     <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#signUp">Sign Up</a>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton">Close</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton2">Close</button>
                                     <button type="submit" class="btn btn-primary">Sign In</button>
                                 </div>
                             </form>
@@ -106,7 +106,7 @@
 
                                 <div class="modal-footer">
                                     <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#signIn">Sign In</a>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton">Close</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton2">Close</button>
                                     <button type="submit" class="btn btn-primary">Sign Up</button>
                                 </div>
                             </form>

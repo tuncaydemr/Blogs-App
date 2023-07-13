@@ -34,9 +34,11 @@ $(() => {
 function openModal() {
     $("#signIn").modal("show");
 
-    $("#modalCloseButton").click(function (e) {
-        e.preventDefault();
+    $("#modalCloseButton").click(function () {
+        window.location.href = "/home";
+    });
 
+    $("#modalCloseButton2").click(function () {
         window.location.href = "/home";
     });
 }
