@@ -68,7 +68,7 @@
                                             @enderror
                                         " name="email" id="email">
                                         @error('email')
-                                            <div class="mt-1 text-black p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
+                                            <div class="text-black p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3 form-group">
