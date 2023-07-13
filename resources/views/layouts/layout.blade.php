@@ -71,7 +71,12 @@
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
                                         @error('password')
-                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
+                                            {{-- <div class="mt-1 text-danger">{{ ucfirst($message) }}</div> --}}
+                                            <ul>
+                                                @foreach ($errors as $error)
+
+                                                @endforeach
+                                            </ul>
                                         @enderror
                                     </div>
                                 </div>

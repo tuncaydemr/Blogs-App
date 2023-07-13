@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class FormController extends Controller
 {
@@ -67,13 +68,20 @@ class FormController extends Controller
         $password = $request->password;
         $user = Users::where('email', $email)->first();
 
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'email' =>
             'required|exists:users,email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
-            
+
             'password' =>
             'required|min:8|regex:^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'
         ]);
+
+        if($validator->fails()){
+            $errors = $validator->errors()->all();
+
+            return view('layouts.layout', $errors);
+        }
+
 
         if($user && Hash::check($password, $user->password) ) {
             Session::put('user', $user);
