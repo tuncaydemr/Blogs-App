@@ -19,7 +19,7 @@ class BlogsController extends Controller
         if(Session::has('user')){
             return view('blogs.index', ['blogs' => $blogs]);
         } else {
-            return view('home.index');
+            return view('layouts.layout');
         }
     }
 
