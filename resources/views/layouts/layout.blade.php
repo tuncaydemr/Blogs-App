@@ -81,10 +81,10 @@
                                         @error('password')
                                             <div class="invalid-feedback p-3 rounded">
                                                 <div class="text-black">1- Minimum 8 characters.</div>
-                                                <div class="text-white">2- At least one uppercase letter.</div>
-                                                <div class="text-danger">3- At least one lowercase letter.</div>
-                                                <div class="text-danger">4- At least one number.</div>
-                                                <div class="text-danger">5- At least one special character.</div>
+                                                <div class="text-black">2- At least one uppercase letter.</div>
+                                                <div class="text-black">3- At least one lowercase letter.</div>
+                                                <div class="text-black">4- At least one number.</div>
+                                                <div class="text-black">5- At least one special character.</div>
                                             </div>
                                         @enderror
                                     </div>
