@@ -112,6 +112,9 @@
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
                                     </div>
+                                    @error('password')
+                                        <div class="mt-1">{{ ucwords($message) }}</div>
+                                    @enderror
                                 </div>
 
                                 <div class="modal-footer">
