@@ -83,6 +83,6 @@ class FormController extends Controller
     {
         Session::forget('user');
 
-        return redirect()->to('/home');
+        return redirect()->route('login');
     }
 }
