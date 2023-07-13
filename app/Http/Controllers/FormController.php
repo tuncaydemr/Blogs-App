@@ -68,14 +68,14 @@ class FormController extends Controller
         $email = $request->email;
         $dbEmail = Users::where('email', $email)->get();
 
-        Session::put('email', $dbEmail);
+        Session::put('user', $dbEmail);
 
         $request->validate([
             'email' => 'required|email',
             'password' => 'required|min:8'
         ]);
 
-        
+
 
 
 
