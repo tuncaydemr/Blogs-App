@@ -102,21 +102,21 @@
                                         <input type="text" class="form-control" name="username" id="username">
                                     </div>
                                     @error('username')
-                                        <div class="mt-1">{{ ucwords($message) }}</div>
+                                        <div class="mt-1">{{ ucfirst($message) }}</div>
                                     @enderror
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
                                     </div>
                                     @error('email')
-                                        <div class="mt-1">{{ ucwords($message) }}</div>
+                                        <div class="mt-1">{{ ucfirst($message) }}</div>
                                     @enderror
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
                                     </div>
                                     @error('password')
-                                        <div class="mt-1">{{ ucwords($message) }}</div>
+                                        <div class="mt-1">{{ ucfirst($message) }}</div>
                                     @enderror
                                 </div>
 
