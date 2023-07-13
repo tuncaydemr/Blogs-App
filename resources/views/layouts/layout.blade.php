@@ -79,8 +79,8 @@
                                             @enderror
                                         " name="password" id="password">
                                         @error('password')
-                                            <div class="mt-1 text-danger invalid-feedback">Minimum 8 characters.</div>
-                                            <div class="mt-1 text-danger invalid-feedback">At least one uppercase letter.</div>
+                                            <div class="text-danger invalid-feedback">1- Minimum 8 characters.</div>
+                                            <div class="text-danger invalid-feedback">2- At least one uppercase letter.</div>
                                         @enderror
                                     </div>
                                 </div>

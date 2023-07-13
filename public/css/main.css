@@ -11870,6 +11870,10 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 
+.is-invalid {
+  background: #808080;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,
