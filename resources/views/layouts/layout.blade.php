@@ -79,8 +79,13 @@
                                             @enderror
                                         " name="password" id="password">
                                         @error('password')
-                                            <div class="text-danger invalid-feedback">1- Minimum 8 characters.</div>
-                                            <div class="text-danger invalid-feedback">2- At least one uppercase letter.</div>
+                                            <div class="invalid-feedback p-3 rounded">
+                                                <div class="text-black">1- Minimum 8 characters.</div>
+                                                <div class="text-white">2- At least one uppercase letter.</div>
+                                                <div class="text-danger">3- At least one lowercase letter.</div>
+                                                <div class="text-danger">4- At least one number.</div>
+                                                <div class="text-danger">5- At least one special character.</div>
+                                            </div>
                                         @enderror
                                     </div>
                                 </div>
