@@ -79,7 +79,8 @@
                                             @enderror
                                         " name="password" id="password">
                                         @error('password')
-                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
+                                            <div class="mt-1 text-danger invalid-feedback">Minimum 8 characters.</div>
+                                            <div class="mt-1 text-danger invalid-feedback">At least one uppercase letter.</div>
                                         @enderror
                                     </div>
                                 </div>
