@@ -61,24 +61,24 @@
 
                                 <div class="modal-body">
                                     <div class="mb-3 form-group">
-                                        <label for="email" class="form-label">Email</label>
+                                        <label for="loginEmail" class="form-label">Email</label>
                                         <input type="email" class="form-control
-                                            @error('email')
+                                            @error('loginEmail')
                                                 is-invalid
                                             @enderror
-                                        " name="email" id="email">
-                                        @error('email')
+                                        " name="loginEmail" id="loginEmail">
+                                        @error('loginEmail')
                                             <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3 form-group">
-                                        <label for="password" class="form-label">Password</label>
+                                        <label for="loginPassword" class="form-label">Password</label>
                                         <input type="password" class="form-control
-                                            @error('password')
+                                            @error('loginPassword')
                                                 is-invalid
                                             @enderror
-                                        " name="password" id="password">
-                                        @error('password')
+                                        " name="loginPassword" id="loginPassword">
+                                        @error('loginPassword')
                                             <div class="invalid-feedback p-2 rounded">
                                                 <div class="text-danger">1- Minimum 8 characters.</div>
                                                 <div class="text-danger">2- At least one uppercase letter.</div>
@@ -112,35 +112,35 @@
 
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label for="username" class="form-label">Username</label>
+                                        <label for="registerUsername" class="form-label">Username</label>
                                         <input type="text" class="form-control
-                                            @error('username')
+                                            @error('registerUsername')
                                                 is-invalid
                                             @enderror
-                                        " name="username" id="username">
-                                        @error('username')
+                                        " name="registerUsername" id="registerUsername">
+                                        @error('registerUsername')
                                             <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">Email</label>
+                                        <label for="registerEmail" class="form-label">Email</label>
                                         <input type="email" class="form-control
-                                            @error('email')
+                                            @error('registerEmail')
                                                 is-invalid
                                             @enderror
-                                        " name="email" id="email">
-                                        @error('email')
+                                        " name="registerEmail" id="registerEmail">
+                                        @error('registerEmail')
                                             <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password" class="form-label">Password</label>
+                                        <label for="registerPassword" class="form-label">Password</label>
                                         <input type="password" class="form-control
-                                            @error('password')
+                                            @error('registerPassword')
                                                 is-invalid
                                             @enderror
-                                        " name="password" id="password">
-                                        @error('password')
+                                        " name="registerPassword" id="registerPassword">
+                                        @error('registerPassword')
                                             <div class="invalid-feedback p-2 rounded">
                                                 <div class="text-danger">1- Minimum 8 characters.</div>
                                                 <div class="text-danger">2- At least one uppercase letter.</div>
