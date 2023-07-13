@@ -64,14 +64,14 @@
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
                                         @error('email')
-                                            <div class="mt-1 text-danger">{{ ucwords($message) }}</div>
+                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3 form-group">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password" pattern="[0-9]">
                                         @error('password')
-                                            <div class="mt-1 text-danger">{{ ucwords($message) }}</div>
+                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                 </div>
