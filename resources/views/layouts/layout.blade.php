@@ -38,21 +38,21 @@
                             @if (Session::has('user'))
                                 <a href="{{ route('logout') }}" class="btn btn-primary" role="button">Logout</a>
                             @else
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
-                                    Sign In
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
+                                    Login
                                 </button>
                             @endif
                         </li>
                     </ul>
                 </div>
-                <div id="signIn" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div id="login" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
-                            <form action="{{ route('signin') }}" method="POST">
+                            <form action="{{ route('login') }}" method="POST">
                                 @csrf
 
                                 <div class="modal-header">
-                                    <h3>Sign In</h3>
+                                    <h3>Login</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" id="modalCloseButton"></button>
                                 </div>
 
@@ -109,7 +109,7 @@
                                 </div>
 
                                 <div class="modal-footer">
-                                    <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#signIn">Sign In</a>
+                                    <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#login">Sign In</a>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton4">Close</button>
                                     <button type="submit" class="btn btn-primary">Sign Up</button>
                                 </div>
