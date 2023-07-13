@@ -34,11 +34,27 @@ $(() => {
 function openModal() {
     $("#signIn").modal("show");
 
-    $("#modalCloseButton").click(function () {
-        window.location.href = "/home";
+    // $("#modalCloseButton").click(function () {
+    //     window.location.href = "/home";
+    // });
+
+    $("#modalCloseButton").each(() => {
+        $(this).click(() => {
+            window.location.href = "/home";
+        });
     });
 
-    $("#modalCloseButton2").click(function () {
-        window.location.href = "/home";
-    });
+    
+
+    // $("#modalCloseButton2").click(function () {
+    //     window.location.href = "/home";
+    // });
+
+    // $("#modalCloseButton3").click(function () {
+    //     window.location.href = "/home";
+    // });
+
+    // $("#modalCloseButton4").click(function () {
+    //     window.location.href = "/home";
+    // });
 }

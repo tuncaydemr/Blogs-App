@@ -86,7 +86,7 @@
 
                                 <div class="modal-header">
                                     <h3>Sign Up</h3>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" id="signupModalCloseButton"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" id="modalCloseButton"></button>
                                 </div>
 
                                 <div class="modal-body">
@@ -106,7 +106,7 @@
 
                                 <div class="modal-footer">
                                     <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#signIn">Sign In</a>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="signupModalCloseButton">Close</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton">Close</button>
                                     <button type="submit" class="btn btn-primary">Sign Up</button>
                                 </div>
                             </form>
