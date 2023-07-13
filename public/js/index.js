@@ -34,5 +34,9 @@ $(() => {
 function openModal() {
     $("#signIn").modal("show");
 
-    $('#signIn .modal-header button').removeClass('btn-close');
+    $("#signIn .modal-header button").click(function (e) {
+        e.preventDefault();
+
+        
+    });
 }

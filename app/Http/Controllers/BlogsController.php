@@ -16,7 +16,11 @@ class BlogsController extends Controller
     {
         $blogs = Blogs::all();
 
-        return view('blogs.index', ['blogs' => $blogs]);
+        if(Session::has('user')){
+            return view('blogs.index', ['blogs' => $blogs]);
+        } else {
+            return view('home.index');
+        }
     }
 
     /**
