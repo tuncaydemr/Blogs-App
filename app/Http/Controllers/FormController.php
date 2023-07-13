@@ -66,15 +66,15 @@ class FormController extends Controller
     {
         $email = $request->email;
         $password = $request->password;
-        $dbEmail = Users::where('email', $email)->get();
+        $user = Users::where('email', $email)->first();
 
         $request->validate([
             'email' => 'required|email',
             'password' => 'required|min:8'
         ]);
 
-        if($dbEmail && Hash::check($password, $dbEmail->password) ) {
-            Session::put('user', $dbEmail);
+        if($user && Hash::check($password, $user->password) ) {
+            Session::put('user', $user);
         }
 
         return redirect()->to('/blogs/home');
