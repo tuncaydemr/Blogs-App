@@ -37,6 +37,6 @@ function openModal() {
     $("#signIn .modal-header button").click(function (e) {
         e.preventDefault();
 
-        
+        window.location.href = "/home";
     });
 }
