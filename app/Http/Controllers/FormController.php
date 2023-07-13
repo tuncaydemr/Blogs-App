@@ -68,8 +68,11 @@ class FormController extends Controller
         $user = Users::where('email', $email)->first();
 
         $request->validate([
-            'email' => 'required|exists:users,email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
-            'password' => 'required|min:8|regex:^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'
+            'email' =>
+            'required|exists:users,email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
+            
+            'password' =>
+            'required|min:8|regex:^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'
         ]);
 
         if($user && Hash::check($password, $user->password) ) {
