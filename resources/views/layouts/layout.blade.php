@@ -36,7 +36,11 @@
                     <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
                         <li class="nav-item">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
-                                Sign In
+                                @if (Session::has('user'))
+                                    Sign In
+                                @else
+                                    Giriş yap
+                                @endif
                             </button>
                         </li>
                     </ul>

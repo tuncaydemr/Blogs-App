@@ -66,19 +66,19 @@ class FormController extends Controller
     public function signIn(Request $request)
     {
         $email = $request->email;
+        $password = $request->password;
         $dbEmail = Users::where('email', $email)->get();
-
-        Session::put('user', $dbEmail);
 
         $request->validate([
             'email' => 'required|email',
             'password' => 'required|min:8'
         ]);
 
+        if($dbEmail && Hash::check($password, $dbEmail->password)) {
+            Session::put('user', $dbEmail);
+        }
 
 
 
-
-        return redirect()->to('/blogs/home');
     }
 }
