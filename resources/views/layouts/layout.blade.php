@@ -113,7 +113,7 @@
                                             @enderror
                                         " name="username" id="username">
                                         @error('username')
-                                            <div class="mt-1">{{ ucfirst($message) }}</div>
+                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
@@ -124,7 +124,7 @@
                                             @enderror
                                         " name="email" id="email">
                                         @error('email')
-                                            <div class="mt-1">{{ ucfirst($message) }}</div>
+                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
@@ -135,7 +135,7 @@
                                             @enderror
                                         " name="password" id="password">
                                         @error('password')
-                                            <div class="mt-1">{{ ucfirst($message) }}</div>
+                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                 </div>
