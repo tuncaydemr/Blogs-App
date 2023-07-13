@@ -49,8 +49,7 @@ class FormController extends Controller
         $request->validate([
             'username' => 'required|string',
 
-            'email' =>
-            'required|exists:users,email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix|unique:users',
+            'email' => 'required|exists:users,email|unique:users',
 
             'password' =>
             'required|min:8|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8}$/'
@@ -72,8 +71,7 @@ class FormController extends Controller
         $user = Users::where('email', $email)->first();
 
         $request->validate([
-            'email' =>
-            'required|exists:users,email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
+            'email' => 'required|exists:users,email',
 
             'password' =>
             'required|min:8|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8}$/'
