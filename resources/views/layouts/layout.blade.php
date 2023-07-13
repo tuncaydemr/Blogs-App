@@ -1,5 +1,3 @@
-@if (Session::has('email'))
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,5 +128,3 @@
     @stack('scripts')
 </body>
 </html>
-
-@endif
