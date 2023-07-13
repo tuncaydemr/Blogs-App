@@ -40,7 +40,6 @@
                                     @csrf
                                     <button type="submit">Logout</button>
                                 </form>
-                                {{-- <a href="{{ route('logout') }}" class="btn btn-primary" role="button">Logout</a> --}}
                             @else
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
                                     Login
