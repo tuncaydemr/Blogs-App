@@ -35,9 +35,13 @@
                 <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
                     <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
                         <li class="nav-item">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
-                                Sign In
-                            </button>
+                            @if (Session::has('user'))
+                                <a href="{{ route('logout') }}" class="btn btn-primary" role="button">Logout</a>
+                            @else
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">
+                                    Sign In
+                                </button>
+                            @endif
                         </li>
                     </ul>
                 </div>
