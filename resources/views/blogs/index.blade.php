@@ -92,10 +92,6 @@
         <script>
             $(document).ready(function() {
                 openModal();
-
-                if(window.location.href === '/blogs/home'){
-                    openModal();
-                }
             });
         </script>
     @endif
