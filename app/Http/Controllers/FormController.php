@@ -72,7 +72,7 @@ class FormController extends Controller
             'password' => 'required|min:8'
         ]);
 
-        if($user === $email && Hash::check($password, $user->password) ) {
+        if($user && Hash::check($password, $user->password) ) {
             Session::put('user', $user);
         }
 
