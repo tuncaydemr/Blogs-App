@@ -47,12 +47,17 @@ class FormController extends Controller
         $hashPassword = Hash::make($password);
 
         $request->validate([
+
+            'email' => 'required|email',
+            'password' => 'required|min:8'
+        ]);
+
+        $request->validate([
             'username' => 'required|string',
 
-            'email' => 'required|exists:users,email|unique:users',
+            'email' => 'required|email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
 
-            'password' =>
-            'required|min:8|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8}$/'
+            'password' => 'required|min:8|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
         Users::insert([
@@ -71,7 +76,8 @@ class FormController extends Controller
         $user = Users::where('email', $email)->first();
 
         $request->validate([
-            'email' => 'required|exists:users,email',
+            'email' =>
+            'required|exists:users,email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
 
             'password' =>
             'required|min:8|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8}$/'
