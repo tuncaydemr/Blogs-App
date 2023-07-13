@@ -74,7 +74,7 @@
                                             {{-- <div class="mt-1 text-danger">{{ ucfirst($message) }}</div> --}}
                                             <ul>
                                                 @foreach ($errors as $error)
-
+                                                    <li>{{ $error }}</li>
                                                 @endforeach
                                             </ul>
                                         @enderror
