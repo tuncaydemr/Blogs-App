@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blogs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Session;
 
 class BlogsController extends Controller
 {
@@ -15,7 +16,11 @@ class BlogsController extends Controller
     {
         $blogs = Blogs::all();
 
-        return view('blogs.index', ['blogs' => $blogs]);
+        if(Session::has('user')){
+            return view('blogs.index', ['blogs' => $blogs]);
+        } else {
+            return view('home.index');
+        }
     }
 
     /**
