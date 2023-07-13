@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="mb-3 form-group">
                                         <label for="password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="password" id="password">
+                                        <input type="password" class="form-control" name="password" id="password" pattern="[0-9]">
                                         @error('password')
                                             <div class="mt-1 text-danger">{{ ucwords($message) }}</div>
                                         @enderror

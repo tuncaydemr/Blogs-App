@@ -68,7 +68,7 @@ class FormController extends Controller
         $user = Users::where('email', $email)->first();
 
         $request->validate([
-            'email' => 'required|email',
+            'email' => 'required|exists:users,email',
             'password' => 'required|min:8'
         ]);
 
