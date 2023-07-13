@@ -26,8 +26,8 @@ Route::controller(BlogsController::class)->group(function () {
 Route::controller(FormController::class)->group(function () {
     Route::put('/blogs/{id}', 'submitForm')->name('blogs.edit.submitForm');
     Route::get('/blogs/sort', 'sortByRate')->name('sortByRate');
-    Route::post('/login', 'login')->name('signin');
-    Route::post('/register', 'register')->name('signup');
+    Route::post('/login', 'login')->name('login');
+    Route::post('/register', 'register')->name('register');
     Route::post('/logout', 'logout')->name('logout');
 });
 
