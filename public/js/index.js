@@ -34,7 +34,7 @@ $(() => {
 function openModal() {
     $("#signIn").modal("show");
 
-    $("#signIn .modal-header button").click(function (e) {
+    $("#modalCloseButton").click(function (e) {
         e.preventDefault();
 
         window.location.href = "/home";
