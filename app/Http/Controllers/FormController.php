@@ -77,7 +77,6 @@ class FormController extends Controller
             Session::put('user', $dbEmail);
         }
 
-
-
+        return redirect()->to('/blogs/home');
     }
 }
