@@ -36,10 +36,7 @@
                     <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
                         <li class="nav-item">
                             @if (Session::has('user'))
-                                <form action="{{ route('logout') }}" method="POST">
-                                    @csrf
-                                    <button type="submit">Logout</button>
-                                </form>
+                                <a href="{{ route('logout') }}" class="btn btn-primary" role="button">Logout</a>
                             @else
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
                                     Login
