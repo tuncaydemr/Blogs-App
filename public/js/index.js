@@ -32,7 +32,7 @@ $(() => {
 });
 
 function openModal() {
-    $("#signIn").modal("show");
+    $("#login").modal("show");
 
     $("#modalCloseButton").click(() => {
         window.location.href = "/home";
