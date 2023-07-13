@@ -65,29 +65,16 @@
                                         <input type="email" class="form-control @error('email')
                                             is-invalid
                                         @enderror" name="email" id="email">
-                                        {{-- @error('email')
+                                        @error('email')
                                             <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
-                                        @enderror --}}
+                                        @enderror
                                     </div>
                                     <div class="mb-3 form-group">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
-
-                                            {{-- <div class="mt-1 text-danger">{{ ucfirst($message) }}</div> --}}
-                                        @if ($errors)
-
-                                            <div class="text-danger">
-                                                <ul>
-                                                    @foreach ($errors as $error)
-
-                                                        <li>{{ $error }}</li>
-
-                                                    @endforeach
-                                                </ul>
-                                            </div>
-
-                                        @endif
-
+                                        @error('password')
+                                            <div class="mt-1 text-danger">{{ ucfirst($message) }}</div>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -116,23 +103,23 @@
                                         <label for="username" class="form-label">Username</label>
                                         <input type="text" class="form-control" name="username" id="username">
                                     </div>
-                                    {{-- @error('username')
+                                    @error('username')
                                         <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror --}}
+                                    @enderror
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control" name="email" id="email">
                                     </div>
-                                    {{-- @error('email')
+                                    @error('email')
                                         <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror --}}
+                                    @enderror
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="password" id="password">
                                     </div>
-                                    {{-- @error('password')
+                                    @error('password')
                                         <div class="mt-1">{{ ucfirst($message) }}</div>
-                                    @enderror --}}
+                                    @enderror
                                 </div>
 
                                 <div class="modal-footer">
