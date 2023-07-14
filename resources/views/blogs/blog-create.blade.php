@@ -35,8 +35,8 @@
                             <div class="text-white mt-1">{{ ucwords($message) }}</div>
                         @enderror
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="active" name="active" value="1">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="active" name="active">
                         <label class="form-check-label text-white" for="active">Active</label>
                     </div>
                         @error('active')

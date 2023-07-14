@@ -74,7 +74,7 @@ class FormController extends Controller
         $request->validate([
             'loginEmail' => 'required|exists:users,email',
 
-            'loginPassword' => 'required|exists:users,password'
+            'loginPassword' => 'required'
         ]);
 
         if($user && Hash::check($password, $user->password) ) {
