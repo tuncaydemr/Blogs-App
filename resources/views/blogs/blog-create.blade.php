@@ -37,7 +37,7 @@
                     </div>
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" role="switch" id="active" name="active">
-                        <label class="form-check-label text-white" for="active">Active</label>
+                        <label class="form-check-label text-white" for="active">Disable</label>
                     </div>
                         @error('active')
                             <div class="text-white mt-1">{{ ucwords($message) }}</div>
