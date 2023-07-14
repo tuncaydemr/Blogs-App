@@ -43,7 +43,9 @@ class FormController extends Controller
 
     public function register(Request $request)
     {
-        $password = $request->password;
+        $username = $request->registerUsername;
+        $email = $request->registerEmail;
+        $password = $request->registerPassword;
         $hashPassword = Hash::make($password);
 
         $request->validate([
@@ -55,8 +57,8 @@ class FormController extends Controller
         ]);
 
         Users::insert([
-            'username' => $request->username,
-            'email' => $request->email,
+            'username' => $username,
+            'email' => $email,
             'password' => $hashPassword
         ]);
 
@@ -65,8 +67,8 @@ class FormController extends Controller
 
     public function login(Request $request)
     {
-        $email = $request->email;
-        $password = $request->password;
+        $email = $request->loginEmail;
+        $password = $request->loginPassword;
         $user = Users::where('email', $email)->first();
 
         $request->validate([
