@@ -62,10 +62,6 @@ class FormController extends Controller
             'password' => $hashPassword
         ]);
 
-        if($validator) {
-            return redirect()->route('login');
-        }
-
         return redirect()->to('/blogs/home');
     }
 
