@@ -111,12 +111,8 @@ class FormController extends Controller
             'phone' => $request->phone,
         ];
 
-        Mail::send('emails.welcome', $data, function ($message) use ($data) {
-            $message->to('recipient@example.com')
-            ->subject($data['subject']);
-        });
+        Mail::to(config('mail.from.address'))->send(new MyEmail($data));
 
-        // Redirect back with a success message
         return redirect()->back()->with('success', 'Your message has been sent!');
     }
 }

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome Email</title>
+    <title>{{ $data['subject'] }}</title>
 </head>
 <body>
-    <h1>Welcome to Our Website</h1>
-    <p>Thank you for signing up. We are excited to have you!</p>
+    <h1>{{ $data['subject'] }}</h1>
+    <p>Name: {{ $data['name'] }}</p>
+    <p>Email: {{ $data['email'] }}</p>
+    <p>Message: {{ $data['message'] }}</p>
 </body>
 </html>

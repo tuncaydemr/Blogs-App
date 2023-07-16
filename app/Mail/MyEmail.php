@@ -13,12 +13,21 @@ class MyEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $data;
+
     /**
      * Create a new message instance.
      */
+    public function __construct(array $data)
+    {
+        $this->data = $data;
+    }
+
     public function build()
     {
-        return $this->subject('Welcome to Our Website')->view('emails.welcome');
+        return $this->from($this->data['email'], $this->data['name'])
+        ->subject($this->data['subject'])
+        ->view('emails.welcome', ['data' => $this->data]);
     }
 
     /**
