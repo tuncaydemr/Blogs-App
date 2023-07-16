@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Mail\MyEmail;
 use App\Models\Blogs;
 use App\Models\Users;
 use Illuminate\Http\Request;
@@ -96,6 +97,6 @@ class FormController extends Controller
     {
         $userEmail = $request->email;
 
-        Mail::to($userEmail)->send(MustVerifyEmail);
+        Mail::to($userEmail)->send(new MyEmail());
     }
 }
