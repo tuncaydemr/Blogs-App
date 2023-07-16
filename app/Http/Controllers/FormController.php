@@ -8,6 +8,7 @@ use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
 class FormController extends Controller
@@ -89,5 +90,12 @@ class FormController extends Controller
         Session::forget('user');
 
         return redirect()->to('/home');
+    }
+
+    public function sendEmail(Request $request)
+    {
+        $userEmail = $request->email;
+
+        Mail::to($userEmail)->send(MustVerifyEmail);
     }
 }
