@@ -111,7 +111,7 @@ class FormController extends Controller
             'phone' => $request->phone,
         ];
 
-        Mail::to(config('mail.from.address'))->send(new MyEmail($data));
+        Mail::to('tuncaydemir682@gmail.com')->send(new MyEmail($data));
 
         return redirect()->back()->with('success', 'Your message has been sent!');
     }
