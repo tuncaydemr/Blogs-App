@@ -17,11 +17,20 @@ class MyEmail extends Mailable
 
     /**
      * Create a new message instance.
+     * @param array $data
+     * @return void
      */
+
     public function __construct(array $data)
     {
         $this->data = $data;
     }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
 
     public function build()
     {
