@@ -95,10 +95,28 @@ class FormController extends Controller
 
     public function sendEmail(Request $request)
     {
-        $userEmail = $request->email;
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'subject' => 'required',
+            'message' => 'required',
+            'phone' => 'required',
+        ]);
 
-        Mail::to($userEmail)->send(new MyEmail());
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+            'phone' => $request->phone,
+        ];
 
-        return "Email sent successfully!";
+        Mail::send('emails.contact', $data, function ($message) use ($data) {
+            $message->to('recipient@example.com')
+            ->subject($data['subject']);
+        });
+
+        // Redirect back with a success message
+        return redirect()->back()->with('success', 'Your message has been sent!');
     }
 }
