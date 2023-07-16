@@ -98,5 +98,7 @@ class FormController extends Controller
         $userEmail = $request->email;
 
         Mail::to($userEmail)->send(new MyEmail());
+
+        return "Email sent successfully!";
     }
 }
