@@ -111,7 +111,7 @@ class FormController extends Controller
             'phone' => $request->phone,
         ];
 
-        Mail::send('emails.contact', $data, function ($message) use ($data) {
+        Mail::send('emails.welcome', $data, function ($message) use ($data) {
             $message->to('recipient@example.com')
             ->subject($data['subject']);
         });
