@@ -14,7 +14,7 @@ class BlogsController extends Controller
      */
     public function blogs()
     {
-        $blogs = Blogs::all();
+        $blogs = Blogs::simplePaginate(1);
 
         return view('blogs.index', ['blogs' => $blogs]);
     }

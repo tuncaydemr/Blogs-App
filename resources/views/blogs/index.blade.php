@@ -70,6 +70,10 @@
 
         @endforeach
 
+        <div class="mt-5">
+            {{ $blogs->links() }}
+        </div>
+
     @endsection
 
 @endif
