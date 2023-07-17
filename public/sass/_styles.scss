@@ -12,6 +12,12 @@
     }
 }
 
+nav {
+    .w-5 {
+        display: none;
+    }
+}
+
 // Small down
 
 @media (max-width: 767.98px) {
