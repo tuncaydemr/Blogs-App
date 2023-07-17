@@ -90,9 +90,7 @@ class BlogsController extends Controller
      */
     public function delete(int $id)
     {
-        Blogs::findOrFail($id);
-
-        Blogs::where('id', $id)->delete();
+        Blogs::findOrFail($id)->delete();
 
         return redirect()->to('/blogs/home');
     }
