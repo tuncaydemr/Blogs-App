@@ -14,7 +14,7 @@ class BlogsController extends Controller
      */
     public function blogs()
     {
-        $blogs = Blogs::orderBy('title')->simplePaginate(1);
+        $blogs = Blogs::orderBy('title')->simplePaginate(2);
 
         return view('blogs.index', ['blogs' => $blogs]);
     }
