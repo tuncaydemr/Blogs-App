@@ -71,7 +71,7 @@
         @endforeach
 
         <div class="mt-5">
-            {{ $blogs->links() }}
+            <div class="text-center">{{ $blogs->links() }}</div>
         </div>
 
     @endsection
