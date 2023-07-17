@@ -72,8 +72,8 @@
 
         @endforeach
 
-        <div class="my-5">
-            <div class="text-center">{{ $blogs->links() }}</div>
+        <div class="my-5 d-flex justify-content-center">
+            <p>{{ $blogs->links() }}</p>
         </div>
 
     @endsection
