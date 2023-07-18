@@ -11894,7 +11894,8 @@ nav .w-5 {
     padding: 0;
   }
   .blog-edit,
-  .blog-create {
+  .blog-create,
+  .my-account {
     width: 80%;
   }
 }
@@ -11919,7 +11920,8 @@ nav .w-5 {
 }
 @media (min-width: 992px) {
   .blog-edit,
-  .blog-create {
+  .blog-create,
+  .my-account {
     width: 60%;
   }
   .card-title {
