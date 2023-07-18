@@ -126,7 +126,7 @@ class FormController extends Controller
 
         $hashPassword = Hash::make($password);
 
-        $validator = $req->validate([
+        $req->validate([
             'username' => 'required|string',
 
             'email' => 'required|email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
@@ -136,8 +136,6 @@ class FormController extends Controller
 
         Users::find($id)->update(['username' => $username, 'email' => $email, 'password' => $hashPassword]);
 
-        if($validator) {
-            return redirect()->to('/blogs/home');
-        }
+        return redirect()->to('/blogs/home');
     }
 }
