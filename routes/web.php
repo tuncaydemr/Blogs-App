@@ -11,8 +11,10 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'home')->name('index');
     Route::get('/home', 'home')->name('home');
     Route::get('/contact', 'contact')->name('contact');
-    Route::get('/my-account', 'myAccount')->name('my.account');
+
 });
+
+Route::get('/my-account', 'HomeController@myAccount')->name('my.account');
 
 Route::controller(BlogsController::class)->group(function () {
     Route::get('/blogs/home', 'blogs')->name('blogs');
