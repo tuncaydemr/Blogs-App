@@ -25,6 +25,9 @@
                                     @enderror
 
                                 " id="title" name="title" value="{{ $title }}">
+                            @error('image')
+                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label text-white">Description</label>
@@ -36,6 +39,9 @@
 
                                 " name="description" id="description" maxlength="200">{{ $description }}</textarea>
                             <p id="letterCount" class="text-white text-end"></p>
+                            @error('image')
+                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label text-white">Image</label>
@@ -46,6 +52,9 @@
                                     @enderror
 
                                 " type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
+                            @error('image')
+                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
+                            @enderror
                             <input type="hidden" name="old_image" value="{{ $image }}">
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-5">
