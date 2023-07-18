@@ -32,11 +32,11 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto flex-row justify-content-center justify-content-lg-end w-100 mb-3 mb-lg-0">
-                        @if (Session::has('user'))
-                            <li class="nav-item me-4">
+                        <li class="nav-item me-4">
+                            @if (Session::has('user'))
                                 <a href="{{ route('my.account') }}" class="btn btn-primary" role="button">My Account</a>
-                            </li>
-                        @endif
+                            @endif
+                        </li>
                         <li class="nav-item">
                             @if (Session::has('user'))
                                 <form action="{{ route('logout') }}" method="POST">
