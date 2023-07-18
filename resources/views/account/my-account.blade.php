@@ -10,7 +10,7 @@
 
         @foreach ($users as $user)
 
-            <form action="{{ route('my.account.edit') }}" method="POST" novalidate>
+            <form action="{{ route('my.account.edit', $user->id) }}" method="POST" novalidate>
                 @csrf
 
                 <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 mb-3" style="height: 90vh;">
