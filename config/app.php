@@ -55,11 +55,9 @@ return [
     |
     */
 
-    // http://blogs-app.site/
+    // 'url' => env('APP_URL', 'http://localhost'),
 
-    // http://localhost
-
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://blogs-app.site/'),
 
     'asset_url' => env('ASSET_URL'),
 
