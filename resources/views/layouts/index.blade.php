@@ -19,8 +19,8 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
-                    <ul class="navbar-nav ms-auto flex-row justify-content-center">
+                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4 bg-info">
+                    <ul class="navbar-nav flex-row justify-content-center w-100">
                         <li class="nav-item me-5">
                             <a href="{{ route('home') }}" class="nav-link">Home</a>
                         </li>
@@ -32,8 +32,11 @@
                         </li>
                     </ul>
                 </div>
-                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
-                    <ul class="navbar-nav ms-auto mb-2 flex-row justify-content-center">
+                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4 bg-danger">
+                    <ul class="navbar-nav mb-2 flex-row justify-content-center w-100">
+                        <li class="nav-item">
+                            <a href="{{ route('my.account') }}" class="btn btn-primary" role="button">My Account</a>
+                        </li>
                         <li class="nav-item">
                             @if (Session::has('user'))
                                 <form action="{{ route('logout') }}" method="POST">
@@ -46,6 +49,7 @@
                                 </button>
                             @endif
                         </li>
+
                     </ul>
                 </div>
                 <div id="login" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
