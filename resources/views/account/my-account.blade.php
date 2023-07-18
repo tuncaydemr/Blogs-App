@@ -32,7 +32,7 @@
                         <div class="mb-3">
                             <label for="password" class="form-label text-white">Password</label>
                             <input type="password" class="form-control" id="password" name="password">
-                            @error('image')
+                            @error('password')
                                 <div class="text-white mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
