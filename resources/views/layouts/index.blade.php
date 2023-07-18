@@ -40,7 +40,7 @@
                                     @csrf
                                     <button type="submit" class="btn btn-primary">Logout</button>
                                 </form>
-                                <a href="{{ route('mu.account') }}" class="btn btn-primary" role="button">My Account</a>
+                                <a href="{{ route('my.account') }}" class="btn btn-primary" role="button">My Account</a>
                             @else
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
                                     Login
