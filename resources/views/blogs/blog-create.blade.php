@@ -58,6 +58,7 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 @endpush
 
 @push('cdn')
