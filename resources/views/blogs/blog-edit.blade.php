@@ -38,10 +38,12 @@
                                     @enderror
 
                                 " name="description" id="description" maxlength="200">{{ $description }}</textarea>
-                            <p id="letterCount" class="text-white text-end"></p>
-                            @error('description')
-                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
-                            @enderror
+                            <div class="d-flex justify-content-between">
+                                @error('description')
+                                    <div class="text-danger mt-1 w-100">{{ ucwords($message) }}</div>
+                                @enderror
+                                <p id="letterCount" class="text-white text-end w-100"></p>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label text-white">Image</label>
