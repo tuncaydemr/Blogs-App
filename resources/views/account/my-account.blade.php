@@ -27,7 +27,7 @@
 
                                 " id="username" name="username" value="{{ $user->username }}">
                                 @error('username')
-                                    <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                    <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                                 @enderror
                             </div>
                             <div class="mb-3">
@@ -40,7 +40,7 @@
 
                                 " id="email" name="email" value="{{ $user->email }}">
                                 @error('email')
-                                    <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                    <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                                 @enderror
                             </div>
                             <div class="mb-3">
@@ -53,7 +53,7 @@
 
                                 " id="password" name="password" value="{{ $user->password }}">
                                 @error('password')
-                                    <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                    <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                                 @enderror
                             </div>
                             <div class="w-100 d-flex justify-content-center mt-5">
