@@ -20,7 +20,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="navMenu" class="collapse navbar-collapse py-5 rounded-4">
-                    <ul class="navbar-nav ms-auto flex-row justify-content-end w-100">
+                    <ul class="navbar-nav ms-auto flex-row justify-content-center justify-content-lg-end w-100 mb-5 mb-lg-0">
                         <li class="nav-item me-5">
                             <a href="{{ route('home') }}" class="nav-link">Home</a>
                         </li>
@@ -31,8 +31,8 @@
                             <a href="{{ route('contact') }}" class="nav-link">Contact</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto flex-row justify-content-end w-100">
-                        <li class="nav-item">
+                    <ul class="navbar-nav ms-auto flex-row justify-content-center justify-content-lg-end w-100 mb-3 mb-lg-0">
+                        <li class="nav-item me-4">
                             <a href="{{ route('my.account') }}" class="btn btn-primary" role="button">My Account</a>
                         </li>
                         <li class="nav-item">
