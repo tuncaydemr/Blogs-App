@@ -19,7 +19,7 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4 bg-info">
+                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
                     <ul class="navbar-nav flex-row justify-content-center w-100">
                         <li class="nav-item me-5">
                             <a href="{{ route('home') }}" class="nav-link">Home</a>
@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4 bg-danger">
+                <div id="navMenu" class="collapse navbar-collapse p-5 rounded-4">
                     <ul class="navbar-nav mb-2 flex-row justify-content-center w-100">
                         <li class="nav-item">
                             <a href="{{ route('my.account') }}" class="btn btn-primary" role="button">My Account</a>
