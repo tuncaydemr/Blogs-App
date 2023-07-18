@@ -117,4 +117,17 @@ class FormController extends Controller
 
         return redirect()->back()->with('success', 'Your message has been sent!');
     }
+
+    public function myAccountEdit(Request $req, $id)
+    {
+        $username = $req->username;
+        $email = $req->email;
+        $password = $req->password;
+
+        $hashPassword = Hash::make($password);
+
+        Users::find($id)->update(['username' => $username, 'email' => $email, 'password' => $hashPassword]);
+
+        return redirect()->to('/blogs/home');
+    }
 }
