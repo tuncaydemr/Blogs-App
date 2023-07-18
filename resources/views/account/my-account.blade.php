@@ -17,21 +17,21 @@
                     <div class="col-12">
                         <div class="mb-3">
                             <label for="username" class="form-label text-white">Username</label>
-                            <input type="text" class="form-control" id="username" name="username">
+                            <input type="text" class="form-control" id="username" name="username" value="{{ $users->username }}">
                             @error('username')
                                 <div class="text-white mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label text-white">Email</label>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <input type="email" class="form-control" id="email" name="email" value="{{ $users->email }}">
                             @error('email')
                                 <div class="text-white mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label text-white">Password</label>
-                            <input type="password" class="form-control" id="password" name="password">
+                            <input type="password" class="form-control" id="password" name="password" value="{{ $users->password }}">
                             @error('password')
                                 <div class="text-white mt-1">{{ ucwords($message) }}</div>
                             @enderror
