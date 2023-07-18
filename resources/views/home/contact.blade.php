@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.index')
 
 @section('title')
     Blog Contact
@@ -22,7 +22,7 @@
                         <h1 class="text-center my-5 text-white">Contact Us</h1>
                         <form action="{{ route('send.email') }}" method="POST" novalidate>
                             @csrf
-                            
+
                             <div class="row">
                                 <div class="mb-3 col-6">
                                     <label for="name" class="form-label text-white">Name</label>
