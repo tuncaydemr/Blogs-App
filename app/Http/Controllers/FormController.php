@@ -19,6 +19,11 @@ class FormController extends Controller
         $title = $request->input('title');
         $description = $request->input('description');
 
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageExtension = $image->hashName();

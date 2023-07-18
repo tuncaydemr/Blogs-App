@@ -45,16 +45,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label text-white">Image</label>
-                            <input class="form-control
-
-                                    @error('image')
-                                        is-invalid
-                                    @enderror
-
-                                " type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
-                            @error('image')
-                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
-                            @enderror
+                            <input class="form-control" type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
                             <input type="hidden" name="old_image" value="{{ $image }}">
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-5">
