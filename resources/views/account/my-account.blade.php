@@ -12,7 +12,7 @@
             @csrf
 
             <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 mb-3" style="height: 90vh;">
-                <div class="row blog-create">
+                <div class="row my-account">
                     <h2 class="mb-5 text-center text-white">My Account</h2>
                     <div class="col-12">
                         <div class="mb-3">
