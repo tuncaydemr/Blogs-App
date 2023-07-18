@@ -17,32 +17,56 @@
                     <div class="col-12">
                         <div class="mb-3">
                             <label for="title" class="form-label text-white">Title</label>
-                            <input type="text" class="form-control" id="title" name="title">
+                            <input type="text" class="form-control
+
+                                    @error('title')
+                                        is-invalid
+                                    @enderror
+
+                                " id="title" name="title">
                             @error('title')
-                                <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label text-white">Description</label>
-                            <textarea class="form-control" name="description" id="description" maxlength="200"></textarea>
+                            <textarea class="form-control
+
+                                    @error('description')
+                                        is-invalid
+                                    @enderror
+
+                                " name="description" id="description" maxlength="200"></textarea>
                             <p id="letterCount" class="text-white text-end"></p>
                             @error('description')
-                                <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label text-white">Image</label>
-                            <input class="form-control" type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
+                            <input class="form-control
+
+                                    @error('image')
+                                        is-invalid
+                                    @enderror
+
+                                " type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
                             @error('image')
-                                <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="active" name="active">
+                            <input class="form-check-input
+
+                                    @error('active')
+                                        is-invalid
+                                    @enderror
+
+                                " type="checkbox" role="switch" id="active" name="active">
                             <label class="form-check-label text-white" for="active">Disable</label>
                         </div>
                             @error('active')
-                                <div class="text-white mt-1">{{ ucwords($message) }}</div>
+                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         <div class="w-100 d-flex justify-content-center mt-5">
                             <button type="submit" class="btn btn-primary w-50 p-3">Create</button>
