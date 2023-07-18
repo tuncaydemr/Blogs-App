@@ -18,16 +18,34 @@
                     <div class="col-12">
                         <div class="mb-3">
                             <label for="title" class="form-label text-white">Title</label>
-                            <input type="text" class="form-control" id="title" name="title" value="{{ $title }}">
+                            <input type="text" class="form-control
+
+                                    @error('image')
+                                        is-invalid
+                                    @enderror
+
+                                " id="title" name="title" value="{{ $title }}">
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label text-white">Description</label>
-                            <textarea class="form-control" name="description" id="description" maxlength="200">{{ $description }}</textarea>
+                            <textarea class="form-control
+
+                                    @error('image')
+                                        is-invalid
+                                    @enderror
+
+                                " name="description" id="description" maxlength="200">{{ $description }}</textarea>
                             <p id="letterCount" class="text-white text-end"></p>
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label text-white">Image</label>
-                            <input class="form-control" type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
+                            <input class="form-control
+
+                                    @error('image')
+                                        is-invalid
+                                    @enderror
+
+                                " type="file" id="image" name="image" accept=".png, .jpeg, .jpg">
                             <input type="hidden" name="old_image" value="{{ $image }}">
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-5">
