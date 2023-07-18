@@ -11936,7 +11936,8 @@ nav .w-5 {
 }
 @media (min-width: 1400px) {
   .blog-edit,
-  .blog-create {
+  .blog-create,
+  .my-account {
     width: 50%;
   }
   .card-title {
