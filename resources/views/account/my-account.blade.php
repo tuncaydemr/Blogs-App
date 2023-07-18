@@ -7,8 +7,8 @@
 @if (Session::has('user'))
 
     @section('content')
-    
-        <form action="{{ route('blogs.create') }}" method="POST" novalidate enctype="multipart/form-data">
+
+        <form action="{{ route('my.account.edit') }}" method="POST" novalidate enctype="multipart/form-data">
             @csrf
 
             <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 mb-3" style="height: 90vh;">
