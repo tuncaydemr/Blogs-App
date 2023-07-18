@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Users;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,6 +18,8 @@ class HomeController extends Controller
 
     public function myAccount()
     {
-        return view('account.my-account');
+        $users = Users::all();
+
+        return view('account.my-account', ['users' => $users]);
     }
 }
