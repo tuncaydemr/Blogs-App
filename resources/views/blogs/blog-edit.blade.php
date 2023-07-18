@@ -20,12 +20,12 @@
                             <label for="title" class="form-label text-white">Title</label>
                             <input type="text" class="form-control
 
-                                    @error('image')
+                                    @error('title')
                                         is-invalid
                                     @enderror
 
                                 " id="title" name="title" value="{{ $title }}">
-                            @error('image')
+                            @error('title')
                                 <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
@@ -33,13 +33,13 @@
                             <label for="description" class="form-label text-white">Description</label>
                             <textarea class="form-control
 
-                                    @error('image')
+                                    @error('description')
                                         is-invalid
                                     @enderror
 
                                 " name="description" id="description" maxlength="200">{{ $description }}</textarea>
                             <p id="letterCount" class="text-white text-end"></p>
-                            @error('image')
+                            @error('description')
                                 <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
