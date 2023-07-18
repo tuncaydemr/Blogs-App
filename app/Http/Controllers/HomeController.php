@@ -14,4 +14,9 @@ class HomeController extends Controller
     {
         return view('home.contact');
     }
+
+    public function myAccount()
+    {
+        return view('account.my-account');
+    }
 }
