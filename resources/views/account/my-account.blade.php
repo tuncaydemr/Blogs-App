@@ -37,7 +37,7 @@
                             @enderror
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-5">
-                            <button type="submit" class="btn btn-primary w-50 p-3">Create</button>
+                            <button type="submit" class="btn btn-primary w-50 p-3">Edit</button>
                         </div>
                     </div>
                 </div>
