@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,6 +54,10 @@ return [
     | your application so that it is used when running Artisan tasks.
     |
     */
+
+    // http://blogs-app.site/
+
+    // http://localhost
 
     'url' => env('APP_URL', 'http://localhost'),
 
