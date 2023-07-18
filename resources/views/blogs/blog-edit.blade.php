@@ -37,7 +37,7 @@
                                         is-invalid
                                     @enderror
 
-                                " name="description" id="description" maxlength="200">{{ $description }}</textarea>
+                                " name="description" id="description" maxlength="200" rows="5">{{ $description }}</textarea>
                             <div class="d-flex justify-content-between">
                                 @error('description')
                                     <div class="text-danger mt-1 w-100">{{ ucwords($message) }}</div>
