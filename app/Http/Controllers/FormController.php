@@ -66,7 +66,7 @@ class FormController extends Controller
             'registerPassword' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
-        if($validator && $username && $email && $password) {
+        if($validator) {
             Users::insert([
                 'username' => $username,
                 'email' => $email,
