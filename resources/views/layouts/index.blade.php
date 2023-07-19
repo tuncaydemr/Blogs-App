@@ -158,7 +158,7 @@
                                 <div class="modal-footer">
                                     <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#login">Login</a>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton4">Close</button>
-                                    <button type="submit" id="registerSubmit" class="btn btn-primary">Register</button>
+                                    <button type="submit" class="btn btn-primary">Register</button>
                                 </div>
                             </form>
                         </div>
