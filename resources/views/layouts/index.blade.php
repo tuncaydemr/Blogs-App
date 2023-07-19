@@ -105,12 +105,10 @@
 
                 <form action="{{ route('register') }}" method="POST" novalidate>
                     @csrf
-                    
+
                     <div id="register" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
                         <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                             <div class="modal-content p-3">
-
-
                                 <div class="modal-header">
                                     <h3>Register</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" id="modalCloseButton3"></button>
