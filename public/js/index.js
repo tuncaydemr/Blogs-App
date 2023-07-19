@@ -34,10 +34,6 @@ $(() => {
 function openModal() {
     $("#login").modal("show");
 
-    $('#registerSubmit').click(() => {
-        $("#login").modal("hide");
-    });
-
     $("#modalCloseButton").click(() => {
         window.location.href = "/home";
     });

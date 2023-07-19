@@ -79,7 +79,7 @@ class FormController extends Controller
             ]);
         }
 
-        return redirect()->route('register');
+        return redirect()->to('/blogs/home');
     }
 
     public function login(Request $request)
