@@ -59,9 +59,9 @@ class FormController extends Controller
         $hashPassword = Hash::make($password);
 
         $validator = $request->validate([
-            'registerUsername' => 'required|string',
+            'registerUsername' => 'required|string|unique:users,username',
 
-            'registerEmail' => 'required|email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix',
+            'registerEmail' => 'required|email|regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix|unique:users,email',
 
             'registerPassword' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
@@ -77,6 +77,8 @@ class FormController extends Controller
         } else {
             return back()->with('error', 'Invalid email or password. Please try again.');
         }
+
+
     }
 
     public function login(Request $request)
