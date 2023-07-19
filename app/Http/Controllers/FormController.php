@@ -7,6 +7,7 @@ use App\Mail\MyEmail;
 use App\Models\Blogs;
 use App\Models\Users;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -65,13 +66,17 @@ class FormController extends Controller
             'registerPassword' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
-        Users::insert([
-            'username' => $username,
-            'email' => $email,
-            'password' => $hashPassword
-        ]);
+        if($validator) {
+            Users::insert([
+                'username' => $username,
+                'email' => $email,
+                'password' => $hashPassword
+            ]);
 
-        return redirect()->to('/blogs/home');
+            return redirect()->to('/blogs/home');
+        } else {
+            return back()->with('error', 'Invalid email or password. Please try again.');
+        }
     }
 
     public function login(Request $request)
