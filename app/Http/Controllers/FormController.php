@@ -58,6 +58,11 @@ class FormController extends Controller
         $password = $request->registerPassword;
         $hashPassword = Hash::make($password);
 
+        $user = Users::first();
+
+        $dbUsername = $user->username;
+        $dbEmail = $user->email;
+
         $validator = $request->validate([
             'registerUsername' => 'required|string|unique:users,username',
 
@@ -66,7 +71,7 @@ class FormController extends Controller
             'registerPassword' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
-        if($validator) {
+        if($validator && ($username != $dbUsername) && ($email != $dbEmail)) {
             Users::insert([
                 'username' => $username,
                 'email' => $email,
