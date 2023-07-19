@@ -78,9 +78,9 @@ class FormController extends Controller
                 'password' => $hashPassword
             ]);
 
-            return redirect()->to('/blogs/home');
+            return "Başarılı";
         } else {
-            return back()->with('error');
+            return redirect()->with('error');
         }
     }
 

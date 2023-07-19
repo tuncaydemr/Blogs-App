@@ -102,11 +102,14 @@
                         </div>
                     </div>
                 </div>
-                <div id="register" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
-                    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-                        <div class="modal-content p-3">
-                            <form action="{{ route('register') }}" method="POST" novalidate>
-                                @csrf
+
+                <form action="{{ route('register') }}" method="POST" novalidate>
+                    @csrf
+                    
+                    <div id="register" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                            <div class="modal-content p-3">
+
 
                                 <div class="modal-header">
                                     <h3>Register</h3>
@@ -160,10 +163,10 @@
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton4">Close</button>
                                     <button type="submit" class="btn btn-primary">Register</button>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </nav>
     </header>
