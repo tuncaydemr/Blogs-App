@@ -77,11 +77,9 @@ class FormController extends Controller
                 'email' => $email,
                 'password' => $hashPassword
             ]);
-
-            return "Başarılı";
-        } else {
-            return redirect()->with('error');
         }
+
+        return redirect()->route('register');
     }
 
     public function login(Request $request)

@@ -32,11 +32,11 @@ $(() => {
 });
 
 function openModal() {
-    if($('#registerSubmit')) {
+    $("#login").modal("show");
+
+    $('#registerSubmit').click(() => {
         $("#login").modal("hide");
-    } else {
-        $("#login").modal("show");
-    }
+    });
 
     $("#modalCloseButton").click(() => {
         window.location.href = "/home";
