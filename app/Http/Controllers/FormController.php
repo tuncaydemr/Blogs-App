@@ -77,9 +77,11 @@ class FormController extends Controller
                 'email' => $email,
                 'password' => $hashPassword
             ]);
-        }
 
-        return redirect()->to('/blogs/home');
+            return redirect()->to('/blogs/home');
+        } else {
+            return back()->with('error');
+        }
     }
 
     public function login(Request $request)
