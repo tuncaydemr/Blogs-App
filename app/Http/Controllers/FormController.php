@@ -66,17 +66,15 @@ class FormController extends Controller
             'registerPassword' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
-        if($validator) {
+        if($validator && $username && $email && $password) {
             Users::insert([
                 'username' => $username,
                 'email' => $email,
                 'password' => $hashPassword
             ]);
-
-            return redirect()->to('/blogs/home');
-        } else {
-            return back()->with('error', 'Invalid email or password. Please try again.');
         }
+
+        return redirect()->to('/blogs/home');
     }
 
     public function login(Request $request)
