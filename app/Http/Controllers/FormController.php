@@ -77,8 +77,6 @@ class FormController extends Controller
         } else {
             return back()->with('error', 'Invalid email or password. Please try again.');
         }
-
-
     }
 
     public function login(Request $request)
