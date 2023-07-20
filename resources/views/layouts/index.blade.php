@@ -181,9 +181,7 @@
 
     <main>
         <section>
-            <div class="container mt-3">
-                @yield('content')
-            </div>
+            @yield('content')
         </section>
     </main>
 

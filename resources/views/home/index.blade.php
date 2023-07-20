@@ -5,7 +5,20 @@
 @endsection
 
 @section('content')
-    Home Page
+    <div class="container-fluid my-4">
+        <div class="row">
+            <div class="col-12">
+                <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid opacity-75 rounded-2 z-0 position-relative" alt="Blog Banner" width="100%" style="height: 80vh;">
+            </div>
+            <div class="card w-25 position-absolute z-1 p-4 banner-card">
+                <div class="card-body">
+                    <h3 class="card-title mb-5">Lorem ipsum dolor sit amet</h3>
+                    <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet saepe vitae consequatur labore. Repellat assumenda iste accusamus minima debitis.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('styles')
