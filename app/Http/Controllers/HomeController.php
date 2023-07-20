@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blogs;
 use App\Models\Users;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function home() {
-        return view('home.index');
+    public function home()
+    {
+        $blogs = Blogs::all();
+
+        return view('home.index', ['blogs' => $blogs]);
     }
 
     public function contact()

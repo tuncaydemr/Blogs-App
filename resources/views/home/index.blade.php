@@ -48,6 +48,20 @@
     </div>
 @endsection
 
+@section('content3')
+    <div class="container my-4">
+        <div class="row">
+            <div class="col">
+
+                @foreach ( as )
+
+                @endforeach
+                
+            </div>
+        </div>
+    </div>
+@endsection
+
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
