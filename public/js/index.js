@@ -50,7 +50,3 @@ function openModal() {
         window.location.href = "/home";
     });
 }
-
-function openModal2() {
-    $('#login').modal('show');
-}
