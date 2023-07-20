@@ -67,11 +67,13 @@ class FormController extends Controller
         ]);
 
         if($validator) {
-            $userRegister = Users::insert([
+            Users::insert([
                 'username' => $username,
                 'email' => $email,
                 'password' => $hashPassword
             ]);
+
+            return redirect()-> back()->with('success', 'Congratilatons');
         }
     }
 
