@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid my-4">
+    <div class="mb-4">
         <div class="row blog-banner">
             <div class="col-12">
-                <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid rounded-2" alt="Blog Banner">
+                <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid w-100" alt="Blog Banner">
             </div>
             <div class="card p-4 rounded-4">
                 <div class="card-body">
@@ -22,7 +22,7 @@
 @endsection
 
 @section('content2')
-    <div class="container my-4">
+    <div class="container my-5">
         <div class="row">
             <div class="col social-media py-3">
                 <h3>Social Media</h3>
@@ -49,13 +49,18 @@
 @endsection
 
 @section('content3')
-    <div class="container my-4">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col latest-articles">
+                <h3>Latest Articles</h3>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
 
                 @foreach ($blogs as $blog)
-                
-                    @if ($blog['active'])
+
+                    @if ($blog->active)
 
                         <div class="card my-4">
                             <div class="row">
