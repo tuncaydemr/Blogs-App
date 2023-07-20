@@ -36,10 +36,10 @@
                     <a href="https://www.instagram.com/">
                         <img width="70" height="70" src="https://img.icons8.com/fluency/70/instagram-new.png" alt="instagram"/>
                     </a>
-                    <a href="">
+                    <a href="https://www.twitter.com/">
                         <img width="70" height="70" src="https://img.icons8.com/fluency/70/twitter.png" alt="twitter"/>
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/">
                         <img width="70" height="70" src="https://img.icons8.com/fluency/70/youtube-play.png" alt="youtube"/>
                     </a>
                 </div>
