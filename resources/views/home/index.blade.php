@@ -27,10 +27,10 @@
             <div class="col social-links py-3">
                 <h3>Social Links</h3>
                 <div class="d-flex justify-content-evenly">
-                    <a href="">
+                    <a href="https://www.linkedin.com/">
                         <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
                     </a>
-                    <a href="">
+                    <a href="https://tr-tr.facebook.com/">
                         <img width="70" height="70" src="https://img.icons8.com/fluency/70/facebook-new.png" alt="facebook"/>
                     </a>
                     <a href="">
@@ -40,7 +40,7 @@
                         <img width="70" height="70" src="https://img.icons8.com/fluency/70/twitter.png" alt="twitter"/>
                     </a>
                     <a href="">
-                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
+                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/youtube-play.png" alt="youtube"/>
                     </a>
                 </div>
             </div>
