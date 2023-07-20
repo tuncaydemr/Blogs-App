@@ -11901,11 +11901,10 @@ nav .w-5 {
 }
 .social-links h3, .social-links .h3 {
   text-align: center;
+  margin: 0 0 50px 0;
 }
-.social-links ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+.social-links i {
+  font-size: xx-large;
 }
 
 @media (max-width: 767.98px) {

@@ -26,23 +26,9 @@
         <div class="row">
             <div class="col social-links py-3">
                 <h3>Social Links</h3>
-                <ul>
-                    <li>
-                        <a href="">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="">Youtube</a>
-                    </li>
-                    <li>
-                        <a href="">Pinterest</a>
-                    </li>
-                </ul>
+                <div class="d-flex justify-content-evenly">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+                </div>
             </div>
         </div>
     </div>
