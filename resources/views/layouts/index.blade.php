@@ -38,9 +38,9 @@
                     <ul class="navbar-nav ms-auto flex-row justify-content-center justify-content-lg-end w-100 mb-3 mb-lg-0">
 
                         @if (Session::has('user'))
-                            <li class="nav-item me-4">
+                            {{-- <li class="nav-item me-4">
                                 <a href="{{ route('my.account', ['id' => $userId->id]) }}" class="btn btn-primary" role="button">My Account</a>
-                            </li>
+                            </li> --}}
 
                             <li class="nav-item">
                                 <form action="{{ route('logout') }}" method="POST">
