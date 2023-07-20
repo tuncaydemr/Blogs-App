@@ -27,7 +27,21 @@
             <div class="col social-links py-3">
                 <h3>Social Links</h3>
                 <div class="d-flex justify-content-evenly">
-                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+                    <a href="">
+                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
+                    </a>
+                    <a href="">
+                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/facebook-new.png" alt="facebook"/>
+                    </a>
+                    <a href="">
+                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
+                    </a>
+                    <a href="">
+                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
+                    </a>
+                    <a href="">
+                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
+                    </a>
                 </div>
             </div>
         </div>
