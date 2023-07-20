@@ -1,5 +1,5 @@
 @php
-    $userId = session('user_id');
+    $userId = Session::get('user');
 @endphp
 
 <!DOCTYPE html>
@@ -36,23 +36,24 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto flex-row justify-content-center justify-content-lg-end w-100 mb-3 mb-lg-0">
+
                         @if (Session::has('user'))
                             <li class="nav-item me-4">
-                                <a href="{{ route('my.account') }}" class="btn btn-primary" role="button">My Account</a>
+                                <a href="{{ route('my.account', ['id' => $userId->id]) }}" class="btn btn-primary" role="button">My Account</a>
                             </li>
-                        @endif
-                        <li class="nav-item">
-                            @if (Session::has('user'))
+                            
+                            <li class="nav-item">
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
+
                                     <button type="submit" class="btn btn-primary">Logout</button>
                                 </form>
-                            @else
+                        @else
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
                                     Login
                                 </button>
-                            @endif
-                        </li>
+                            </li>
+                        @endif
                     </ul>
                 </div>
                 <div id="login" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
