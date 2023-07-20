@@ -11896,6 +11896,18 @@ nav .w-5 {
   color: black;
 }
 
+.social-links {
+  text-decoration: underline;
+}
+.social-links h3, .social-links .h3 {
+  text-align: center;
+}
+.social-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,

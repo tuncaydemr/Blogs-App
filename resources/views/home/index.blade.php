@@ -23,7 +23,28 @@
 
 @section('content2')
     <div class="container my-4">
-
+        <div class="row">
+            <div class="col social-links py-3">
+                <h3>Social Links</h3>
+                <ul>
+                    <li>
+                        <a href="">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="">Pinterest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 @endsection
 
