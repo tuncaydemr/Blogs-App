@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <h3 class="card-title mb-5">Lorem ipsum dolor sit amet</h3>
                     <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet saepe vitae consequatur labore. Repellat assumenda iste accusamus minima debitis.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" role="button" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
