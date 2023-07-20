@@ -10,7 +10,7 @@
             <div class="col-12">
                 <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid rounded-2" alt="Blog Banner">
             </div>
-            <div class="card p-4 bg-dark rounded-4">
+            <div class="card p-4 rounded-4">
                 <div class="card-body">
                     <h3 class="card-title mb-5">Lorem ipsum dolor sit amet</h3>
                     <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet saepe vitae consequatur labore. Repellat assumenda iste accusamus minima debitis.</p>
@@ -18,6 +18,12 @@
                 </div>
             </div>
         </div>
+    </div>
+@endsection
+
+@section('content2')
+    <div class="container my-4">
+
     </div>
 @endsection
 
