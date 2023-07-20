@@ -67,14 +67,18 @@ class FormController extends Controller
         ]);
 
         if($validator) {
-            Users::insert([
+            $userRegister = Users::insert([
                 'username' => $username,
                 'email' => $email,
                 'password' => $hashPassword
             ]);
-        }
 
-        return redirect()->to('/blogs/home');
+            if($userRegister) {
+                $users = Users::all();
+
+                return view('blogs.index', ['users' => $users]);
+            }
+        }
     }
 
     public function login(Request $request)

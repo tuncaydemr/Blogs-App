@@ -102,4 +102,20 @@
             });
         </script>
     @endif
+
+
+        @if (Users::all()->count())
+            <script>
+                $(document).ready(function() {
+                    openModal();
+                });
+            </script>
+        @else
+            <script>
+                $(document).ready(function() {
+                    openModal2();
+                });
+            </script>
+        @endif
+
 @endpush
