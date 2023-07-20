@@ -11874,6 +11874,27 @@ nav .w-5 {
   display: none;
 }
 
+.blog-banner img {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  opacity: 75%;
+  z-index: 0;
+}
+.blog-banner .card {
+  position: absolute;
+  width: 25%;
+  top: 40%;
+  left: 10%;
+  z-index: 1;
+}
+.blog-banner .card .card-body h3, .blog-banner .card .card-body .h3 {
+  color: white;
+}
+.blog-banner .card .card-body p {
+  color: white;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,
