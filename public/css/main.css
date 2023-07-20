@@ -11896,12 +11896,10 @@ nav .w-5 {
   color: black;
 }
 
-.social-media {
-  text-decoration: underline;
-}
 .social-media h3, .social-media .h3 {
   text-align: center;
   margin: 0 0 50px 0;
+  border-bottom: 1px solid black;
 }
 
 @media (max-width: 767.98px) {
