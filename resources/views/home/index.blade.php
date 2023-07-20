@@ -51,23 +51,23 @@
 @section('content3')
     <div class="container my-5">
         <div class="row">
-            <div class="col latest-articles">
+            <div class="col-12 latest-articles">
                 <h3>Latest Articles</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row d-flex">
+            <div class="col-3">
 
                 @foreach ($blogs as $blog)
 
                     @if ($blog->active)
 
                         <div class="card my-4">
-                            <div class="row">
-                                <div class="col-12 col-md-5 col-lg-4">
-                                    <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
+                            <div class="row d-block">
+                                <div class="col-12">
+                                    <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded">
                                 </div>
-                                <div class="col-8 col-md-4 col-lg-5 d-flex flex-column justify-content-evenly py-3 py-md-0">
+                                <div class="col-12 p-3">
                                     <h4 class="card-title">{{ $blog['title'] }}</h4>
                                     <div class="card-description">
                                         <h6 class="text-truncate" id="description">{{ $blog['description'] }}</h6>
@@ -83,23 +83,12 @@
                                     @endif
 
                                 </div>
-
-                                <div class="col-4 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center">
-                                    <a href="{{ route('blogs.like', ['id' => $blog['id']]) }}">
-                                        <button type="button" class="btn btn-primary py-1 mb-3">
-                                            <i class="bi bi-hand-thumbs-up-fill"></i>
-                                            Like
-                                        </button>
-                                    </a>
-                                    <a href="{{ route('blogs.details', ['id' => $blog['id']]) }}" class="btn btn-success blogs-details-btn">Details</a>
-                                </div>
                             </div>
                         </div>
 
                     @endif
 
                 @endforeach
-
             </div>
         </div>
     </div>
