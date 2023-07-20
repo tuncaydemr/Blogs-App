@@ -11874,6 +11874,35 @@ nav .w-5 {
   display: none;
 }
 
+.blog-banner img {
+  position: relative;
+  height: 80vh;
+  z-index: 0;
+}
+.blog-banner .card {
+  position: absolute;
+  width: 25%;
+  top: 40%;
+  left: 10%;
+  z-index: 1;
+  background: #fffff0;
+}
+.blog-banner .card .card-body h3, .blog-banner .card .card-body .h3 {
+  color: black;
+}
+.blog-banner .card .card-body p {
+  color: black;
+}
+
+.social-media h3, .social-media .h3,
+.latest-articles h3,
+.latest-articles .h3 {
+  text-align: center;
+  margin: 0 0 50px 0;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,

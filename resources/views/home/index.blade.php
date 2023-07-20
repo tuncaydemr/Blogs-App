@@ -4,7 +4,7 @@
     Blog Home
 @endsection
 
-{{-- @section('content')
+@section('content')
     <div class="mb-4">
         <div class="row blog-banner">
             <div class="col-12">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-@endsection --}}
+@endsection
 
 @section('content2')
     <div class="container my-5">
@@ -55,19 +55,22 @@
                 <h3>Latest Articles</h3>
             </div>
         </div>
-        {{-- <div class="row">
-            <div class="col-11 d-flex">
+        <div class="row">
+            <div class="col d-flex">
 
                 @foreach ($blogs as $blog)
 
                     @if ($blog->active)
 
-                        <div class="card my-4">
-                            <div class="row d-block">
+                        <div class="card my-4 mx-3">
+                            <div class="row">
                                 <div class="col-12">
-                                    <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded">
+                                    <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded" width="300" height="200">
                                 </div>
-                                <div class="col-12 p-3">
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12 d-flex flex-column justify-content-between p-3">
                                     <h4 class="card-title">{{ $blog['title'] }}</h4>
                                     <div class="card-description">
                                         <h6 class="text-truncate" id="description">{{ $blog['description'] }}</h6>
@@ -91,7 +94,7 @@
                 @endforeach
 
             </div>
-        </div> --}}
+        </div>
     </div>
 @endsection
 
