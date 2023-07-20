@@ -65,7 +65,7 @@
                         <div class="card my-4 mx-3">
                             <div class="row">
                                 <div class="col-12">
-                                    <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded" width="300" height="200">
+                                    <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded">
                                 </div>
 
                             </div>
