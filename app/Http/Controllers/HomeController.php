@@ -16,9 +16,9 @@ class HomeController extends Controller
         return view('home.contact');
     }
 
-    public function myAccount()
+    public function myAccount($id)
     {
-        $users = Users::all();
+        $users = Users::find($id);
 
         return view('account.my-account', ['users' => $users]);
     }
