@@ -1,3 +1,7 @@
+@php
+    $userId = session('user_id');
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
