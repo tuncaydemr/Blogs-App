@@ -113,6 +113,12 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" id="modalCloseButton3"></button>
                                 </div>
 
+                                @if (session('success'))
+                                    <div class="alert alert-success">
+                                        {{ session('success') }}
+                                    </div>
+                                @endif
+
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="registerUsername" class="form-label">Username</label>
