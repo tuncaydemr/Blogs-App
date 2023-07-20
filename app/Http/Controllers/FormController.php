@@ -72,13 +72,11 @@ class FormController extends Controller
                 'email' => $email,
                 'password' => $hashPassword
             ]);
-
-            if($userRegister) {
-                $users = Users::all();
-
-                return view('blogs.index', ['users' => $users]);
-            }
         }
+
+        $users = Users::all();
+
+        return view('blogs.index', ['users' => $users]);
     }
 
     public function login(Request $request)
