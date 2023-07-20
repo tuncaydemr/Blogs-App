@@ -55,8 +55,8 @@
                 <h3>Latest Articles</h3>
             </div>
         </div>
-        <div class="row d-flex">
-            <div class="col-3">
+        <div class="row">
+            <div class="col-3 d-flex">
 
                 @foreach ($blogs as $blog)
 
@@ -89,6 +89,7 @@
                     @endif
 
                 @endforeach
+
             </div>
         </div>
     </div>
