@@ -73,10 +73,6 @@ class FormController extends Controller
                 'password' => $hashPassword
             ]);
         }
-
-        $users = Users::all();
-
-        return view('blogs.index', ['users' => $users]);
     }
 
     public function login(Request $request)
