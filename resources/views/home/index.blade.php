@@ -67,13 +67,12 @@
                                 <div class="col-12">
                                     <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded">
                                 </div>
-
                             </div>
                             <div class="row">
-                                <div class="col-12 d-flex flex-column justify-content-between p-3">
+                                <div class="col-12 p-3">
                                     <h4 class="card-title">{{ $blog['title'] }}</h4>
                                     <div class="card-description">
-                                        <h6 class="text-truncate" id="description">{{ $blog['description'] }}</h6>
+                                        <h6 class="text-truncate fs-6" id="description">{{ $blog['description'] }}</h6>
                                         <a href="" class="more text-decoration-none" id="more">More...</a>
                                     </div>
 
