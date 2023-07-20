@@ -41,7 +41,7 @@
                             <li class="nav-item me-4">
                                 <a href="{{ route('my.account', ['id' => $userId->id]) }}" class="btn btn-primary" role="button">My Account</a>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
