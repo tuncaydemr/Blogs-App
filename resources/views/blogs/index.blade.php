@@ -101,11 +101,5 @@
                 openModal();
             });
         </script>
-    @else
-        <script>
-            $(document).ready(function() {
-                openModal2();
-            });
-        </script>
     @endif
 @endpush
