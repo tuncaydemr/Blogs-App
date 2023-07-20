@@ -24,8 +24,8 @@
 @section('content2')
     <div class="container my-4">
         <div class="row">
-            <div class="col social-links py-3">
-                <h3>Social Links</h3>
+            <div class="col social-media py-3">
+                <h3>Social Media</h3>
                 <div class="d-flex justify-content-evenly">
                     <a href="https://www.linkedin.com/">
                         <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
