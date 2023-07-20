@@ -18,42 +18,42 @@ nav {
     }
 }
 
-.blog-banner {
-    img {
-        position: relative;
-        height: 80vh;
-        z-index: 0;
-    }
+// .blog-banner {
+//     img {
+//         position: relative;
+//         height: 80vh;
+//         z-index: 0;
+//     }
 
-    .card {
-        position: absolute;
-        width: 25%;
-        top: 40%;
-        left: 10%;
-        z-index: 1;
-        background: #fffff0;
+//     .card {
+//         position: absolute;
+//         width: 25%;
+//         top: 40%;
+//         left: 10%;
+//         z-index: 1;
+//         background: #fffff0;
 
-        .card-body {
-            h3{
-                color: black;
-            }
+//         .card-body {
+//             h3{
+//                 color: black;
+//             }
 
-            p {
-                color: black;
-            }
-        }
-    }
-}
+//             p {
+//                 color: black;
+//             }
+//         }
+//     }
+// }
 
-.social-media,
-.latest-articles {
-    h3 {
-        text-align: center;
-        margin: 0 0 50px 0;
-        border-bottom: 1px solid black;
-        padding: 10px 0;
-    }
-}
+// .social-media,
+// .latest-articles {
+//     h3 {
+//         text-align: center;
+//         margin: 0 0 50px 0;
+//         border-bottom: 1px solid black;
+//         padding: 10px 0;
+//     }
+// }
 
 // Small down
 

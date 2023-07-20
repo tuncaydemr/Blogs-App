@@ -4,7 +4,7 @@
     Blog Home
 @endsection
 
-@section('content')
+{{-- @section('content')
     <div class="mb-4">
         <div class="row blog-banner">
             <div class="col-12">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection --}}
 
 @section('content2')
     <div class="container my-5">
@@ -55,8 +55,8 @@
                 <h3>Latest Articles</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3 d-flex">
+        {{-- <div class="row">
+            <div class="col-11 d-flex">
 
                 @foreach ($blogs as $blog)
 
@@ -91,7 +91,7 @@
                 @endforeach
 
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 

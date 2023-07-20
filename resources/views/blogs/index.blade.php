@@ -28,52 +28,58 @@
                     </form>
                 </div>
             </div>
-        </div>
 
-        @foreach ($blogs as $blog)
+            <div class="row">
+                <div class="col p-0">
 
-            @if ($blog['active'])
+                    @foreach ($blogs as $blog)
 
-                <div class="card my-4">
-                    <div class="row">
-                        <div class="col-12 col-md-5 col-lg-4">
-                            <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
-                        </div>
-                        <div class="col-8 col-md-4 col-lg-5 d-flex flex-column justify-content-evenly py-3 py-md-0">
-                            <h4 class="card-title">{{ $blog['title'] }}</h4>
-                            <div class="card-description">
-                                <h6 class="text-truncate" id="description">{{ $blog['description'] }}</h6>
-                                <a href="" class="more text-decoration-none" id="more">More...</a>
+                        @if ($blog['active'])
+
+                            <div class="card my-4">
+                                <div class="row">
+                                    <div class="col-12 col-md-5 col-lg-4">
+                                        <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded-start">
+                                    </div>
+                                    <div class="col-8 col-md-4 col-lg-5 d-flex flex-column justify-content-evenly py-3 py-md-0">
+                                        <h4 class="card-title">{{ $blog['title'] }}</h4>
+                                        <div class="card-description">
+                                            <h6 class="text-truncate" id="description">{{ $blog['description'] }}</h6>
+                                            <a href="" class="more text-decoration-none" id="more">More...</a>
+                                        </div>
+
+                                        @if($blog['likes'] > 1)
+                                            <p class="like">{{ $blog['likes'] }} likes</p>
+                                        @elseif ($blog['likes'] === 1)
+                                            <p class="like">{{ $blog['likes'] }} like</p>
+                                        @else
+                                            <p class="like">0 like</p>
+                                        @endif
+
+                                    </div>
+
+                                    <div class="col-4 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+                                        <a href="{{ route('blogs.like', ['id' => $blog['id']]) }}">
+                                            <button type="button" class="btn btn-primary py-1 mb-3">
+                                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                                Like
+                                            </button>
+                                        </a>
+                                        <a href="{{ route('blogs.details', ['id' => $blog['id']]) }}" class="btn btn-success blogs-details-btn">Details</a>
+                                    </div>
+                                </div>
                             </div>
 
-                            @if($blog['likes'] > 1)
-                                <p class="like">{{ $blog['likes'] }} likes</p>
-                            @elseif ($blog['likes'] === 1)
-                                <p class="like">{{ $blog['likes'] }} like</p>
-                            @else
-                                <p class="like">0 like</p>
-                            @endif
+                        @endif
 
-                        </div>
+                    @endforeach
 
-                        <div class="col-4 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center">
-                            <a href="{{ route('blogs.like', ['id' => $blog['id']]) }}">
-                                <button type="button" class="btn btn-primary py-1 mb-3">
-                                    <i class="bi bi-hand-thumbs-up-fill"></i>
-                                    Like
-                                </button>
-                            </a>
-                            <a href="{{ route('blogs.details', ['id' => $blog['id']]) }}" class="btn btn-success blogs-details-btn">Details</a>
-                        </div>
-                    </div>
                 </div>
+            </div>
 
-            @endif
-
-        @endforeach
-
-        <div class="my-5 d-flex justify-content-center">
-            <p>{{ $blogs->links() }}</p>
+            <div class="my-5 d-flex justify-content-center">
+                <p>{{ $blogs->links() }}</p>
+            </div>
         </div>
 
     @endsection
