@@ -19,21 +19,21 @@
         <div class="row">
             <div class="col social-media py-md-3">
                 <h3>Social Media</h3>
-                <div class="d-flex justify-content-evenly bg-danger">
+                <div class="d-flex justify-content-evenly">
                     <a href="https://www.linkedin.com/">
-                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/linkedin.png" alt="linkedin"/>
+                        <img src="{{ asset('img/social-media/linkedin.png') }}" alt="linkedin"/>
                     </a>
                     <a href="https://tr-tr.facebook.com/">
-                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/facebook-new.png" alt="facebook"/>
+                        <img src="{{ asset('img/social-media/facebook.png') }}" alt="facebook"/>
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/instagram-new.png" alt="instagram"/>
+                        <img src="{{ asset('img/social-media/instagram.png') }}" alt="instagram"/>
                     </a>
                     <a href="https://www.twitter.com/">
-                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/twitter.png" alt="twitter"/>
+                        <img src="{{ asset('img/social-media/twitter.png') }}" alt="twitter"/>
                     </a>
                     <a href="https://www.youtube.com/">
-                        <img width="70" height="70" src="https://img.icons8.com/fluency/70/youtube-play.png" alt="youtube"/>
+                        <img src="{{ asset('img/social-media/youtube.png') }}" alt="youtube"/>
                     </a>
                 </div>
             </div>

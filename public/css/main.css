@@ -11878,7 +11878,6 @@ nav .w-5 {
 .latest-articles-title h3,
 .latest-articles-title .h3 {
   text-align: center;
-  margin: 0 0 50px 0;
   border-bottom: 1px solid black;
   padding: 10px 0;
 }
@@ -11907,11 +11906,25 @@ nav .w-5 {
   .my-account {
     width: 80%;
   }
+  .social-media h3, .social-media .h3 {
+    margin: 0 0 20px 0;
+  }
+  .social-media img {
+    width: 36px;
+    height: 36px;
+  }
 }
 @media (max-width: 991.98px) {
   .navbar .container .collapse,
   .navbar .container .modal {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+  .social-media h3, .social-media .h3 {
+    margin: 0 0 30px 0;
+  }
+  .social-media img {
+    width: 48px;
+    height: 48px;
   }
 }
 @media (min-width: 768px) {
@@ -11942,6 +11955,13 @@ nav .w-5 {
   .more {
     font-size: 1rem;
   }
+  .social-media h3, .social-media .h3 {
+    margin: 0 0 40px 0;
+  }
+  .social-media img {
+    width: 60px;
+    height: 60px;
+  }
 }
 @media (min-width: 1400px) {
   .blog-edit,
@@ -11959,5 +11979,12 @@ nav .w-5 {
   .like,
   .more {
     font-size: 1rem;
+  }
+  .social-media h3, .social-media .h3 {
+    margin: 0 0 50px 0;
+  }
+  .social-media img {
+    width: 72px;
+    height: 72px;
   }
 }
