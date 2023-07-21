@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 px-md-4">
                                     <h4 class="card-title">{{ $blog->title }}</h4>
                                     <div class="card-description">
                                         <h6 class="text-truncate" id="description">{{ $blog->description }}</h6>

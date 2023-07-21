@@ -11923,6 +11923,10 @@ nav .w-5 {
   .latest-articles .card .like {
     font-size: 10px;
   }
+  .latest-articles .card img {
+    width: 140px;
+    height: 70px;
+  }
 }
 @media (max-width: 991.98px) {
   .navbar .container .collapse,
