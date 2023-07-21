@@ -11903,6 +11903,11 @@ nav .w-5 {
   padding: 10px 0;
 }
 
+.latest-articles img {
+  width: 300px;
+  height: 150px;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,
