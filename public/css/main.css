@@ -11986,11 +11986,13 @@ nav .w-5 {
   .more {
     font-size: 1rem;
   }
-  .social-media h3, .social-media .h3 {
+  .social-media h3, .social-media .h3,
+  .latest-articles h3,
+  .latest-articles .h3 {
     margin: 0 0 50px 0;
   }
   .social-media img {
     width: 72px;
-    height: 72px;
+    height: 36px;
   }
 }
