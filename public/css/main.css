@@ -11875,8 +11875,7 @@ nav .w-5 {
 }
 
 .blog-banner img {
-  position: relative;
-  z-index: 0;
+  width: 100%;
 }
 
 .social-media h3, .social-media .h3,
