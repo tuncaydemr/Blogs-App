@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid container-sm my-sm-3">
+    <div class="container my-3">
         <div class="row blog-banner">
             <div class="col-12">
-                <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid w-100" alt="Blog Banner">
+                <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid" alt="Blog Banner">
             </div>
         </div>
     </div>
