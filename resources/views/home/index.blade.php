@@ -62,14 +62,14 @@
 
                     @if ($blog->active)
 
-                        <div class="card my-4 mx-3">
+                        <div class="card m-3">
                             <div class="row">
                                 <div class="col-12 latest-articles">
                                     <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 p-3">
+                                <div class="col-12 py-2 px-4">
                                     <h4 class="card-title">{{ $blog['title'] }}</h4>
                                     <div class="card-description">
                                         <h6 class="text-truncate fs-6" id="description">{{ $blog['description'] }}</h6>
