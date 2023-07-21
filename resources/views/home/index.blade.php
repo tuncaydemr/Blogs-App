@@ -42,30 +42,30 @@
 @endsection
 
 @section('content3')
-    <div class="container my-5">
+    <div class="container latest-articles my-5">
         <div class="row">
-            <div class="col-12 latest-articles">
+            <div class="col-12">
                 <h3>Latest Articles</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col d-flex">
+            <div class="col-12 d-flex">
 
                 @foreach ($blogs as $blog)
 
                     @if ($blog->active)
 
-                        <div class="card m-3">
+                        <div class="card m-1">
                             <div class="row">
                                 <div class="col-12">
-                                    <img src="{{ asset('img/' . $blog->image) }}" alt="Image" class="img-fluid rounded">
+                                    <img src="{{ asset('img/' . $blog->image) }}" alt="Image" class="img-fluid rounded-top">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <h4 class="card-title">{{ $blog->title }}</h4>
                                     <div class="card-description">
-                                        <h6 class="text-truncate fs-6" id="description">{{ $blog->description }}</h6>
+                                        <h6 class="text-truncate" id="description">{{ $blog->description }}</h6>
                                         <a href="" class="more text-decoration-none" id="more">More...</a>
                                     </div>
 

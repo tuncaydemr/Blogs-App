@@ -27,7 +27,6 @@ nav {
     }
 }
 
-
 // Small down
 
 @media (max-width: 767.98px) {
@@ -70,6 +69,20 @@ nav {
         img {
             width: 36px;
             height: 36px;
+        }
+    }
+
+    .latest-articles {
+        .card {
+            h4 {
+                font-size: 12px;
+            }
+
+            .text-truncate,
+            .more,
+            .like {
+                font-size: 10px;
+            }
         }
     }
 }
