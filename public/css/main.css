@@ -11875,8 +11875,8 @@ nav .w-5 {
 }
 
 .social-media h3, .social-media .h3,
-.latest-articles-title h3,
-.latest-articles-title .h3 {
+.latest-articles h3,
+.latest-articles .h3 {
   text-align: center;
   border-bottom: 1px solid black;
   padding: 10px 0;
@@ -11906,7 +11906,9 @@ nav .w-5 {
   .my-account {
     width: 80%;
   }
-  .social-media h3, .social-media .h3 {
+  .social-media h3, .social-media .h3,
+  .latest-articles h3,
+  .latest-articles .h3 {
     margin: 0 0 20px 0;
   }
   .social-media img {
@@ -11919,7 +11921,9 @@ nav .w-5 {
   .navbar .container .modal {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   }
-  .social-media h3, .social-media .h3 {
+  .social-media h3, .social-media .h3,
+  .latest-articles h3,
+  .latest-articles .h3 {
     margin: 0 0 30px 0;
   }
   .social-media img {

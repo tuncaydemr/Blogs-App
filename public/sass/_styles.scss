@@ -19,7 +19,7 @@ nav {
 }
 
 .social-media,
-.latest-articles-title {
+.latest-articles {
     h3 {
         text-align: center;
         border-bottom: 1px solid black;
@@ -59,11 +59,14 @@ nav {
         width: 80%;
     }
 
-    .social-media {
+    .social-media,
+    .latest-articles {
         h3 {
             margin: 0 0 20px 0;
         }
-        
+    }
+
+    .social-media {
         img {
             width: 36px;
             height: 36px;
@@ -83,11 +86,14 @@ nav {
         }
     }
 
-    .social-media {
+    .social-media,
+    .latest-articles {
         h3 {
             margin: 0 0 30px 0;
         }
+    }
 
+    .social-media {
         img {
             width: 48px;
             height: 48px;
