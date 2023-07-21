@@ -5,12 +5,12 @@
 @endsection
 
 @section('content')
-    <div class="mb-4">
+    <div class="container-fluid my-4">
         <div class="row blog-banner">
             <div class="col-12">
-                <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid w-100" alt="Blog Banner">
+                <img src="{{ asset('img/blog-banner-1.png') }}" class="img-fluid" alt="Blog Banner">
             </div>
-            <div class="card p-4 rounded-4">
+            <div class="card p-0 rounded-4">
                 <div class="card-body">
                     <h3 class="card-title mb-5">Lorem ipsum dolor sit amet</h3>
                     <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet saepe vitae consequatur labore. Repellat assumenda iste accusamus minima debitis.</p>

@@ -21,15 +21,11 @@ nav {
 .blog-banner {
     img {
         position: relative;
-        height: 80vh;
         z-index: 0;
     }
 
     .card {
         position: absolute;
-        width: 25%;
-        top: 40%;
-        left: 10%;
         z-index: 1;
         background: #fffff0;
 
