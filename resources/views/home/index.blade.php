@@ -65,7 +65,7 @@
                                 <div class="col-12 py-2 px-4">
                                     <h4 class="card-title">{{ $blog->title }}</h4>
                                     <div class="card-description">
-                                        <h6 class="text-truncate fs-6" id="description">{{ $blog['description'] }}</h6>
+                                        <h6 class="text-truncate fs-6" id="description">{{ $blog->description }}</h6>
                                         <a href="" class="more text-decoration-none" id="more">More...</a>
                                     </div>
 
