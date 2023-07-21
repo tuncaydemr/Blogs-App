@@ -11895,8 +11895,8 @@ nav .w-5 {
 }
 
 .social-media h3, .social-media .h3,
-.latest-articles h3,
-.latest-articles .h3 {
+.latest-articles-title h3,
+.latest-articles-title .h3 {
   text-align: center;
   margin: 0 0 50px 0;
   border-bottom: 1px solid black;

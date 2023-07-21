@@ -51,7 +51,7 @@
 @section('content3')
     <div class="container my-5">
         <div class="row">
-            <div class="col-12 latest-articles">
+            <div class="col-12 latest-articles-title">
                 <h3>Latest Articles</h3>
             </div>
         </div>
@@ -64,7 +64,7 @@
 
                         <div class="card my-4 mx-3">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 latest-articles-img">
                                     <img src="{{ asset('img/' . $blog['image']) }}" alt="Image" class="img-fluid rounded">
                                 </div>
                             </div>
