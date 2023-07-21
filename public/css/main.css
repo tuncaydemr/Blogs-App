@@ -11959,7 +11959,9 @@ nav .w-5 {
   .more {
     font-size: 1rem;
   }
-  .social-media h3, .social-media .h3 {
+  .social-media h3, .social-media .h3,
+  .latest-articles h3,
+  .latest-articles .h3 {
     margin: 0 0 40px 0;
   }
   .social-media img {
