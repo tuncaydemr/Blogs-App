@@ -15,7 +15,7 @@
 @endsection
 
 @section('content2')
-    <div class="container my-5">
+    <div class="container my-3">
         <div class="row">
             <div class="col social-media py-3">
                 <h3>Social Media</h3>
