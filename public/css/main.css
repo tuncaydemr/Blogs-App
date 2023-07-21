@@ -11878,17 +11878,6 @@ nav .w-5 {
   position: relative;
   z-index: 0;
 }
-.blog-banner .card {
-  position: absolute;
-  z-index: 1;
-  background: #fffff0;
-}
-.blog-banner .card .card-body h3, .blog-banner .card .card-body .h3 {
-  color: black;
-}
-.blog-banner .card .card-body p {
-  color: black;
-}
 
 .social-media h3, .social-media .h3,
 .latest-articles-title h3,
@@ -11897,11 +11886,6 @@ nav .w-5 {
   margin: 0 0 50px 0;
   border-bottom: 1px solid black;
   padding: 10px 0;
-}
-
-.latest-articles img {
-  width: 300px;
-  height: 150px;
 }
 
 @media (max-width: 767.98px) {
