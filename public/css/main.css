@@ -11942,6 +11942,18 @@ nav .w-5 {
     width: 48px;
     height: 48px;
   }
+  .latest-articles .card h4, .latest-articles .card .h4 {
+    font-size: 16px;
+  }
+  .latest-articles .card .text-truncate,
+  .latest-articles .card .more,
+  .latest-articles .card .like {
+    font-size: 14px;
+  }
+  .latest-articles .card img {
+    width: 200px;
+    height: 100px;
+  }
 }
 @media (min-width: 768px) {
   .card-title {

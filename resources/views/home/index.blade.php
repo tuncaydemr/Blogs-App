@@ -62,6 +62,9 @@
                                 </div>
                             </div>
                             <div class="row">
+
+                                {{-- burdasın --}}
+                                
                                 <div class="col-12 px-md-4">
                                     <h4 class="card-title">{{ $blog->title }}</h4>
                                     <div class="card-description">
