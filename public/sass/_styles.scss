@@ -192,13 +192,13 @@ nav {
     .latest-articles {
         .card {
             h4 {
-                font-size: 16px;
+                font-size: 20px;
             }
 
             .text-truncate,
             .more,
             .like {
-                font-size: 14px;
+                font-size: 16px;
             }
 
             img {
@@ -207,6 +207,12 @@ nav {
             }
         }
     }
+}
+
+// XL up
+
+@media (min-width: 1200px) {
+
 }
 
 // XXL up

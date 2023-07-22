@@ -11993,12 +11993,12 @@ nav .w-5 {
     height: 60px;
   }
   .latest-articles .card h4, .latest-articles .card .h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .latest-articles .card .text-truncate,
   .latest-articles .card .more,
   .latest-articles .card .like {
-    font-size: 14px;
+    font-size: 16px;
   }
   .latest-articles .card img {
     width: 260px;
