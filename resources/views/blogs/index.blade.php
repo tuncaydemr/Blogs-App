@@ -42,7 +42,7 @@
                                         <img src="{{ asset('img/' . $blog->image) }}" alt="Image" class="img-fluid rounded-start">
                                     </div>
                                     <div class="col-8 col-md-4 col-lg-5 d-flex flex-column justify-content-evenly py-3 py-md-0">
-                                        <h4 class="card-title">{{ $blog['title'] }}</h4>
+                                        <h4 class="card-title">{{ $blog->title }}</h4>
                                         <div class="card-description">
                                             <h6 class="text-truncate" id="description">{{ $blog['description'] }}</h6>
                                             <a href="{{ route('blogs.details', $blog->id) }}" class="more text-decoration-none" id="more">More...</a>
