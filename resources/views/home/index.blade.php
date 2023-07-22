@@ -100,7 +100,7 @@
                 <img src="{{ asset('img/technology-2.jpg') }}" alt="Technology">
             </div>
             <div class="col">
-                <img src="" alt="Technology">
+                <img src="{{ asset('img/technology-3.jpg') }}" alt="Technology">
             </div>
             <div class="col">
                 <img src="" alt="Technology">
