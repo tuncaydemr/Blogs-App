@@ -91,10 +91,9 @@ class FormController extends Controller
 
         if($user && Hash::check($password, $user->password) && $validator) {
             Session::put('user', $user);
-            
-        } else {
-            return redirect()->back()->with('error', 'Invalid email or password!');
         }
+
+        return redirect()->to('/blogs/home');
     }
 
     public function logout()
