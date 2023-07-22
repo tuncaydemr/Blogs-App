@@ -1,7 +1,7 @@
 @extends('layouts.index')
 
 @section('title')
-    Blog App
+    Blogs
 @endsection
 
 @if (Session::has('user'))
