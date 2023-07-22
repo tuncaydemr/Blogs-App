@@ -34,7 +34,7 @@
 
                     @foreach ($blogs as $blog)
 
-                        @if ($blog['active'])
+                        @if ($blog->active)
 
                             <div class="card my-4">
                                 <div class="row">
