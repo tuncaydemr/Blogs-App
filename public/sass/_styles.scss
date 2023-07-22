@@ -27,6 +27,14 @@ nav {
     }
 }
 
+#register {
+    .modal-body {
+        .text-success {
+            font-size: 14px;
+        }
+    }
+}
+
 // Small down
 
 @media (max-width: 767.98px) {

@@ -11882,6 +11882,10 @@ nav .w-5 {
   padding: 10px 0;
 }
 
+#register .modal-body .text-success {
+  font-size: 14px;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,
