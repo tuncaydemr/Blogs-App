@@ -51,7 +51,7 @@
                                         @if($blog->likes > 1)
                                             <p class="like">{{ $blog->likes }} likes</p>
                                         @elseif ($blog->likes === 1)
-                                            <p class="like">{{ $blog['likes'] }} like</p>
+                                            <p class="like">{{ $blog->likes }} like</p>
                                         @else
                                             <p class="like">0 like</p>
                                         @endif
