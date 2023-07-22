@@ -195,6 +195,9 @@
         <section>
             @yield('content3')
         </section>
+        <section>
+            @yield('content4')
+        </section>
     </main>
 
     @stack('scripts')
