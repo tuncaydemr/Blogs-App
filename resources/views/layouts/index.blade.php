@@ -203,11 +203,16 @@
     <footer>
         <section>
             <div class="container-fluid mt-5">
-                <div class="row">
-                    <div class="col"></div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4>About Me</h4>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"></div>
+                    </div>
                 </div>
             </div>
         </section>
