@@ -73,7 +73,7 @@ class FormController extends Controller
                 'password' => $hashPassword
             ]);
 
-            return redirect()-> back()->with('success', 'Congratulations. You have successfully registered.');
+            return redirect()->back()->with('success', 'Congratulations. You have successfully registered.');
         }
     }
 
