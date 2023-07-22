@@ -1,5 +1,5 @@
 @php
-    $userId = Session::get('user');
+    $user = Session::get('user');
 @endphp
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@
 
                         @if (Session::has('user'))
                             <li class="nav-item me-4">
-                                <a href="{{ route('my.account', ['id' => $userId->id]) }}" class="btn btn-primary" role="button">My Account</a>
+                                <a href="{{ route('my.account', $user->id) }}" class="btn btn-primary" role="button">My Account</a>
                             </li>
 
                             <li class="nav-item">
