@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 py-md-3">
                                     <h4 class="card-title m-md-3">{{ $blog->title }}</h4>
                                     <div class="card-description">
                                         <h6 class="text-truncate m-md-3" id="description">{{ $blog->description }}</h6>
