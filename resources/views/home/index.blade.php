@@ -90,6 +90,20 @@
     </div>
 @endsection
 
+@section('content4')
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+@endsection
+
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
