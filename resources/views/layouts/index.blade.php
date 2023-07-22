@@ -205,7 +205,7 @@
             <div class="container-fluid bg-dark mt-5">
                 <div class="container">
                     <div class="row d-flex justify-content-between mb-5">
-                        <div class="col-5">
+                        <div class="col-5 d-flex flex-column justify-content-center">
                             <h4>About Me</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, similique sunt blanditiis eos id ex inventore voluptate corrupti neque doloremque!</p>
                         </div>
