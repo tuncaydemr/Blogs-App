@@ -91,7 +91,7 @@
 @endsection
 
 @section('content4')
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
             <div class="col">
                 <img src="{{ asset('img/technology-1.jpg') }}" class="img-fluid" alt="Technology">
