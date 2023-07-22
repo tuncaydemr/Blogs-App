@@ -94,19 +94,19 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <img src="{{ asset('img/technology-1.jpg') }}" alt="Technology">
+                <img src="{{ asset('img/technology-1.jpg') }}" class="img-fluid" alt="Technology">
             </div>
             <div class="col">
-                <img src="{{ asset('img/technology-2.jpg') }}" alt="Technology">
+                <img src="{{ asset('img/technology-2.jpg') }}" class="img-fluid" alt="Technology">
             </div>
             <div class="col">
-                <img src="{{ asset('img/technology-3.jpg') }}" alt="Technology">
+                <img src="{{ asset('img/technology-3.jpg') }}" class="img-fluid" alt="Technology">
             </div>
             <div class="col">
-                <img src="{{ asset('img/technology-4.jpg') }}" alt="Technology">
+                <img src="{{ asset('img/technology-4.jpg') }}" class="img-fluid" alt="Technology">
             </div>
             <div class="col">
-                <img src="{{ asset('img/technology-5.jpg') }}" alt="Technology">
+                <img src="{{ asset('img/technology-5.jpg') }}" class="img-fluid" alt="Technology">
             </div>
         </div>
     </div>
