@@ -214,6 +214,7 @@
                             <div class="col-9">
                                 <label for="joinMyEmailList" class="form-label">Email</label>
                                 <input type="text" class="form-control" id="joinMyEmailList">
+                                <button type="button" class="btn btn-primary">Subscribe Now</button>
                             </div>
                         </div>
                     </div>
