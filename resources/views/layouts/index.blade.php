@@ -24,7 +24,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="navMenu" class="collapse navbar-collapse py-5 rounded-4">
-                    <ul class="navbar-nav ms-auto flex-row justify-content-center justify-content-lg-end w-100 mb-5 mb-lg-0">
+                    <ul class="navbar-nav mx-auto flex-row justify-content-center mb-5 mb-lg-0">
                         <li class="nav-item me-5">
                             <a href="{{ route('home') }}" class="nav-link">Home</a>
                         </li>
@@ -35,7 +35,7 @@
                             <a href="{{ route('contact') }}" class="nav-link">Contact</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto flex-row justify-content-center justify-content-lg-end w-100 mb-3 mb-lg-0">
+                    <ul class="navbar-nav flex-row justify-content-center mb-3 mb-lg-0">
 
                         @if (Session::has('user'))
                             {{-- <li class="nav-item me-4">
