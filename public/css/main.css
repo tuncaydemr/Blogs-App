@@ -11894,7 +11894,7 @@ footer * {
   color: white;
 }
 footer .container {
-  padding: 12rem 0;
+  padding: 12rem 0 0 0;
 }
 
 @media (max-width: 767.98px) {
