@@ -200,6 +200,12 @@
         </section>
     </main>
 
+    <footer>
+        <section>
+            
+        </section>
+    </footer>
+
     @stack('scripts')
 </body>
 </html>
