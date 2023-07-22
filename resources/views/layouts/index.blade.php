@@ -218,7 +218,7 @@
                             <button type="button" class="btn btn-primary col-9">Subscribe Now</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row copyright">
                         <div class="col text-center">&copy; 2023 by Fogo Software. All rights reserved.</div>
                     </div>
                 </div>
