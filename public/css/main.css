@@ -11992,6 +11992,18 @@ nav .w-5 {
     width: 60px;
     height: 60px;
   }
+  .latest-articles .card h4, .latest-articles .card .h4 {
+    font-size: 16px;
+  }
+  .latest-articles .card .text-truncate,
+  .latest-articles .card .more,
+  .latest-articles .card .like {
+    font-size: 14px;
+  }
+  .latest-articles .card img {
+    width: 260px;
+    height: 130px;
+  }
 }
 @media (min-width: 1400px) {
   .blog-edit,

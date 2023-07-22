@@ -188,6 +188,25 @@ nav {
             height: 60px;
         }
     }
+
+    .latest-articles {
+        .card {
+            h4 {
+                font-size: 16px;
+            }
+
+            .text-truncate,
+            .more,
+            .like {
+                font-size: 14px;
+            }
+
+            img {
+                width: 260px;
+                height: 130px;
+            }
+        }
+    }
 }
 
 // XXL up
