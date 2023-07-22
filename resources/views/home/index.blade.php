@@ -62,22 +62,19 @@
                                 </div>
                             </div>
                             <div class="row">
-
-                                {{-- burdasın --}}
-                                
-                                <div class="col-12 px-md-4">
-                                    <h4 class="card-title">{{ $blog->title }}</h4>
+                                <div class="col-12">
+                                    <h4 class="card-title m-3">{{ $blog->title }}</h4>
                                     <div class="card-description">
-                                        <h6 class="text-truncate" id="description">{{ $blog->description }}</h6>
-                                        <a href="" class="more text-decoration-none" id="more">More...</a>
+                                        <h6 class="text-truncate m-3" id="description">{{ $blog->description }}</h6>
+                                        <a href="" class="more m-3 text-decoration-none" id="more">More...</a>
                                     </div>
 
                                     @if($blog->likes > 1)
-                                        <p class="like">{{ $blog->likes }} likes</p>
+                                        <p class="like m-3">{{ $blog->likes }} likes</p>
                                     @elseif ($blog->likes === 1)
-                                        <p class="like">{{ $blog->likes }} like</p>
+                                        <p class="like m-3">{{ $blog->likes }} like</p>
                                     @else
-                                        <p class="like">0 like</p>
+                                        <p class="like m-3">0 like</p>
                                     @endif
 
                                 </div>
