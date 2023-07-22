@@ -163,6 +163,13 @@
                                                 <div class="text-danger">5- At least one special character.</div>
                                             </div>
                                         @enderror
+                                        <div class="p-2 bg-success-subtle rounded">
+                                            <div class="text-success">1- Minimum 8 characters.</div>
+                                            <div class="text-success">2- At least one uppercase letter.</div>
+                                            <div class="text-success">3- At least one lowercase letter.</div>
+                                            <div class="text-success">4- At least one number.</div>
+                                            <div class="text-success">5- At least one special character.</div>
+                                        </div>
                                     </div>
                                 </div>
 
