@@ -11887,11 +11887,14 @@ nav .w-5 {
 }
 .technology .col img {
   width: 600px;
-  height: 400px;
+  height: 300px;
 }
 
 footer * {
   color: white;
+}
+footer .container {
+  padding: 12rem 0;
 }
 
 @media (max-width: 767.98px) {

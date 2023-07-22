@@ -33,7 +33,7 @@ nav {
 
         img {
             width: 600px;
-            height: 400px;
+            height: 300px;
         }
     }
 }
@@ -41,6 +41,10 @@ nav {
 footer {
     * {
         color: white;
+    }
+
+    .container {
+        padding: 12rem 0;
     }
 }
 
