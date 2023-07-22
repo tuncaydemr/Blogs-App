@@ -12037,4 +12037,16 @@ nav .w-5 {
     width: 72px;
     height: 72px;
   }
+  .latest-articles .card h4, .latest-articles .card .h4 {
+    font-size: 22px;
+  }
+  .latest-articles .card .text-truncate,
+  .latest-articles .card .more,
+  .latest-articles .card .like {
+    font-size: 18px;
+  }
+  .latest-articles .card img {
+    width: 340px;
+    height: 170px;
+  }
 }

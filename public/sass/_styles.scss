@@ -258,4 +258,23 @@ nav {
             height: 72px;
         }
     }
+
+    .latest-articles {
+        .card {
+            h4 {
+                font-size: 22px;
+            }
+
+            .text-truncate,
+            .more,
+            .like {
+                font-size: 18px;
+            }
+
+            img {
+                width: 340px;
+                height: 170px;
+            }
+        }
+    }
 }
