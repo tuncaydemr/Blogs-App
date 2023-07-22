@@ -27,6 +27,17 @@ nav {
     }
 }
 
+.technology {
+    .col {
+        padding: 0;
+
+        img {
+            width: 600px;
+            height: 400px;
+        }
+    }
+}
+
 // Small down
 
 @media (max-width: 767.98px) {

@@ -11882,6 +11882,14 @@ nav .w-5 {
   padding: 10px 0;
 }
 
+.technology .col {
+  padding: 0;
+}
+.technology .col img {
+  width: 600px;
+  height: 400px;
+}
+
 @media (max-width: 767.98px) {
   .card-title,
   .card-description,
