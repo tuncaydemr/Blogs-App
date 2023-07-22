@@ -48,7 +48,7 @@
                                             <a href="{{ route('blogs.details', $blog->id) }}" class="more text-decoration-none" id="more">More...</a>
                                         </div>
 
-                                        @if($blog['likes'] > 1)
+                                        @if($blog->likes > 1)
                                             <p class="like">{{ $blog['likes'] }} likes</p>
                                         @elseif ($blog['likes'] === 1)
                                             <p class="like">{{ $blog['likes'] }} like</p>
