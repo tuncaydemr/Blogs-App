@@ -212,7 +212,14 @@ nav {
 // XL up
 
 @media (min-width: 1200px) {
-
+    .latest-articles {
+        .card {
+            img {
+                width: 300px;
+                height: 150px;
+            }
+        }
+    }
 }
 
 // XXL up

@@ -12005,6 +12005,12 @@ nav .w-5 {
     height: 130px;
   }
 }
+@media (min-width: 1200px) {
+  .latest-articles .card img {
+    width: 300px;
+    height: 150px;
+  }
+}
 @media (min-width: 1400px) {
   .blog-edit,
   .blog-create,
