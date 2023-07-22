@@ -8,11 +8,11 @@
 
     @section('content')
 
-        <form action="{{ route('blogs.edit.submitForm', ['id' => $id]) }}" method="POST" novalidate enctype="multipart/form-data">
+        <form action="{{ route('blogs.edit.submitForm', $id) }}" method="POST" novalidate enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
-            <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 mb-3" style="height: 80vh;">
+            <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 my-3" style="height: 80vh;">
                 <div class="row blog-edit">
                     <h2 class="mb-5 text-center text-white">Blog Edit</h2>
                     <div class="col-12">
