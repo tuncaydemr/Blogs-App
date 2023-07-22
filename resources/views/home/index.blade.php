@@ -94,12 +94,20 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                
+                <img src="{{ asset('img/technology-1.jpg') }}" alt="Technology">
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col">
+                <img src="" alt="Technology">
+            </div>
+            <div class="col">
+                <img src="" alt="Technology">
+            </div>
+            <div class="col">
+                <img src="" alt="Technology">
+            </div>
+            <div class="col">
+                <img src="" alt="Technology">
+            </div>
         </div>
     </div>
 @endsection
