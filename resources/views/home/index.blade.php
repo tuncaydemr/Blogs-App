@@ -66,7 +66,7 @@
                                     <h4 class="card-title m-md-3">{{ $blog->title }}</h4>
                                     <div class="card-description">
                                         <h6 class="text-truncate m-md-3" id="description">{{ $blog->description }}</h6>
-                                        <a href="" class="more m-md-3 text-decoration-none" id="more">More...</a>
+                                        <a href="{{ route('blogs.details', $blog->id) }}" class="more m-md-3 text-decoration-none" id="more">More...</a>
                                     </div>
 
                                     @if($blog->likes > 1)
