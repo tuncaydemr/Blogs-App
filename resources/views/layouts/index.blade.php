@@ -209,7 +209,11 @@
                             <h4>About Me</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, similique sunt blanditiis eos id ex inventore voluptate corrupti neque doloremque!</p>
                         </div>
-                        <div class="col"></div>
+                        <div class="col">
+                            <h4>Join My Mailing List</h4>
+                            <label for="joinMyEmailList" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="joinMyEmailList">
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col"></div>
