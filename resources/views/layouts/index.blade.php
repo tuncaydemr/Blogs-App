@@ -202,17 +202,19 @@
 
     <footer>
         <section>
-            <div class="container-fluid mt-5">
+            <div class="container-fluid bg-dark mt-5">
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-5">
                             <h4>About Me</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, similique sunt blanditiis eos id ex inventore voluptate corrupti neque doloremque!</p>
                         </div>
-                        <div class="col">
+                        <div class="col-5">
                             <h4>Join My Mailing List</h4>
-                            <label for="joinMyEmailList" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="joinMyEmailList">
+                            <div class="col-6">
+                                <label for="joinMyEmailList" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="joinMyEmailList">
+                            </div>
                         </div>
                     </div>
                     <div class="row">
