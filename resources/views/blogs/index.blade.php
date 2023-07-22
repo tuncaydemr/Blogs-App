@@ -59,13 +59,13 @@
                                     </div>
 
                                     <div class="col-4 col-md-3 col-lg-3 d-flex flex-column align-items-center justify-content-center">
-                                        <a href="{{ route('blogs.like', ['id' => $blog['id']]) }}">
+                                        <a href="{{ route('blogs.like', $blog->id) }}">
                                             <button type="button" class="btn btn-primary py-1 mb-3">
                                                 <i class="bi bi-hand-thumbs-up-fill"></i>
                                                 Like
                                             </button>
                                         </a>
-                                        <a href="{{ route('blogs.details', ['id' => $blog['id']]) }}" class="btn btn-success blogs-details-btn">Details</a>
+                                        <a href="{{ route('blogs.details', $blog->id) }}" class="btn btn-success blogs-details-btn">Details</a>
                                     </div>
                                 </div>
                             </div>
