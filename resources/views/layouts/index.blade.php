@@ -211,11 +211,11 @@
                         </div>
                         <div class="col-5">
                             <h4>Join My Mailing List</h4>
-                            <div class="col-9">
+                            <div class="col-9 mb-3">
                                 <label for="joinMyEmailList" class="form-label">Email</label>
                                 <input type="text" class="form-control" id="joinMyEmailList">
-                                <button type="button" class="btn btn-primary">Subscribe Now</button>
                             </div>
+                            <button type="button" class="btn btn-primary col-9">Subscribe Now</button>
                         </div>
                     </div>
                     <div class="row">
