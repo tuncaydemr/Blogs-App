@@ -1,5 +1,8 @@
 @php
     $user = Session::get('user');
+
+    $userSession = Session::has('user');
+    $adminSession = Session::has('admin');
 @endphp
 
 <!DOCTYPE html>
