@@ -8,7 +8,7 @@
 
     @section('content')
 
-        <div class="container my-5">
+        <div class="container blog-details">
             <div class="row">
                 <div class="col">
 
