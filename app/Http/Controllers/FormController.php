@@ -144,7 +144,7 @@ class FormController extends Controller
 
         Users::find($id)->update(['username' => $username, 'email' => $email, 'password' => $hashPassword]);
 
-        return redirect()->to('/blogs/home');
+        return redirect()->route('my.account', $id);
     }
 
     public function myAccountDelete($id)
