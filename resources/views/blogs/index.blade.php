@@ -88,7 +88,9 @@
                                                 Like
                                             </button>
                                         </a>
-                                        <a href="{{ route('blogs.details', $blog->id) }}" class="btn btn-success blogs-details-btn">Details</a>
+                                        @if (Session::has('admin'))
+                                            <a href="{{ route('blogs.details', $blog->id) }}" class="btn btn-success blogs-details-btn">Details</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
