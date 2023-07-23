@@ -146,4 +146,13 @@ class FormController extends Controller
 
         return redirect()->to('/blogs/home');
     }
+
+    public function myAccountDelete($id)
+    {
+        Users::find($id)->delete();
+
+        Session::forget('user');
+
+        return redirect()->to('/home');
+    }
 }
