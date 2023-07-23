@@ -28,4 +28,11 @@ class AdminController extends Controller
 
         return "başarısız";
     }
+
+    public function logout()
+    {
+        Session::forget('admin');
+
+        return redirect()->to('/home');
+    }
 }
