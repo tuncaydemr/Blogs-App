@@ -4,7 +4,7 @@
     Blog Edit
 @endsection
 
-@if (Session::has('user') || Session::has('admin'))
+@if (Session::has('admin'))
 
     @section('content')
 
@@ -77,7 +77,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="{{ asset('js/index.js') }}"></script>
 
-    @if (session()->has('user') || session()->has('admin'))
+    @if (session()->has('admin'))
 
     @else
         <script>
