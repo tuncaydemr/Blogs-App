@@ -4,7 +4,7 @@
     Blog Create
 @endsection
 
-@if (isset($userSession) || isset($adminSession))
+@if (Session::has('user') || Session::has('admin'))
 
     @section('content')
 
