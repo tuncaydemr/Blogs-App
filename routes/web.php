@@ -41,7 +41,5 @@ Route::controller(AdminController::class)->group(function () {
     Route::get('/my-admin-account/{id}', 'myAdminAccount')->name('my.admin.account');
 });
 
-
-
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');
 
