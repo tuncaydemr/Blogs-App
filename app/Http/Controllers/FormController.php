@@ -144,7 +144,7 @@ class FormController extends Controller
             'password' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
-        if (($username !== $user->username) && ($email !== $user->email)) {
+        if (($username !== $user->username) || ($email !== $user->email)) {
             $user->update([
                 'username' => $username,
                 'email' => $email,
