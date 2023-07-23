@@ -51,7 +51,7 @@ class AdminController extends Controller
         $req->validate([
             'username' => 'required|string',
 
-            'password' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
+            'password' => 'required',
         ]);
 
         Admin::find($id)->update([
