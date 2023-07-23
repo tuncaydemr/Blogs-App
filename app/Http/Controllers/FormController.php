@@ -145,6 +145,17 @@ class FormController extends Controller
         Users::find($id)->update(['username' => $username, 'email' => $email, 'password' => $hashPassword]);
 
         return redirect()->route('my.account', $id);
+
+        if (($username !== $admin->username)) {
+            Admin::find($id)->update([
+                'username' => $username,
+                'password' => $password,
+            ]);
+
+            return redirect()->route('my.admin.account', $id)->with('success', 'Congratulations, Your admin account has been updated.');
+        } else {
+            return redirect()->route('my.admin.account', $id)->with('error', 'Invalid username or password.');
+        }
     }
 
     public function myAccountDelete($id)

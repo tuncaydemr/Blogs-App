@@ -57,7 +57,7 @@ class AdminController extends Controller
         ]);
 
         if(($username !== $admin->username)) {
-            Admin::find($id)->update([
+            $admin->update([
                 'username' => $username,
                 'password' => $password,
             ]);
