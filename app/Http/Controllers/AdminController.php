@@ -35,4 +35,11 @@ class AdminController extends Controller
 
         return redirect()->to('/home');
     }
+
+    public function myAdminAccount($id)
+    {
+        $admin = Admin::find($id);
+
+        return view('account.my-account', ['admin' => $admin]);
+    }
 }
