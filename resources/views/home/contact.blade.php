@@ -14,6 +14,11 @@
     </div>
     <div class="container bg-dark rounded-4 my-5 col-md-11 py-5">
         <div class="row">
+            <div class="col">
+                <div class="alert alert-success">{{ session('success') }}</div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-11 col-md-8 d-flex flex-column justify-content-center my-3 mx-auto">
                 <h1 class="text-center my-5 text-white">Contact Us</h1>
                 <form action="{{ route('send.email') }}" method="POST" novalidate>
