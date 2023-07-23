@@ -13,8 +13,8 @@
         </div>
     </div>
     <div class="container bg-dark rounded-4 my-5 col-md-11 py-5">
-        <div class="row">
-            <div class="col-11 col-md-8 d-flex justify-content-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-11 col-md-8">
                 @if (session('success'))
                     <div class="alert alert-success">{{ session('success') }}</div>
                 @endif
