@@ -4,7 +4,7 @@
     Blogs
 @endsection
 
-@if (Session::has('user') || Session::has('admin'))
+@if ($userSession || $adminSession)
 
     @section('content')
 
