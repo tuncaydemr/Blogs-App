@@ -101,7 +101,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="{{ asset('js/index.js') }}"></script>
 
-    @if (($userSession) || ($adminSession))
+    @if (!Session::has('user') || ($adminSession))
         <script>
             $(document).ready(function() {
                 openModal();
