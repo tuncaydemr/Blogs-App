@@ -41,9 +41,20 @@
                     <ul class="navbar-nav ms-auto flex-row justify-content-center mb-3 mb-lg-0">
 
                         @if ($userSession)
-                            {{-- <li class="nav-item me-4">
+                            <li class="nav-item me-4">
                                 <a href="{{ route('my.account', $user->id) }}" class="btn btn-primary" role="button">My Account</a>
-                            </li> --}}
+                            </li>
+
+                            <li class="nav-item">
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+
+                                    <button type="submit" class="btn btn-primary">Logout</button>
+                                </form>
+                        @elseif ($adminSession)
+                            <li class="nav-item me-4">
+                                <a href="{{ route('my.admin.account', $user->id) }}" class="btn btn-primary" role="button">My Admin Account</a>
+                            </li>
 
                             <li class="nav-item">
                                 <form action="{{ route('logout') }}" method="POST">
