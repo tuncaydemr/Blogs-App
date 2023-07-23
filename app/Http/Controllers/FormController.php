@@ -134,6 +134,8 @@ class FormController extends Controller
 
         $hashPassword = Hash::make($password);
 
+        $user = Users::find($id);
+
         $req->validate([
             'username' => 'required|string',
 
@@ -142,19 +144,16 @@ class FormController extends Controller
             'password' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
         ]);
 
-        Users::find($id)->update(['username' => $username, 'email' => $email, 'password' => $hashPassword]);
-
-        return redirect()->route('my.account', $id);
-
-        if (($username !== $admin->username)) {
-            Admin::find($id)->update([
+        if (($username !== $user->username) && ($email !== $user->email)) {
+            $user->update([
                 'username' => $username,
-                'password' => $password,
+                'email' => $email,
+                'password' => $hashPassword,
             ]);
 
-            return redirect()->route('my.admin.account', $id)->with('success', 'Congratulations, Your admin account has been updated.');
+            return redirect()->route('my.account', $id)->with('success', 'Congratulations, Your admin account has been updated.');
         } else {
-            return redirect()->route('my.admin.account', $id)->with('error', 'Invalid username or password.');
+            return redirect()->route('my.account', $id)->with('error', 'Invalid username or password.');
         }
     }
 
