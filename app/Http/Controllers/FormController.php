@@ -153,7 +153,7 @@ class FormController extends Controller
 
             return redirect()->route('my.account', $id)->with('success', 'Congratulations, Your admin account has been updated.');
         } else {
-            return redirect()->route('my.account', $id)->with('error', 'Invalid username or password.');
+            return redirect()->route('my.account', $id)->with('error', 'Invalid username or email or password.');
         }
     }
 
