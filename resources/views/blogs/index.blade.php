@@ -33,13 +33,13 @@
 
                 @else
 
-                    <div class="col-7 my-2 p-0">
+                    <div class="col-12 col-md-8 col-lg-7 my-2 p-0">
                         <form method="GET" action="{{ route('search') }}" class="d-flex" role="search">
                             <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-danger" type="submit">Search</button>
                         </form>
                     </div>
-                    <div class="col-3 my-2 ms-auto p-0">
+                    <div class="col-12 col-md-3 my-2 ms-auto p-0">
                         <form action="{{ route('sortByRate') }}" method="GET">
                             <select class="form-select" name="sortBy" id="sortBy">
                                 <option value="asc">Sort By</option>
