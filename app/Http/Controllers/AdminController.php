@@ -16,7 +16,7 @@ class AdminController extends Controller
         $admin = Admin::where('username', $username)->first();
 
         $validator = $req->validate([
-            'adminLoginUsername' => 'required|exists:admin,username',
+            'adminLoginUsername' => 'required',
             'adminLoginPassword' => 'required',
         ]);
 
@@ -24,6 +24,6 @@ class AdminController extends Controller
             Session::put('admin', $admin);
         }
 
-        return redirect()->to('/blogs/home');
+        return redirect()->to('/home');
     }
 }
