@@ -36,7 +36,12 @@ Route::controller(FormController::class)->group(function () {
     Route::get('/my-account/{id}/delete', 'myAccountDelete')->name('my.account.delete');
 });
 
-Route::post('/admin-login', [AdminController::class, 'login'])->name('admin.login');
+Route::controller(AdminController::class)->group(function () {
+    Route::post('/admin-login', 'login')->name('admin.login');
+    Route::get('/my-admin-account/{id}', 'myAdminAccount')->name('my.admin.account');
+});
+
+
 
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');
 
