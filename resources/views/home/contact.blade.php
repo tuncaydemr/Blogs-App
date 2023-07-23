@@ -35,7 +35,13 @@
                         </div>
                         <div class="mb-3 col-6">
                             <label for="email" class="form-label text-white">Email</label>
-                            <input type="email" name="email" id="email" class="form-control">
+                            <input type="email" name="email" id="email" class="form-control
+
+                                @error('email')
+                                    is-invalid
+                                @enderror
+
+                            ">
                             @error('email')
                                 <div class="invalid-feedback text-danger">{{ ucfirst($message) }}</div>
                             @enderror
