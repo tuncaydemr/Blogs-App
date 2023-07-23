@@ -12067,4 +12067,8 @@ footer .copyright {
     width: 340px;
     height: 170px;
   }
+  .technology .col img {
+    width: 600px;
+    height: 300px;
+  }
 }
