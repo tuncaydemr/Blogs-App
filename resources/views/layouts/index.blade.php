@@ -1,9 +1,6 @@
 @php
     $user = Session::get('user');
     $admin = Session::get('admin');
-
-    $userSession = ;
-    $adminSession = Session::has('admin');
 @endphp
 
 <!DOCTYPE html>
