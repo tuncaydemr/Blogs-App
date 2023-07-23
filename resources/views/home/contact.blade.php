@@ -65,11 +65,13 @@
 
                             ">
                             @error('phone')
-                                <div class="invalid-feedback p-2 rounded">
-                                    <div class="text-danger">1- It should start with '+'.</div>
-                                    <div class="text-danger">2- Country code must be entered.</div>
-                                    <div class="text-danger">3- Must be a minimum of 10 characters.</div>
-                                    <div class="text-danger">4- Must be a maximum of 10 characters.</div>
+                                <div class="invalid-feedback text-danger mb-3">{{ ucfirst($message) }}</div>
+                                <div class="invalid-feedback bg-success-subtle p-2 rounded">
+                                    <div class="text-success">1- Only numbers are accepted.</div>
+                                    <div class="text-success">1- It should start with '+'.</div>
+                                    <div class="text-success">2- Country code must be entered.</div>
+                                    <div class="text-success">3- Must be a minimum of 10 characters.</div>
+                                    <div class="text-success">4- Must be a maximum of 10 characters.</div>
                                 </div>
                             @enderror
                         </div>
