@@ -77,7 +77,9 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="{{ asset('js/index.js') }}"></script>
 
-    @if (isset($userSession) || isset($adminSession))
+    @if (session()->has('user') || session()->has('admin'))
+
+    @else
         <script>
             $(document).ready(function() {
                 openModal();
