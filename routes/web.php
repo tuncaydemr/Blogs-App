@@ -31,8 +31,8 @@ Route::controller(FormController::class)->group(function () {
     Route::post('/register', 'register')->name('register');
     Route::post('/logout', 'logout')->name('logout');
     Route::post('/send-email', 'sendEmail')->name('send.email');
-    Route::post('/my-account-edit/{id}', 'myAccountEdit')->name('my.account.edit');
-    Route::post('/my-account-delete/{id}', 'myAccountDelete')->name('my.account.delete');
+    Route::post('/my-account/{id}/edit', 'myAccountEdit')->name('my.account.edit');
+    Route::post('/my-account/{id}/delete', 'myAccountDelete')->name('my.account.delete');
 });
 
 Route::get('/blogs', [SearchController::class, 'search'])->name('search');
