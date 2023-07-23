@@ -8,7 +8,7 @@
 
     @section('content')
 
-        <div class="container my-5">
+        <div class="container blogs-home">
             <div class="row">
                 <div class="col-12 col-md-2 my-2 p-0">
                     <a href="{{ route('blogs.add') }}" class="btn btn-primary d-block d-md-inline-block" role="button">Blog Add</a>
