@@ -20,7 +20,7 @@ class AdminController extends Controller
             'adminLoginPassword' => 'required',
         ]);
 
-        if($admin && ($password === $admin->password) && $validator) {
+        if($admin && ($password == $admin->password) && $validator) {
             Session::put('admin', $admin);
         }
 
