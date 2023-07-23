@@ -33,14 +33,20 @@
 
 
                                 </div>
-                                <div class="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center">
-                                    <p class="m-1">
-                                        <a href="{{ route('blogs.edit', $id) }}" class="btn btn-primary px-4 py-2">Edit</a>
-                                    </p>
-                                    <p class="m-1">
-                                        <a href="{{ route('blogs.delete', $id) }}" class="btn btn-danger px-3 py-2">Delete</a>
-                                    </p>
-                                </div>
+
+                                @if (Session::has('admin'))
+
+                                    <div class="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center">
+                                        <p class="m-1">
+                                            <a href="{{ route('blogs.edit', $id) }}" class="btn btn-primary px-4 py-2">Edit</a>
+                                        </p>
+                                        <p class="m-1">
+                                            <a href="{{ route('blogs.delete', $id) }}" class="btn btn-danger px-3 py-2">Delete</a>
+                                        </p>
+                                    </div>
+
+                                @endif
+
                             </div>
                         </div>
                         <div class="container">
