@@ -55,7 +55,7 @@
 
                     @if ($blog->active)
 
-                        <div class="card mx-1 mx-md-2 mx-xl-3">
+                        <div class="card mx-1 mx-md-2 mx-xl-3 mb-4">
                             <div class="row">
                                 <div class="col-12">
                                     <img src="{{ asset('img/' . $blog->image) }}" alt="Image" class="img-fluid rounded-top">
