@@ -118,24 +118,24 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="mb-3 form-group">
-                                        <label for="loginEmail" class="form-label">Email</label>
-                                        <input type="email" class="form-control
-                                            @error('loginEmail')
+                                        <label for="adminLoginUsername" class="form-label">Username</label>
+                                        <input type="text" class="form-control
+                                            @error('adminLoginUsername')
                                                 is-invalid
                                             @enderror
-                                        " name="loginEmail" id="loginEmail">
-                                        @error('loginEmail')
+                                        " name="adminLoginUsername" id="adminLoginUsername">
+                                        @error('adminLoginUsername')
                                             <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                     <div class="mb-3 form-group">
-                                        <label for="loginPassword" class="form-label">Password</label>
+                                        <label for="adminLoginPassword" class="form-label">Password</label>
                                         <input type="password" class="form-control
-                                            @error('loginPassword')
+                                            @error('adminLoginPassword')
                                                 is-invalid
                                             @enderror
-                                        " name="loginPassword" id="loginPassword">
-                                        @error('loginPassword')
+                                        " name="adminLoginPassword" id="adminLoginPassword">
+                                        @error('adminLoginPassword')
                                             <div class="invalid-feedback p-2 rounded">
                                                 <div class="text-danger">1- Minimum 8 characters.</div>
                                                 <div class="text-danger">2- At least one uppercase letter.</div>
