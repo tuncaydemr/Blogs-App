@@ -4,7 +4,7 @@
     Blogs
 @endsection
 
-@if (Session::has('user') || $adminSession !== null)
+@if (Session::has('user') || Session::has('admin'))
 
     @section('content')
 
@@ -101,7 +101,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="{{ asset('js/index.js') }}"></script>
 
-    @if (!Session::has('user') || ($adminSession))
+    @if (!Session::has('user') || !Session::has('admin'))
         <script>
             $(document).ready(function() {
                 openModal();
