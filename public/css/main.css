@@ -11977,6 +11977,10 @@ footer .copyright {
     margin: 0 0 6px 0;
     font-size: 0.875rem;
   }
+  .latest-articles .card img {
+    width: 200px;
+    height: 100px;
+  }
 }
 @media (min-width: 992px) {
   .blog-edit,

@@ -168,6 +168,15 @@ footer {
         margin: 0 0 6px 0;
         font-size: $font-size-sm;
     }
+
+    .latest-articles {
+        .card {
+            img {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
 }
 
 // Medium up
