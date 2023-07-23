@@ -56,8 +56,6 @@ class AdminController extends Controller
             'password' => 'required',
         ]);
 
-
-
         if(($username !== $admin->username)) {
             Admin::find($id)->update([
                 'username' => $username,
