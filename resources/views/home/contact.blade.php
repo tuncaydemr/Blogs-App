@@ -63,7 +63,13 @@
                         </div>
                         <div class="mb-3 col-6">
                             <label for="subject" class="form-label text-white">Subject</label>
-                            <input type="text" name="subject" id="subject" class="form-control">
+                            <input type="text" name="subject" id="subject" class="form-control
+
+                                @error('subject')
+                                    is-invalid
+                                @enderror
+
+                            ">
                             @error('subject')
                                 <div class="invalid-feedback text-danger">{{ ucfirst($message) }}</div>
                             @enderror
