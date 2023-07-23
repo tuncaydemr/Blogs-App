@@ -204,7 +204,7 @@
         <section>
             <div class="container-fluid bg-dark mt-5">
                 <div class="container">
-                    <div class="row d-flex flex-column flex-md-row align-content-center justify-content-between  mb-5">
+                    <div class="row d-flex flex-column flex-md-row align-content-center justify-content-between mb-5">
                         <div class="col-6 col-md-5 mb-5 mb-md-0 d-flex flex-column justify-content-center">
                             <h4>About Me</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, similique sunt blanditiis eos id ex inventore voluptate corrupti neque doloremque!</p>
