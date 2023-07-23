@@ -43,9 +43,22 @@ class AdminController extends Controller
         return view('account.my-admin-account', ['admin' => $admin]);
     }
 
-    public function myAdminAccountEdit(Request $req)
+    public function myAdminAccountEdit(Request $req, $id)
     {
         $username = $req->username;
         $password = $req->password;
+
+        $req->validate([
+            'username' => 'required|string',
+
+            'password' => 'required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/'
+        ]);
+
+        Admin::find($id)->update([
+            'username' => $username,
+            'password' => $password,
+        ]);
+
+        return redirect()->route('my.admin.account', $id);
     }
 }
