@@ -11960,6 +11960,10 @@ footer .copyright {
   .latest-articles .card .like {
     font-size: 14px;
   }
+  .technology .col img {
+    width: 400px;
+    height: 200px;
+  }
 }
 @media (min-width: 768px) {
   .card-title {

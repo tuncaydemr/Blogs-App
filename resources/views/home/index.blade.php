@@ -93,19 +93,11 @@
 @section('content4')
     <div class="container-fluid my-5">
         <div class="row technology">
-            <div class="col">
+            <div class="col d-flex flex-column align-items-center">
                 <img src="{{ asset('img/technology-1.jpg') }}" class="img-fluid" alt="Technology">
-            </div>
-            <div class="col">
                 <img src="{{ asset('img/technology-2.jpg') }}" class="img-fluid" alt="Technology">
-            </div>
-            <div class="col">
                 <img src="{{ asset('img/technology-3.jpg') }}" class="img-fluid" alt="Technology">
-            </div>
-            <div class="col">
                 <img src="{{ asset('img/technology-4.jpg') }}" class="img-fluid" alt="Technology">
-            </div>
-            <div class="col">
                 <img src="{{ asset('img/technology-5.jpg') }}" class="img-fluid" alt="Technology">
             </div>
         </div>
