@@ -8,13 +8,14 @@
 
     @section('content')
 
-        <form action="{{ route('my.account.edit', $users->id) }}" method="POST" novalidate>
-            @csrf
+        <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 my-3" style="height: 90vh;">
+            <div class="row my-account">
+                <h2 class="mb-5 text-center text-white">My Account</h2>
+                <div class="col-12">
+                    
+                    <form action="{{ route('my.account.edit', $users->id) }}" method="POST" novalidate>
+                        @csrf
 
-            <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 my-3" style="height: 90vh;">
-                <div class="row my-account">
-                    <h2 class="mb-5 text-center text-white">My Account</h2>
-                    <div class="col-12">
                         <div class="mb-3">
                             <label for="username" class="form-label text-white">Username</label>
                             <input type="text" class="form-control
@@ -56,12 +57,12 @@
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-5">
                             <button type="submit" class="btn btn-primary w-50 p-3">Edit</button>
+                    </form>
                             <a href="{{ route('my.account.delete', $users->id) }}" class="btn btn-primary" role="button">Delete</a>
                         </div>
-                    </div>
                 </div>
             </div>
-        </form>
+        </div>
 
     @endsection
 
