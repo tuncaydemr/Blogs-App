@@ -78,7 +78,13 @@
                     <div class="row">
                         <div class="col-12 mt-3">
                             <label for="message" class="form-label text-white">Message</label>
-                            <textarea class="form-control" name="message" id="message" rows="7"></textarea>
+                            <textarea class="form-control
+
+                                @error('message')
+                                    is-invalid
+                                @enderror
+
+                            " name="message" id="message" rows="7"></textarea>
                             @error('message')
                                 <div class="invalid-feedback text-danger">{{ ucfirst($message) }}</div>
                             @enderror
