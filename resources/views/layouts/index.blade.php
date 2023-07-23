@@ -204,12 +204,12 @@
         <section>
             <div class="container-fluid bg-dark mt-5">
                 <div class="container">
-                    <div class="row d-flex justify-content-between mb-5">
-                        <div class="col-5 d-flex flex-column justify-content-center">
+                    <div class="row d-flex flex-column flex-md-row align-content-center justify-content-between  mb-5">
+                        <div class="col-6 col-md-5 d-flex flex-column justify-content-center">
                             <h4>About Me</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, similique sunt blanditiis eos id ex inventore voluptate corrupti neque doloremque!</p>
                         </div>
-                        <div class="col-5">
+                        <div class="col-6 col-md-5">
                             <h4>Join My Mailing List</h4>
                             <div class="col-9 mb-3">
                                 <label for="joinMyEmailList" class="form-label">Email</label>
