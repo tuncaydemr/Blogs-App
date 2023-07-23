@@ -50,7 +50,13 @@
                     <div class="row">
                         <div class="mb-3 col-6">
                             <label for="phone" class="form-label text-white">Phone</label>
-                            <input type="tel" name="phone" id="phone" class="form-control">
+                            <input type="tel" name="phone" id="phone" class="form-control
+
+                                @error('phone')
+                                    is-invalid
+                                @enderror
+
+                            ">
                             @error('phone')
                                 <div class="invalid-feedback text-danger">{{ ucfirst($message) }}</div>
                             @enderror
