@@ -1,5 +1,6 @@
 @php
     $user = Session::get('user');
+    $admin = Session::get('admin');
 
     $userSession = Session::has('user');
     $adminSession = Session::has('admin');
@@ -53,7 +54,7 @@
                                 </form>
                         @elseif ($adminSession)
                             <li class="nav-item me-4">
-                                <a href="{{ route('my.admin.account', $user->id) }}" class="btn btn-primary" role="button">My Admin Account</a>
+                                <a href="{{ route('my.admin.account', $admin->id) }}" class="btn btn-primary" role="button">My Admin Account</a>
                             </li>
 
                             <li class="nav-item">
