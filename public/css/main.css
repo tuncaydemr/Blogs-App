@@ -11941,10 +11941,6 @@ footer .copyright {
   .latest-articles .card .like {
     font-size: 10px;
   }
-  .latest-articles .card img {
-    width: 140px;
-    height: 70px;
-  }
 }
 @media (max-width: 991.98px) {
   .navbar .container .collapse,
@@ -11967,10 +11963,6 @@ footer .copyright {
   .latest-articles .card .more,
   .latest-articles .card .like {
     font-size: 14px;
-  }
-  .latest-articles .card img {
-    width: 200px;
-    height: 100px;
   }
 }
 @media (min-width: 768px) {
