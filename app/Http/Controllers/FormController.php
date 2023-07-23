@@ -110,7 +110,7 @@ class FormController extends Controller
             'email' => 'required|email',
             'subject' => 'required',
             'message' => 'required',
-            'phone' => 'required|numeric|min:1|max:10',
+            'phone' => 'required|regex:/^\+[0-9]{1,3}[0-9]{10}$/',
         ]);
 
         $data = [
