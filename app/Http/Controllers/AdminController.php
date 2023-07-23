@@ -12,10 +12,10 @@ class AdminController extends Controller
         $password = $req->adminLoginPassword;
 
         $req->validate([
-            'adminLoginUsername' => 'required',
+            'adminLoginUsername' => 'required|exists:admin,username',
             'adminLoginPassword' => 'required',
         ]);
 
-        
+
     }
 }
