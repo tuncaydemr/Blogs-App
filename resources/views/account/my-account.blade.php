@@ -4,7 +4,7 @@
     My Account
 @endsection
 
-@if ($userSession)
+@if (isset($userSession))
 
     @section('content')
 
