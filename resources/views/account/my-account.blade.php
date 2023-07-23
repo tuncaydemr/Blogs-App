@@ -12,7 +12,7 @@
             <div class="row my-account">
                 <h2 class="mb-5 text-center text-white">My Account</h2>
                 <div class="col-12">
-                    
+
                     <form action="{{ route('my.account.edit', $users->id) }}" method="POST" novalidate>
                         @csrf
 
@@ -57,7 +57,9 @@
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-5">
                             <button type="submit" class="btn btn-primary w-50 p-3">Edit</button>
+
                     </form>
+
                             <a href="{{ route('my.account.delete', $users->id) }}" class="btn btn-primary" role="button">Delete</a>
                         </div>
                 </div>
