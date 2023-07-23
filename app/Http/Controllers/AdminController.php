@@ -48,17 +48,25 @@ class AdminController extends Controller
         $username = $req->username;
         $password = $req->password;
 
+        $admin = Admin::find($id);
+
         $req->validate([
             'username' => 'required|string',
 
             'password' => 'required',
         ]);
 
-        Admin::find($id)->update([
-            'username' => $username,
-            'password' => $password,
-        ]);
 
-        return redirect()->route('my.admin.account', $id)->with('success', 'Congratulations, Your admin account has been updated.');
+
+        if(($username !== $admin->username)) {
+            Admin::find($id)->update([
+                'username' => $username,
+                'password' => $password,
+            ]);
+
+            return redirect()->route('my.admin.account', $id)->with('success', 'Congratulations, Your admin account has been updated.');
+        } else {
+            return redirect()->route('my.admin.account', $id)->with('error', 'Invalid username or password.');
+        }
     }
 }
