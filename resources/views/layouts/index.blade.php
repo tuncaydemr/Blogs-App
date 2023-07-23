@@ -37,7 +37,7 @@
                     </ul>
                     <ul class="navbar-nav ms-auto flex-row justify-content-center mb-3 mb-lg-0">
 
-                        @if (Session::has('user') and Session::has('admin'))
+                        @if (Session::has('user') || Session::has('admin'))
                             {{-- <li class="nav-item me-4">
                                 <a href="{{ route('my.account', $user->id) }}" class="btn btn-primary" role="button">My Account</a>
                             </li> --}}
