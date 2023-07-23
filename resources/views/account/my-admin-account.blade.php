@@ -43,7 +43,6 @@
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-5">
                             <button type="submit" class="btn btn-primary col-5 py-3 mx-auto">Edit</button>
-                            <a href="{{ route('my.account.delete', $users->id) }}" class="btn btn-danger col-5 py-3 mx-auto" role="button">Delete</a>
                         </div>
                     </div>
                 </div>
