@@ -8,7 +8,7 @@
 
     @section('content')
 
-        <form action="{{ route('my.account.edit', $users->id) }}" method="POST" novalidate>
+        <form action="{{ route('my.admin.account.edit', $admin->id) }}" method="POST" novalidate>
             @csrf
 
             <div class="container d-flex justify-content-center align-items-center bg-dark rounded-4 my-3" style="height: 90vh;">
@@ -23,21 +23,8 @@
                                     is-invalid
                                 @enderror
 
-                            " id="username" name="username" value="{{ $users->username }}">
+                            " id="username" name="username" value="{{ $admin->username }}">
                             @error('username')
-                                <div class="text-danger mt-1">{{ ucwords($message) }}</div>
-                            @enderror
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-white">Email</label>
-                            <input type="email" class="form-control
-
-                                @error('email')
-                                    is-invalid
-                                @enderror
-
-                            " id="email" name="email" value="{{ $users->email }}">
-                            @error('email')
                                 <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
                         </div>
@@ -49,7 +36,7 @@
                                     is-invalid
                                 @enderror
 
-                            " id="password" name="password" value="{{ $users->password }}">
+                            " id="password" name="password" value="{{ $admin->password }}">
                             @error('password')
                                 <div class="text-danger mt-1">{{ ucwords($message) }}</div>
                             @enderror
