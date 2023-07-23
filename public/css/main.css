@@ -11885,10 +11885,6 @@ nav .w-5 {
 .technology .col {
   padding: 0;
 }
-.technology .col img {
-  width: 600px;
-  height: 300px;
-}
 
 footer * {
   color: white;
@@ -12017,6 +12013,10 @@ footer .copyright {
   .latest-articles .card img {
     width: 260px;
     height: 130px;
+  }
+  .technology .col img {
+    width: 400px;
+    height: 200px;
   }
 }
 @media (min-width: 1200px) {
