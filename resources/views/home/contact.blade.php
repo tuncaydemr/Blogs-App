@@ -15,7 +15,9 @@
     <div class="container bg-dark rounded-4 my-5 col-md-11 py-5">
         <div class="row">
             <div class="col">
-                <div class="alert alert-success">{{ session('success') }}</div>
+                @if (session('success'))
+                    <div class="alert alert-success">{{ session('success') }}</div>
+                @endif
             </div>
         </div>
         <div class="row">
