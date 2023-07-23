@@ -59,6 +59,6 @@ class AdminController extends Controller
             'password' => $password,
         ]);
 
-        return redirect()->route('my.admin.account', $id);
+        return redirect()->route('my.admin.account', $id)->with('success', 'Congratulations, Your admin account has been updated.');
     }
 }
