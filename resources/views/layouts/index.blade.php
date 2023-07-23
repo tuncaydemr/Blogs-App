@@ -2,7 +2,7 @@
     $user = Session::get('user');
     $admin = Session::get('admin');
 
-    $userSession = Session::has('user');
+    $userSession = ;
     $adminSession = Session::has('admin');
 @endphp
 
