@@ -42,4 +42,10 @@ class AdminController extends Controller
 
         return view('account.my-admin-account', ['admin' => $admin]);
     }
+
+    public function myAdminAccountEdit(Request $req)
+    {
+        $username = $req->username;
+        $password = $req->password;
+    }
 }
