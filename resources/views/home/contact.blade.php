@@ -68,9 +68,8 @@
                                 <div class="invalid-feedback p-2 rounded">
                                     <div class="text-danger">1- It should start with '+'.</div>
                                     <div class="text-danger">2- Country code must be entered.</div>
-                                    <div class="text-danger">3- At least one lowercase letter.</div>
-                                    <div class="text-danger">4- At least one number.</div>
-                                    <div class="text-danger">5- At least one special character.</div>
+                                    <div class="text-danger">3- Must be a minimum of 10 characters.</div>
+                                    <div class="text-danger">4- Must be a maximum of 10 characters.</div>
                                 </div>
                             @enderror
                         </div>
