@@ -4,7 +4,7 @@
     Blogs
 @endsection
 
-@if ($userSession || $adminSession)
+@if (isset($userSession) || isset($adminSession))
 
     @section('content')
 
