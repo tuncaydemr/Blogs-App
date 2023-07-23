@@ -22,11 +22,9 @@ class AdminController extends Controller
 
         if($admin && ($password == $admin->password) && $validator) {
             Session::put('admin', $admin);
-
-            return redirect()->to('/home');
         }
 
-        return "başarısız";
+        return redirect()->to('/home');
     }
 
     public function logout()
