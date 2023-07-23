@@ -110,7 +110,7 @@ class FormController extends Controller
             'email' => 'required|email',
             'subject' => 'required',
             'message' => 'required',
-            'phone' => 'required|numeric|min:1',
+            'phone' => 'required|numeric|min:1|max:10',
         ]);
 
         $data = [
