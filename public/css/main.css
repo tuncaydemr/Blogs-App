@@ -11965,9 +11965,13 @@ footer .copyright {
   .latest-articles .card .like {
     font-size: 14px;
   }
+  .technology .col {
+    display: flex;
+    justify-content: center;
+  }
   .technology .col img {
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 250px;
     margin: 20px 0;
   }
 }
