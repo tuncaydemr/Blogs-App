@@ -11963,6 +11963,7 @@ footer .copyright {
   .technology .col img {
     width: 400px;
     height: 200px;
+    margin: 20px 0;
   }
 }
 @media (min-width: 768px) {
