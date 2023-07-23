@@ -66,13 +66,6 @@
                                     <h3>Login</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" id="modalCloseButton"></button>
                                 </div>
-
-                                @if (session('error'))
-                                    <div class="alert alert-danger">
-                                        {{ session('error') }}
-                                    </div>
-                                @endif
-
                                 <div class="modal-body">
                                     <div class="mb-3 form-group">
                                         <label for="loginEmail" class="form-label">Email</label>
