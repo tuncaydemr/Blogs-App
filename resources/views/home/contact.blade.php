@@ -52,12 +52,18 @@
                         <div class="mb-3 col-6">
                             <label for="subject" class="form-label text-white">Subject</label>
                             <input type="text" name="subject" id="subject" class="form-control">
+                            @error('subject')
+                                <div class="invalid-feedback text-danger">{{ ucfirst($message) }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 mt-3">
                             <label for="message" class="form-label text-white">Message</label>
                             <textarea class="form-control" name="message" id="message" rows="7"></textarea>
+                            @error('message')
+                                <div class="invalid-feedback text-danger">{{ ucfirst($message) }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="row">
