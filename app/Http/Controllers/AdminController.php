@@ -40,6 +40,6 @@ class AdminController extends Controller
     {
         $admin = Admin::find($id);
 
-        return view('account.my-account', ['admin' => $admin]);
+        return view('account.my-admin-account', ['admin' => $admin]);
     }
 }
