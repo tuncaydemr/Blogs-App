@@ -106,10 +106,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="login" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div id="adminLogin" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
-                            <form action="{{ route('login') }}" method="POST" novalidate>
+                            <form action="{{ route('admin.login') }}" method="POST" novalidate>
                                 @csrf
 
                                 <div class="modal-header">
