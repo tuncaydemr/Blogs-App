@@ -39,6 +39,7 @@ Route::controller(FormController::class)->group(function () {
 Route::controller(AdminController::class)->group(function () {
     Route::post('/admin-login', 'login')->name('admin.login');
     Route::get('/my-admin-account/{id}', 'myAdminAccount')->name('my.admin.account');
+    Route::get('/my-admin-account/{id}/edit', 'myAdminAccountEdit')->name('my.admin.account.edit');
     Route::post('/admin-logout', 'logout')->name('admin.logout');
 });
 
