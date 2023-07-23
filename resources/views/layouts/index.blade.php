@@ -136,19 +136,12 @@
                                             @enderror
                                         " name="adminLoginPassword" id="adminLoginPassword">
                                         @error('adminLoginPassword')
-                                            <div class="invalid-feedback p-2 rounded">
-                                                <div class="text-danger">1- Minimum 8 characters.</div>
-                                                <div class="text-danger">2- At least one uppercase letter.</div>
-                                                <div class="text-danger">3- At least one lowercase letter.</div>
-                                                <div class="text-danger">4- At least one number.</div>
-                                                <div class="text-danger">5- At least one special character.</div>
-                                            </div>
+                                            <div class="text-danger p-2 rounded invalid-feedback">{{ ucfirst($message) }}</div>
                                         @enderror
                                     </div>
                                 </div>
 
                                 <div class="modal-footer">
-                                    <a class="text-decoration-none me-auto" data-bs-toggle="modal" data-bs-target="#register">Register</a>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="modalCloseButton2">Close</button>
                                     <button type="submit" class="btn btn-primary">Login</button>
                                 </div>
