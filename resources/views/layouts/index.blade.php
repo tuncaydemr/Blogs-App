@@ -39,9 +39,9 @@
                     <ul class="navbar-nav ms-auto flex-row justify-content-center mb-3 mb-lg-0">
 
                         @if (Session::has('user'))
-                            {{-- <li class="nav-item me-4">
+                            <li class="nav-item me-4">
                                 <a href="{{ route('my.account', $user->id) }}" class="btn btn-primary" role="button">My Account</a>
-                            </li> --}}
+                            </li>
 
                             <li class="nav-item">
                                 <form action="{{ route('logout') }}" method="POST">
@@ -122,7 +122,7 @@
                 <div id="adminLogin" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                         <div class="modal-content p-3">
-                            {{-- <form action="{{ route('admin.login') }}" method="POST" novalidate> --}}
+                            <form action="{{ route('admin.login') }}" method="POST" novalidate>
                                 @csrf
 
                                 <div class="modal-header">
