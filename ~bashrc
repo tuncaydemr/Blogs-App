@@ -1,0 +1,4 @@
+alias a="git add ."
+alias c ="git commit -m 'Updated'"
+alias p ="git push"
+alias pas="php artisan serve"

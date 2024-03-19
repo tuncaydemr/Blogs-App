@@ -59,8 +59,8 @@ return [
 
             // 'host' => env('DB_HOST', 'localhost'),
             // 'port' => env('DB_PORT', '3306'),
-            // 'database' => env('DB_DATABASE', 'blogs_app'),
-            // 'username' => env('DB_USERNAME', 'blogs_app'),
+            // 'database' => env('DB_DATABASE', 'fb7org_blogs_app'),
+            // 'username' => env('DB_USERNAME', 'fb7org_blogs_app'),
             // 'password' => env('DB_PASSWORD', 'Jancoman02.'),
 
             'unix_socket' => env('DB_SOCKET', ''),
